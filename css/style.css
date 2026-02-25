@@ -64,8 +64,21 @@ body{
 .intro{ margin:0 0 14px; color: rgba(234,242,255,.84); line-height:1.45; max-width:72ch; }
 .hero-cta{ display:flex; gap:10px; flex-wrap:wrap; }
 
-.hero-right{ margin-left:auto; display:none; }
-@media (min-width: 980px){ .hero-right{ display:block; } }
+/* Garante que apareça no mobile também */
+.hero-right{
+  margin-top: 20px;
+  display: block; /* faz aparecer por padrão */
+  width: 100%;
+}
+
+/* Ajustes para desktop */
+@media (min-width: 980px){
+  .hero-right{
+    display: block; 
+    width: auto;
+    margin-top: 0;
+  }
+}
 
 .quick-cards{ display:flex; gap:10px; }
 .qcard{
