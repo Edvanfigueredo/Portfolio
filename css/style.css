@@ -36,8 +36,9 @@ body{
 /* HERO */
 .hero-cover{
   position:relative;
-  height:min(520px, 80vh);
-  overflow:hidden;
+  min-height:520px;
+  height:auto;
+  overflow:visible;
   border-bottom: 1px solid var(--stroke);
 }
 .cover-img{ width:100%; height:100%; object-fit:cover; transform: scale(1.02); }
@@ -408,6 +409,24 @@ body{
   .hero-cover{
     height: auto;
     padding-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 768px){
+
+  .hero-cover{
+    min-height: auto;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .hero-content{
+    position: relative;
+  }
+
+  .hero-right{
+    margin-top: 20px;
   }
 
 }
