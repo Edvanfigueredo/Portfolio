@@ -22,7 +22,6 @@ Este site reúne, em um único lugar:
 
 - 📄 **Currículo interativo**, organizado por abas
 - 📂 **Projetos reais**, com imagens, descrição e links
-- 📑 **Currículo em PDF**, com opção de visualizar, imprimir ou salvar
 - 🎨 Interface moderna com **tema tecnológico**
 - ✨ Animações suaves ao rolar a página e ao trocar abas
 - 📱 Layout responsivo (desktop e mobile)
@@ -95,17 +94,8 @@ Portfolio/
 │   │   └── script.js
 │   ├── img/
 │   │   └── (imagens do site e projetos)
-│   └── docs/
-│       └── CVEdvanFigueredo.pdf
 └── README.md
 ```
-📄 Currículo em PDF
-O currículo oficial está disponível no próprio site, com opções de:
-visualizar na página
-baixar em PDF
-imprimir ou salvar como PDF
-
-📎 Arquivo: assets/docs/CVEdvanFigueredo.pdf
 
 📬 Contato
 💼 LinkedIn:
@@ -117,8 +107,6 @@ https://github.com/Edvanfigueredo
 📧 E-mail:
 edvanfaraujo@outlook.com
 
-📱 WhatsApp:
-https://wa.me/5511963117229
 
 📢 Observação para recrutadores
 
