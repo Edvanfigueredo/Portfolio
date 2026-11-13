@@ -1,0 +1,52 @@
+{%- set L = t[lang] -%}
+{%- set M = L.meta[pageKey] if pageKey else { title: L.ui.notFoundTitle, description: L.ui.notFoundText } -%}
+{%- set otherLang = "pt" if lang == "en" else "en" -%}
+<!doctype html>
+<html lang="{{ L.htmlLang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ M.title }}</title>
+  <meta name="description" content="{{ M.description }}">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#fafaf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1726" media="(prefers-color-scheme: dark)">
+  {%- if pageKey %}
+  <link rel="canonical" href="{{ pageKey | langUrl(lang) | absUrl }}">
+  <link rel="alternate" hreflang="en" href="{{ pageKey | langUrl('en') | absUrl }}">
+  <link rel="alternate" hreflang="pt-BR" href="{{ pageKey | langUrl('pt') | absUrl }}">
+  <link rel="alternate" hreflang="x-default" href="{{ pageKey | langUrl('en') | absUrl }}">
+  <meta property="og:type" content="{{ 'article' if ogType == 'article' else 'website' }}">
+  <meta property="og:site_name" content="{{ site.name }}">
+  <meta property="og:title" content="{{ M.title }}">
+  <meta property="og:description" content="{{ M.description }}">
+  <meta property="og:url" content="{{ pageKey | langUrl(lang) | absUrl }}">
+  <meta property="og:locale" content="{{ L.ogLocale }}">
+  <meta property="og:locale:alternate" content="{{ t[otherLang].ogLocale }}">
+  <meta property="og:image" content="{{ ('/assets/img/og-' + lang + '.jpg') | absUrl }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ site.name }} — {{ L.home.eyebrow }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {%- else %}
+  <meta name="robots" content="noindex">
+  {%- endif %}
+  <link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="preload" href="{{ '/assets/fonts/ibm-plex-sans-latin-400-normal.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="{{ '/assets/fonts/source-serif-4-latin-600-normal.woff2' | url }}" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+  {%- if jsonld %}
+  <script type="application/ld+json">{{ jsonld | dump | safe }}</script>
+  {%- endif %}
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">{{ L.ui.skip }}</a>
+  {% include "partials/header.njk" %}
+  <main id="main" tabindex="-1">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <script src="{{ '/assets/js/site.js' | url }}" defer></script>
+</body>
+</html>

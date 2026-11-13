@@ -1,127 +1,104 @@
-# 🚀 Portfólio – Edvan Figuerêdo Araujo
+# Portfolio — Edvan Figuerêdo Araujo
 
-Portfólio profissional e currículo virtual desenvolvido com **HTML, CSS e JavaScript**, com foco em **Tecnologia da Informação, Desenvolvimento Web, Dados, IA aplicada e Cibersegurança**.
+Professional portfolio: **Technology Consulting · AI & Data · Software Engineering**.
+Bilingual (English by default, Brazilian Portuguese under `/pt/`), static, accessible and fast.
 
-🔗 **Acesse o site:**  
-👉 https://edvanfigueredo.github.io/Portfolio/
+> **Branch status (`update-portfolio`):** the new site lives in `src/` and is built into `_site/`.
+> The legacy site at the repository root (`index.html`, `assets/`, `css/`, `js/`) is still what
+> GitHub Pages serves today, and stays untouched until the cut-over at merge time.
 
+## Stack
 
+- **[Eleventy](https://www.11ty.dev/) 3** — used at **build time only**. Visitors receive plain HTML, one CSS file and about 1 KB of JavaScript.
+- **No runtime framework, no tracking, no cookies, no third-party requests.** Fonts are self-hosted (IBM Plex Sans, Source Serif 4, IBM Plex Mono — SIL Open Font License, see `src/assets/fonts/LICENSE-*`).
+- Node.js 20 or later.
 
-## 👨‍💻 Sobre mim
+## Review the site locally
 
-Sou estudante de **Análise e Desenvolvimento de Sistemas**, em transição de carreira para a área de **Tecnologia da Informação**.  
-Possuo experiência profissional em ambientes corporativos, organização de processos e controle de dados, e venho aplicando esse conhecimento em **projetos práticos de tecnologia**.
-
-Tenho formação concluída em **Cibersegurança** e foco em aprendizado contínuo, desenvolvimento de soluções reais e construção de portfólio sólido para atuação em **estágio ou posições júnior em TI**.
-
-
-
-## 🧩 O que você encontra neste projeto
-
-Este site reúne, em um único lugar:
-
-- 📄 **Currículo interativo**, organizado por abas
-- 📂 **Projetos reais**, com imagens, descrição e links
-- 🎨 Interface moderna com **tema tecnológico**
-- ✨ Animações suaves ao rolar a página e ao trocar abas
-- 📱 Layout responsivo (desktop e mobile)
-
-
-
-## 🛠️ Tecnologias utilizadas
-
-- **HTML5** – estrutura do site  
-- **CSS3** – layout, animações e tema visual  
-- **JavaScript (Vanilla)** – interatividade, abas, animações e eventos  
-- **Git & GitHub** – versionamento e publicação  
-- **GitHub Pages** – hospedagem do site
-
-
-
-## 📌 Projetos em destaque
-
-### 🧠 IMC + Plano de Nutrição com IA (TCC)
-🔗 https://edvanfigueredo.github.io/IMC_BMI_health/
-
-Projeto desenvolvido como **Trabalho de Conclusão de Curso**, que:
-- calcula o IMC do usuário
-- compara dados
-- gera um **plano de nutrição personalizado**
-- integra conceitos de **dados, saúde e inteligência artificial**
-
-
-
-### 🎮 Pac-ManRoblox (HTML + CSS + JS)
-🔗 https://edvanfigueredo.github.io/Pac-ManRoblox/
-
-Jogo estilo retrô desenvolvido para praticar:
-- lógica de programação
-- manipulação de DOM
-- animações
-- organização de código front-end
-
-
-
-### 🎮 Pacman Game Azul
-🔗 https://edvanfigueredo.github.io/pacman-gameazul/
-
-Versão alternativa do jogo Pac-Man, com:
-- identidade visual própria
-- ajustes de UX
-- foco em experiência do usuário
-
-
-
-### 🥋 Guibbor Brazilian Jiu-Jitsu (Website + Painel Admin)
-📌 *Deploy de produção em breve*
-
-Projeto real para uma academia, contendo:
-- site institucional
-- painel administrativo
-- foco em organização, usabilidade e evolução contínua
-
-
-
-## 📂 Estrutura do projeto
-
-```text
-Portfolio/
-├── index.html
-├── assets/
-│   ├── css/
-│   │   └── style.css
-│   ├── js/
-│   │   └── script.js
-│   ├── img/
-│   │   └── (imagens do site e projetos)
-└── README.md
+```bash
+npm ci
+npm start                 # http://localhost:8080/Portfolio/ — live reload while editing
 ```
 
-📬 Contato
-💼 LinkedIn:
-https://www.linkedin.com/in/edvan-figuer%C3%AAdo-araujo-7b8332272
+`npm start` serves the site under the same `/Portfolio/` path as GitHub Pages; open the address it prints.
 
-💻 GitHub:
-https://github.com/Edvanfigueredo
+Visual review gallery (real screenshots of every page — EN/PT, light/dark, desktop/mobile):
 
-📧 E-mail:
-edvanfaraujo@outlook.com
+```bash
+npm run gallery           # needs Playwright with Chromium; writes review/gallery/index.html
+```
 
+Open `review/gallery/index.html` in a browser and filter by language, theme, device or page. The folder is git-ignored.
+Content that still needs the owner's confirmation is listed in [`planning/pending-confirmations.md`](planning/pending-confirmations.md).
 
-📢 Observação para recrutadores
+## Commands
 
-Este portfólio foi desenvolvido do zero, sem frameworks, com foco em:
--entendimento real de front-end
--organização de código
--usabilidade
--apresentação profissional
+```bash
+npm ci            # install the build dependency
+npm run build     # generate the site in _site/
+npm start         # local development server with live reload
+npm run check     # static QA of _site/ (structure, SEO, links, images, content rules)
+npm test          # build + check
+```
 
-Estou aberto a oportunidades de estágio ou posições iniciais em TI, especialmente nas áreas de:
+## Structure
 
--Desenvolvimento Web
--Dados / BI
--Automação
--Suporte Técnico
--IA aplicada
+```
+src/
+├── _data/
+│   ├── site.js          # URL, path prefix, contact links, page keys — the only deployment-specific values
+│   └── t.js             # all site copy, English and Portuguese
+├── _includes/
+│   ├── layouts/         # base.njk (SEO metadata, header, footer), case-study.njk
+│   └── partials/        # header, footer, project card
+├── pages/               # one template per page, generated for both languages
+├── projects/{en,pt}/    # case studies in Markdown
+├── assets/              # css/main.css (design system), js/site.js, fonts, images
+└── static/              # files copied as-is (favicon)
+scripts/
+├── check-site.mjs       # dependency-free QA used by CI
+├── qa-browser.cjs       # local browser QA (responsiveness, menu, language switch), any engine
+├── a11y-*.cjs           # local accessibility audits: axe, contrast, keyboard/screen-reader structure
+├── make-gallery.cjs     # review gallery of real screenshots (npm run gallery)
+└── make-og.py           # regenerates the social preview images (Pillow)
+content/, planning/      # editorial drafts and planning documents (not published)
+```
 
-⭐ Se este projeto te chamou atenção, fique à vontade para entrar em contato!
+## Content rules
+
+- Every statement is backed by LinkedIn, a public repository, or a credential. Nothing is inferred.
+- Projects state their real status (MVP, completed, learning project) and list known issues; planned features never appear as implemented.
+- Only projects with audited code are shown. OrkestrIA and CloudCost Navigator are not shown until their code is available; the healthcare capstone is pending confirmation of its scope.
+- No phone number, street address, birth date or government identifiers anywhere.
+- EY is mentioned in text only (no logo or brand colors) and no client or internal project is described.
+
+## Quality (latest run, 2026-11-13)
+
+Full results, browsers and commands: [`planning/qa-report.md`](planning/qa-report.md).
+
+- **Accessibility (WCAG 2.2 AA):** axe-core reports 0 violations in Chromium, Firefox and WebKit, in light and dark themes. Contrast of all 2,424 text elements is at least 6.05:1. Keyboard navigation (Tab and Shift+Tab, focus visible and never hidden under the sticky header) and screen-reader structure pass in all three engines.
+- **Cross-browser:** 18 pages × 4 widths (360–1440 px) in Chromium, Firefox 155 and WebKit 26.6, without horizontal overflow or errors. Mobile menu, language switch and no-JavaScript navigation verified.
+- **Lighthouse (mobile):** Performance 99–100, Accessibility 100, Best Practices 100, SEO 100 (Home and Contact re-checked after the final visual round).
+- **Links:** GitHub, LinkedIn and email buttons point to the existing URLs in `src/_data/site.js`; external links open in a new tab with `rel="noopener noreferrer"` and an accessible "opens in a new tab" hint.
+- **Build:** `npm test` passes; `npm audit` reports 0 vulnerabilities.
+- **Not covered:** real screen readers (NVDA/JAWS/VoiceOver), Safari on macOS/iOS hardware, and the LinkedIn link, which is unreachable from the test environment.
+
+Optional local QA scripts (need Playwright, and `axe-core` for the axe audit — not project dependencies):
+
+```bash
+node scripts/qa-browser.cjs http://localhost:8090/Portfolio/ [chromium|firefox|webkit]
+node scripts/a11y-axe-run.cjs [chromium|firefox|webkit] http://localhost:8090/Portfolio/
+node scripts/a11y-contrast-all.cjs [chromium|firefox|webkit] http://localhost:8090/Portfolio/
+node scripts/a11y-keyboard.cjs [chromium|firefox|webkit] http://localhost:8090/Portfolio/
+```
+
+## Deployment (prepared, not active)
+
+`.github/workflows/deploy.yml` publishes `_site/` to GitHub Pages, but it only runs manually and requires
+**Settings → Pages → Source = "GitHub Actions"**. That switch is part of the merge decision.
+To use a custom domain later, change `url` and `pathPrefix` in `src/_data/site.js` and add a `CNAME` file to `src/static/`.
+
+## Contact
+
+- LinkedIn: https://www.linkedin.com/in/edvan-figuer%C3%AAdo-araujo-7b8332272
+- GitHub: https://github.com/Edvanfigueredo

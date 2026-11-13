@@ -1,0 +1,10 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+# Note: crawlers only read robots.txt at a domain root. On the github.io
+# project path this file is informational; submit the sitemap directly.
+User-agent: *
+Allow: /
+
+Sitemap: {{ '/sitemap.xml' | absUrl }}

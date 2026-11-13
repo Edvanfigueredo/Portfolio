@@ -1,0 +1,30 @@
+{%- set L = t[lang] -%}
+{%- set otherLang = "pt" if lang == "en" else "en" -%}
+{%- set navKey = navKey or pageKey -%}
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ 'home' | langUrl(lang) | url }}">
+      <span class="brand-name">Edvan Figuerêdo</span>
+      <span class="brand-role">{{ L.home.eyebrow.split(" · ")[0] }}</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-bar" aria-hidden="true"></span>
+      <span class="nav-toggle-label">{{ L.ui.menu }}</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="{{ L.ui.menu }}">
+      <ul class="nav-list">
+        {%- for key in site.nav %}
+        <li><a href="{{ key | langUrl(lang) | url }}"{% if key == navKey %} aria-current="page"{% endif %}>{{ L.ui.nav[key] }}</a></li>
+        {%- endfor %}
+      </ul>
+      {%- if pageKey %}
+      <a class="lang-switch" href="{{ pageKey | langUrl(otherLang) | url }}" hreflang="{{ t[otherLang].htmlLang }}" lang="{{ t[otherLang].htmlLang }}" data-lang="{{ otherLang }}">
+        <span class="visually-hidden">{{ L.ui.langLabel }}: </span>
+        <span aria-hidden="true" class="lang-current">{{ L.ui.currentShort }}</span>
+        <span aria-hidden="true" class="lang-sep">/</span>
+        <span>{{ L.ui.switchTo }}</span>
+      </a>
+      {%- endif %}
+    </nav>
+  </div>
+</header>

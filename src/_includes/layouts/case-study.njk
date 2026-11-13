@@ -1,0 +1,34 @@
+---
+layout: layouts/base.njk
+ogType: article
+---
+{%- set L = t[lang] -%}
+{%- set P = L.projects.items[pageKey] -%}
+<section class="page-head">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="{{ L.ui.breadcrumb }}">
+      <ol>
+        <li><a href="{{ 'projects' | langUrl(lang) | url }}">{{ L.ui.nav.projects }}</a></li>
+        <li aria-current="page">{{ P.name }}</li>
+      </ol>
+    </nav>
+    <p class="eyebrow">{{ eyebrow }}</p>
+    <h1>{{ P.name }}</h1>
+    <p class="lead">{{ lead }}</p>
+  </div>
+</section>
+
+<div class="container case-layout">
+  <article class="case-body">
+    {{ content | safe }}
+  </article>
+  <aside class="case-aside" aria-label="{{ P.name }}">
+    <dl>
+      <div><dt>{{ L.ui.status }}</dt><dd><span class="badge badge-{{ P.status }}">{{ P.statusText }}</span></dd></div>
+      <div><dt>{{ L.ui.role }}</dt><dd>{{ role }}</dd></div>
+      <div><dt>{{ L.ui.stack }}</dt><dd><ul class="stack">{% for s in P.stack %}<li>{{ s }}</li>{% endfor %}</ul></dd></div>
+      <div><dt>{{ L.ui.links }}</dt><dd><a href="{{ P.repo }}" rel="noopener noreferrer" target="_blank">{{ L.ui.viewRepo }}<span class="visually-hidden"> {{ L.ui.newTab }}</span></a></dd></div>
+    </dl>
+    <p class="mt-6"><a class="link-arrow" href="{{ 'projects' | langUrl(lang) | url }}">{{ L.ui.backToProjects }}</a></p>
+  </aside>
+</div>
