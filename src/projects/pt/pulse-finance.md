@@ -15,9 +15,9 @@ O Pulse Finance reúne os dados financeiros da própria pessoa em uma visão men
 
 - **Importação:** extratos bancários (OFX, CSV/Excel, PDF) e backups em JSON. Possíveis duplicidades são sinalizadas para revisão antes de qualquer gravação.
 - **Planejamento:** dívidas com parcelas, recorrências, orçamentos e metas.
-- **Projeção:** projeção multi-mês e simulador "e se?".
+- **Projeção:** projeção multi-mês e simulador “e se?”.
 
-Os dados ficam no navegador: sem servidor, sem conta, sem chave de API. **Status: MVP.** Os fluxos principais funcionam e são testados; os problemas conhecidos estão listados na seção "Problemas conhecidos" e o app não é apresentado como pronto para produção.
+Os dados ficam no navegador: sem servidor, sem conta, sem chave de API. **Status: MVP.** Os fluxos principais funcionam. Dívidas, projeções, o simulador “e se?” e o modo privado têm testes automatizados; a importação ainda não. Os problemas conhecidos estão listados abaixo, e o app não é apresentado como pronto para produção.
 
 <figure>
   <picture>
@@ -39,7 +39,7 @@ Os dados ficam no navegador: sem servidor, sem conta, sem chave de API. **Status
 - **Dívidas e parcelas:** o cronograma é gerado automaticamente, e a última parcela absorve o arredondamento. Pagar uma parcela registra a transação, vincula-a e atualiza o status da dívida; o pagamento pode ser desfeito.
 - **Receitas e despesas recorrentes,** incluindo a regra de "último dia útil do mês" (apenas fins de semana; feriados não são tratados).
 - **Calendário financeiro:** transações reais, parcelas pendentes e recorrências projetadas; o dashboard lê os próximos compromissos da mesma função.
-- **Projeção e simulador "e se?":** projeção multi-mês e cenários de poupança extra, corte de uma categoria ou quitação de uma dívida.
+- **Projeção e simulador “e se?”:** projeção multi-mês e cenários de poupança extra, corte de uma categoria ou quitação de uma dívida.
 - **Modo privado** que mascara valores na tela, **alertas** de vencimentos, orçamentos e metas, e exportação em CSV e JSON.
 
 **Não implementado** (por decisão ou planejado): backend, sincronização entre dispositivos, autenticação.

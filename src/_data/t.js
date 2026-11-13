@@ -108,7 +108,7 @@ const en = {
       "Improving my English (currently B1) for international work",
     ],
     directionTitle: "Direction",
-    direction: "In the next few years I want to become a reliable reference for AI and data engineering in financial services. Longer term, I want to grow into technical and delivery leadership, building on the people leadership I practiced before technology.",
+    direction: "In the next few years I want to become a trusted specialist in AI and data engineering for financial services. Longer term, I want to grow into technical and delivery leadership, building on the people leadership I practiced before technology.",
     languagesTitle: "Languages",
     languages: ["Portuguese — native", "Spanish — professional working proficiency", "English — B1 (intermediate)"],
   },
@@ -126,7 +126,7 @@ const en = {
     cols: { area: "Area", level: "Evidence", scope: "Scope", evidence: "Source" },
     rows: [
       { area: "Technology Consulting", levels: ["practice"], scope: "Automation, data and software delivery for financial institutions", evidence: "Role at EY" },
-      { area: "Financial Services", levels: ["practice", "developing"], scope: "Banking context, digital business strategy", evidence: "EY FSO practice · UVA Digital Business Strategy · Pulse Finance · Financial Market Analysis" },
+      { area: "Financial Services", levels: ["practice", "developing"], scope: "Banking context, digital business strategy", evidence: "EY Financial Services practice · UVA Digital Business Strategy · Pulse Finance · Financial Market Analysis" },
       { area: "Generative AI", levels: ["developing"], scope: "LLM applications, RAG, evaluation", evidence: "LLM Engineering with RAG (Coursera) · EY AI Engineering badge" },
       { area: "Agentic AI", levels: ["developing"], scope: "Multi-agent orchestration, tool use, MCP", evidence: "UC Davis AI Agents · Vanderbilt Agentic AI · LangGraph and AutoGen courses" },
       { area: "Data & Analytics", levels: ["practice", "project"], scope: "SQL, Python (pandas), Power BI", evidence: "DP-900 · EY role · Financial Market Analysis · Pulse Finance" },
@@ -167,7 +167,7 @@ const en = {
     title: "Professional journey",
     techTitle: "Technology Consulting",
     tech: [
-      { org: "EY", role: "Consultant, Technology Consulting: AI & Data, Financial Services", place: "São Paulo, hybrid", period: "Mar 2026 – present", text: "Data, automation and software work for financial-sector clients, using Java, Angular, Python, SQL, Power Automate and BI tools." },
+      { org: "EY", role: "Consultant, Technology Consulting — AI & Data, Financial Services", place: "São Paulo, hybrid", period: "Mar 2026 – present", text: "Data, automation and software work for financial-sector clients, using Java, Angular, Python, SQL, Power Automate and BI tools." },
     ],
     opsTitle: "Healthcare & Pharmaceutical Operations · 2013 – 2026",
     ops: [
@@ -188,8 +188,8 @@ const en = {
     msTitle: "Microsoft certifications",
     ms: [
       { name: "Microsoft Certified: Azure Fundamentals", code: "AZ-900", date: "May 2026" },
-      { name: "Microsoft Certified: Azure Data Fundamentals", code: "DP-900", date: "June 2026" },
-      { name: "Microsoft Certified: Power Platform Fundamentals", code: "PL-900", date: "August 2026" },
+      { name: "Microsoft Certified: Azure Data Fundamentals", code: "DP-900", date: "Jun 2026" },
+      { name: "Microsoft Certified: Power Platform Fundamentals", code: "PL-900", date: "Aug 2026" },
     ],
     uniTitle: "University and industry programs",
     uniNote: "Online courses; the platform is always named.",
@@ -280,7 +280,7 @@ const pt = {
     pillarsTitle: "Onde atuo",
     pillars: [
       { title: "Consultoria de tecnologia para serviços financeiros", text: "Automação de processos, dados e entrega de software para instituições financeiras, na prática de AI & Data da EY." },
-      { title: "IA e IA generativa", text: "Desenvolvendo competências em aplicações com LLMs e desenho multiagente, separando com clareza o que é protótipo, testado e validado. Ainda não há projeto de IA auditado e publicado.", tag: "Em desenvolvimento" },
+      { title: "IA e IA generativa", text: "Desenvolvendo competências em aplicações com LLMs e arquitetura multiagente, separando com clareza o que é protótipo, testado e validado. Ainda não há projeto de IA auditado e publicado.", tag: "Em desenvolvimento" },
       { title: "Dados, analytics e BI", text: "SQL, Python e Power BI para transformar dados operacionais e de mercado em informação útil para decisão." },
       { title: "Engenharia de software e cloud", text: "Java e Spring Boot, Python, Angular e JavaScript, sobre fundamentos de Azure, com testes automatizados e CI/CD." },
     ],
@@ -340,7 +340,7 @@ const pt = {
     cols: { area: "Área", level: "Evidência", scope: "Escopo", evidence: "Fonte" },
     rows: [
       { area: "Consultoria em Tecnologia", levels: ["practice"], scope: "Automação, dados e entrega de software para instituições financeiras", evidence: "Função na EY" },
-      { area: "Serviços Financeiros", levels: ["practice", "developing"], scope: "Contexto bancário, estratégia digital de negócios", evidence: "Prática FSO da EY · UVA Digital Business Strategy · Pulse Finance · Análise do Mercado Financeiro" },
+      { area: "Serviços Financeiros", levels: ["practice", "developing"], scope: "Contexto bancário, estratégia digital de negócios", evidence: "Prática de Serviços Financeiros da EY · UVA Digital Business Strategy · Pulse Finance · Análise do Mercado Financeiro" },
       { area: "IA Generativa", levels: ["developing"], scope: "Aplicações com LLMs, RAG, avaliação", evidence: "LLM Engineering with RAG (Coursera) · badge EY AI Engineering" },
       { area: "IA Agêntica", levels: ["developing"], scope: "Orquestração multiagente, uso de ferramentas, MCP", evidence: "UC Davis AI Agents · Vanderbilt Agentic AI · cursos de LangGraph e AutoGen" },
       { area: "Dados & Analytics", levels: ["practice", "project"], scope: "SQL, Python (pandas), Power BI", evidence: "DP-900 · função na EY · Análise do Mercado Financeiro · Pulse Finance" },
@@ -362,7 +362,7 @@ const pt = {
         status: "mvp",
         statusText: "MVP — v2.0",
         summary: "Aplicação de finanças pessoais local-first que desenvolvi individualmente. Importa extratos bancários (OFX, CSV/Excel, PDF) e backups em JSON, sinaliza possíveis duplicidades e conecta dívidas, recorrências e projeções.",
-        evidence: "42 testes automatizados cobrem dívidas, projeções, o simulador \"e se?\", o modo privado e a navegação por todo o app.",
+        evidence: "42 testes automatizados cobrem dívidas, projeções, o simulador “e se?”, o modo privado e a navegação por todo o app.",
         stack: ["JavaScript", "Vite", "IndexedDB", "Vitest", "GitHub Actions"],
         repo: "https://github.com/Edvanfigueredo/CarteiraDigitalPulse",
       },
@@ -381,7 +381,7 @@ const pt = {
     title: "Trajetória profissional",
     techTitle: "Consultoria em Tecnologia",
     tech: [
-      { org: "EY", role: "Consultor, Consultoria em Tecnologia: AI & Data, Serviços Financeiros", place: "São Paulo, híbrido", period: "mar 2026 – atual", text: "Trabalho com dados, automação e software para clientes do setor financeiro, usando Java, Angular, Python, SQL, Power Automate e ferramentas de BI." },
+      { org: "EY", role: "Consultor, Consultoria em Tecnologia — AI & Data, Serviços Financeiros", place: "São Paulo, híbrido", period: "mar 2026 – atual", text: "Trabalho com dados, automação e software para clientes do setor financeiro, usando Java, Angular, Python, SQL, Power Automate e ferramentas de BI." },
     ],
     opsTitle: "Operações em Saúde e Varejo Farmacêutico · 2013 – 2026",
     ops: [

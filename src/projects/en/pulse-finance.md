@@ -17,7 +17,7 @@ Pulse Finance brings a user's own financial data into one monthly view:
 - **Planning:** debts with installments, recurring payments, budgets and goals.
 - **Projection:** a multi-month forecast and a what-if simulator.
 
-All data stays in the browser: no server, no account, no API key. **Status: MVP.** The core flows work and are tested; the known issues are listed in the "Known issues" section and the app is not presented as production-ready.
+All data stays in the browser: no server, no account, no API key. **Status: MVP.** The core flows work. Debts, forecasting, the what-if simulator and privacy mode are covered by automated tests; import is not yet. The known issues are listed below, and the app is not presented as production-ready.
 
 <figure>
   <picture>

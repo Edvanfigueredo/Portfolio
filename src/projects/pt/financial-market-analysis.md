@@ -6,7 +6,7 @@ layout: layouts/case-study.njk
 navKey: projects
 eyebrow: Estudo de caso · Dados de mercado · Python
 lead: Ferramenta em Python para análise rápida de ações dos EUA e do Brasil (B3), com pontuação transparente baseada em regras e a justificativa de cada ponto.
-role: Desenvolvido individualmente (projeto de aprendizado)
+role: Projeto de aprendizado
 ---
 
 ## O que faz

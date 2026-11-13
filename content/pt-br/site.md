@@ -40,7 +40,7 @@
 ### Onde atuo
 **Consultoria de tecnologia para serviços financeiros.** Automação de processos, dados e entrega de software para instituições financeiras, na prática de AI & Data da EY. [C15]
 
-**IA e IA generativa.** Estou desenvolvendo competências em aplicações com LLMs e desenho multiagente, separando com clareza o que é protótipo, o que é testado e o que é validado. *(Ainda não há projeto de IA auditado e publicado [C16]; este pilar cita cursos e aparece como "Em desenvolvimento".)*
+**IA e IA generativa.** Estou desenvolvendo competências em aplicações com LLMs e arquitetura multiagente, separando com clareza o que é protótipo, o que é testado e o que é validado. *(Ainda não há projeto de IA auditado e publicado [C16]; este pilar cita cursos e aparece como "Em desenvolvimento".)*
 
 **Dados, analytics e BI.** SQL, Python e Power BI para transformar dados operacionais e de mercado em informação útil para decisão.
 
@@ -107,7 +107,7 @@ Português — nativo · Espanhol — profissional · Inglês — B1 (intermedi�
 | Área | Nível | Escopo | Evidência |
 |---|---|---|---|
 | Consultoria em Tecnologia | Prática profissional | Automação, dados e entrega de software para instituições financeiras | Função na EY [C15] |
-| Serviços Financeiros | Prática profissional · Em desenvolvimento | Contexto bancário, estratégia digital de negócios | Prática FSO da EY · UVA *Digital Business Strategy* · Pulse Finance · Análise do Mercado Financeiro |
+| Serviços Financeiros | Prática profissional · Em desenvolvimento | Contexto bancário, estratégia digital de negócios | Prática de Serviços Financeiros da EY · UVA *Digital Business Strategy* · Pulse Finance · Análise do Mercado Financeiro |
 | IA Generativa | Em desenvolvimento [C16] | Aplicações com LLMs, RAG, avaliação | *LLM Engineering with RAG* (Coursera) · badge EY AI Engineering [C11] |
 | IA Agêntica | Em desenvolvimento [C16] | Orquestração multiagente, uso de ferramentas, MCP | UC Davis *AI Agents* · Vanderbilt *Agentic AI* · cursos de LangGraph e AutoGen |
 | Dados & Analytics | Prática profissional · Evidência em projeto | SQL, Python (pandas), Power BI | DP-900 · função na EY [C15] · Análise do Mercado Financeiro · Pulse Finance (importação de extratos, relatórios) |
@@ -138,7 +138,7 @@ Português — nativo · Espanhol — profissional · Inglês — B1 (intermedi�
 ## Trajetória
 
 ### Consultoria em Tecnologia
-**EY** — Consultor, Consultoria em Tecnologia: AI & Data, Serviços Financeiros [C2] · São Paulo, híbrido · mar 2026 – atual
+**EY** — Consultor, Consultoria em Tecnologia — AI & Data, Serviços Financeiros [C2] · São Paulo, híbrido · mar 2026 – atual
 Trabalho com dados, automação e software para clientes do setor financeiro, usando Java, Angular, Python, SQL, Power Automate e ferramentas de BI [C15]. *(Reconhecimento EY Shine, 2026 [C23].)*
 
 ### Operações em Saúde e Varejo Farmacêutico · 2013 – 2026

@@ -90,7 +90,7 @@ Microsoft (AZ-900 · DP-900 · PL-900) · Duke University, University of Virgini
 - Improving my English (currently B1) for international work
 
 ### Direction
-In the next few years I want to become a reliable reference for AI and data engineering in financial services. Longer term, I want to grow into technical and delivery leadership, building on the people leadership I practiced before technology.
+In the next few years I want to become a trusted specialist in AI and data engineering for financial services. Longer term, I want to grow into technical and delivery leadership, building on the people leadership I practiced before technology.
 
 ### Languages
 Portuguese — native · Spanish — professional working proficiency · English — B1 (intermediate)
@@ -107,7 +107,7 @@ Portuguese — native · Spanish — professional working proficiency · English
 | Area | Level | Scope | Evidence |
 |---|---|---|---|
 | Technology Consulting | Professional practice | Automation, data and software delivery for financial institutions | Role at EY [C15] |
-| Financial Services | Professional practice · Developing | Banking context, digital business strategy | EY FSO practice · UVA *Digital Business Strategy* · Pulse Finance · Financial Market Analysis |
+| Financial Services | Professional practice · Developing | Banking context, digital business strategy | EY Financial Services practice · UVA *Digital Business Strategy* · Pulse Finance · Financial Market Analysis |
 | Generative AI | Developing [C16] | LLM applications, RAG, evaluation | *LLM Engineering with RAG* (Coursera) · EY AI Engineering badge [C11] |
 | Agentic AI | Developing [C16] | Multi-agent orchestration, tool use, MCP | UC Davis *AI Agents* · Vanderbilt *Agentic AI* · LangGraph and AutoGen courses |
 | Data & Analytics | Professional practice · Project evidence | SQL, Python (pandas), Power BI | DP-900 · EY role [C15] · Financial Market Analysis · Pulse Finance (statement import, reports) |
@@ -138,7 +138,7 @@ Portuguese — native · Spanish — professional working proficiency · English
 ## Journey
 
 ### Technology Consulting
-**EY** — Consultant, Technology Consulting: AI & Data, Financial Services [C2] · São Paulo, hybrid · Mar 2026 – present
+**EY** — Consultant, Technology Consulting — AI & Data, Financial Services [C2] · São Paulo, hybrid · Mar 2026 – present
 Data, automation and software work for financial-sector clients, using Java, Angular, Python, SQL, Power Automate and BI tools [C15]. *(EY Shine recognition, 2026 [C23].)*
 
 ### Healthcare & Pharmaceutical Operations · 2013 – 2026
@@ -159,8 +159,8 @@ Data, automation and software work for financial-sector clients, using Java, Ang
 
 **Microsoft certifications** [C25]
 - Microsoft Certified: Azure Fundamentals (AZ-900) · May 2026
-- Microsoft Certified: Azure Data Fundamentals (DP-900) · June 2026
-- Microsoft Certified: Power Platform Fundamentals (PL-900) · August 2026
+- Microsoft Certified: Azure Data Fundamentals (DP-900) · Jun 2026
+- Microsoft Certified: Power Platform Fundamentals (PL-900) · Aug 2026
 
 **University and industry programs** (platform always named) [C11]
 - Duke University on Coursera — Python Essentials for MLOps · DevOps, DataOps, MLOps

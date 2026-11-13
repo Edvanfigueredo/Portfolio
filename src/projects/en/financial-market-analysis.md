@@ -6,7 +6,7 @@ layout: layouts/case-study.njk
 navKey: projects
 eyebrow: Case study · Market data · Python
 lead: A Python tool for quick equity research on US and Brazilian (B3) stocks, with a transparent rule-based score and the reasoning behind every point.
-role: Built individually (learning project)
+role: Learning project
 ---
 
 ## What it does
