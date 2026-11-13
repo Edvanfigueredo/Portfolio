@@ -1,6 +1,6 @@
 # Pending confirmations — content not rendered until received
 
-None of the items below appears on the site today. Each one says exactly what is needed.
+Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are published with only verified content. Each one says exactly what is needed.
 
 1. **EY Shine recognition**
    - Exact name of the recognition, as EY writes it.
@@ -19,12 +19,13 @@ None of the items below appears on the site today. Each one says exactly what is
    - Pulse Finance: `https://edvanfigueredo.github.io/CarteiraDigitalPulse/`
    - Financial Market Analysis (Streamlit): `https://stock-exchange-analysis-app.streamlit.app/`
 
-4. **Healthcare capstone (TCC) scope**
-   - **(a)** Is the repository `IMC_BMI_health` the capstone?
-   - **(b)** If a fuller version exists (Node/Express, React, Azure SQL, Azure Pipelines), its repository URL.
-   - **(c)** Individual or group work? If group, the names to credit and your part.
-   - **(d)** The source of the nine-country BMI figures.
-   - **(e)** Approval to publish it as "Academic project", described as rule-based with no AI or backend.
+4. **Saúde IA capstone (TCC)** — now published as "Academic project · Capstone (TCC)", described from the public
+   repository `IMC_BMI_health` (rule-based, front end only, no AI model). Still to confirm:
+   - **(a)** Individual or group work? If group, the names to credit and your part.
+   - **(b)** Whether the capstone was submitted and approved (the page makes no claim about grading).
+   - **(c)** The source of the nine-country BMI and obesity figures.
+   - **(d)** If a fuller version exists (Node/Express, React, Azure SQL, Azure Pipelines, an AI API), its repository URL.
+   - **(e)** Whether the live demo `https://edvanfigueredo.github.io/IMC_BMI_health/` may be linked.
 
 5. **Oncology pharmacy role — English title**
    - Your exact original job title.
@@ -38,3 +39,11 @@ None of the items below appears on the site today. Each one says exactly what is
 
    The text appears on the case-study page exactly as approved. (The AI question is answered: AI supported only the
    initial UX prototype; the development is yours. This is now stated on the case-study page in both languages.)
+
+7. **Guibbor BJJ** — now published as "Consulting · Digital strategy", with only the scope you described
+   (diagnosis, growth strategy, digital presence, acquisition journey and UX, modernization opportunities). To add more:
+   - **(a)** Which proposals were actually implemented, and by whom (the old portfolio said "Site + Admin panel").
+   - **(b)** Period of the engagement and whether it is ongoing.
+   - **(c)** The academy's agreement to be named, and any result it agrees to publish.
+   - **(d)** A clean screenshot or image you are allowed to publish (the old one was a phone photo of a screen).
+   - **(e)** Permission to read the private `guibborbjj` repository, if technical work should be described.
