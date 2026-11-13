@@ -1,17 +1,19 @@
 # Pulse Finance — case study (EN)
 
-> **Status of this draft:** every technical statement was verified against the public repository `Edvanfigueredo/CarteiraDigitalPulse` on 2026-11-13. The tests were executed, not just read. Items marked `[C#]` need confirmation before publication.
-> **URL:** `/projects/pulse-finance/` · **Status label:** Completed — v2.0 · **Links:** Repository · Live demo [C33]
+> **Status of this draft:** revision 2. Every technical statement was verified against the public repository `Edvanfigueredo/CarteiraDigitalPulse` (commit `4a73070`) on 2026-11-13: tests and build executed, coverage measured, import parsing exercised. Items marked `[C#]` need confirmation before publication.
+> **URL:** `/projects/pulse-finance/` · **Status label:** MVP — v2.0 · **Links:** Repository · Live demo [C33]
 
 ---
 
 ## 1. Executive summary
-Pulse Finance is a local-first personal finance web application. Users bring their own bank data:
-- Statements import in five formats (JSON, Excel, CSV, OFX and PDF).
-- A reconciliation step flags duplicates before anything is saved.
-- The app connects debts, recurring payments, budgets and goals into one consistent monthly view, with a forecast and a what-if simulator.
+Pulse Finance is a local-first personal finance web application that I built individually. It brings a user's own financial data into one consistent monthly view:
+- **Import:** bank statements (OFX, CSV/Excel, PDF) and JSON backups. Possible duplicates are flagged for review before anything is saved.
+- **Planning:** debts with installments, recurring payments, budgets and goals.
+- **Projection:** a multi-month forecast and a what-if simulator.
 
-All data stays in the browser. There is no server, no account and no API key. The codebase follows a layered architecture, and 42 automated tests run in CI before every deployment.
+All data stays in the browser. There is no server, no account and no API key. The codebase follows a layered architecture. 42 automated tests pass, and the CI workflow is configured to run them before each deployment.
+
+**Status: MVP.** The core flows work and are tested. Known issues in import parsing, monetary precision and dependency security are listed openly in section 10. The app is not presented as production-ready.
 
 ## 2. Business context
 Personal finance tools usually make a trade-off:
@@ -22,20 +24,29 @@ Pulse was built as an educational tool for people who want to organize income, s
 
 ## 3. Problem
 - Bank statements arrive in incompatible formats, and re-importing the same period creates duplicates.
-- Instalment purchases and recurring bills are hard to see month by month. Users enter the same information in several places, and the numbers drift apart.
+- Installment purchases and recurring bills are hard to see month by month. Users enter the same information in several places, and the numbers drift apart.
 - Privacy: users may not want to upload statements to a third-party service.
 
 ## 4. My role and contributions
-[C34][C29] *Draft, to be confirmed:* I designed and built the application end to end: requirements, architecture, business rules, the import and reconciliation logic, the test suite, documentation and the CI/CD pipeline. *(If AI-assisted development was used, the final text will say so and describe what I specified, reviewed and tested.)*
+I designed and built Pulse individually: requirements, architecture, business rules, import and reconciliation logic, the test suite, documentation and the CI/CD pipeline. [C29: if AI-assisted development was used, the final text will say so and describe what I specified, reviewed and tested.]
 
 ## 5. Solution overview
-- **Statement import** in JSON (full backup or transaction list), Excel/CSV with automatic column detection and a manual-mapping fallback, OFX, and PDF (best effort for the common `date · description · amount` layout). A summary (count, income, expenses, period) and a duplicate check are shown before confirming.
-- **Reconciliation:** each imported line is classified as *new*, *exact duplicate* (same date, amount and description) or *probable duplicate* (same amount within ±3 days).
-- **Debts and installments:** schedules are generated automatically, with rounding absorbed by the last installment. Paying an installment creates the real transaction, links it to the installment, updates the debt status, and can be undone.
-- **Recurring income and expenses**, including a "last business day of the month" rule.
-- **Financial calendar:** merges real transactions, pending installments and projected recurring items without double counting. The dashboard reads from the same source, so the two views can't disagree.
+**Implemented:**
+- **Import:**
+  - JSON (Pulse backup or transaction list);
+  - Excel/CSV with automatic column detection and a manual-mapping fallback;
+  - OFX;
+  - PDF, on a best-effort basis for the common `date · description · amount` layout.
+
+  A summary (count, income, expenses, period) is shown before confirming.
+- **Duplicate flags:** each imported line is classified as *new*, *exact duplicate* (same date, amount and description) or *probable duplicate* (same amount within ±3 days).
+- **Debts and installments:** schedules are generated automatically, with rounding absorbed by the last installment. Paying an installment records the real transaction, links it to the installment and updates the debt status, and the payment can be undone.
+- **Recurring income and expenses,** including a "last business day of the month" rule (weekends only; public holidays are not handled).
+- **Financial calendar:** combines real transactions, pending installments and projected recurring items. The dashboard reads its upcoming items from the same function, so both views use one source.
 - **Forecast and what-if simulator:** multi-month projection, plus scenarios for extra monthly savings, cutting a category by a percentage, or paying off a debt.
 - **Privacy mode:** masks monetary values on screen. **Alerts** for due items, budgets and goals. Export to CSV and JSON.
+
+**Not implemented (by design or planned):** backend, sync between devices, authentication. See section 14.
 
 ## 6. Architecture
 ```
@@ -56,41 +67,48 @@ Vanilla JavaScript (ES modules) · Vite · IndexedDB · Chart.js · SheetJS (spr
 |---|---|---|
 | Local-first, no backend | Cloud backend with accounts | Privacy by design and zero infrastructure. The cost: no multi-device sync and no real authentication, both documented as out of scope. |
 | A single persistence module behind repositories | Calling IndexedDB from services | Keeps the storage choice reversible. A future API replaces one layer. |
-| Central HTML escaping (`escapeHtml` / `esc` template tag) | A UI framework with automatic escaping | Views render with template literals and `innerHTML`, so all user data passes through one escaping function to prevent XSS. |
-| Reconciliation before commit, with exact vs probable duplicates | Importing directly and deduplicating later | Users decide with full information. Wrong data is never written silently. |
+| Central HTML escaping (`escapeHtml` / `esc` template tag) | A UI framework with automatic escaping | Views render with template literals and `innerHTML`, so user data passes through one escaping function to prevent XSS. |
+| Duplicate review before saving | Importing directly and cleaning up later | Users decide with full information before data is written. |
 | Honest limitations in the product | Claiming universal PDF parsing or "AI" | PDF import is labeled best effort. The in-app assistant is explicitly rule-based, not a language model. |
 
 ## 9. Engineering challenges
 - **Heterogeneous statements:** auto-detecting spreadsheet columns, with a manual-mapping fallback when detection fails.
-- **One source of truth:** the calendar, dashboard and reports must show identical numbers across real, pending and projected items.
+- **One source of truth:** the calendar and dashboard read real, pending and projected items from the same function.
 - **Installment arithmetic:** splitting totals into installments without losing cents.
 - **Demo isolation:** a demonstration dataset that never contaminates the user's real data. This is covered by tests.
 
-## 10. Security and reliability
-- No bank passwords, card security codes, credentials or tokens are ever stored. Data stays in the browser's IndexedDB on the user's device.
+## 10. Security, reliability and known issues
+**In place:**
+- No bank passwords, card security codes, credentials or tokens are stored. Data stays in the browser's IndexedDB on the user's device.
 - XSS mitigation through centralized escaping.
-- There is **no authentication**: anyone with access to the browser can see the data. This is documented.
-- **Known improvement items** (from my own review; listed here so the status stays honest):
-  - Upgrade SheetJS to the maintained 0.20.x line. The npm 0.18.5 release has a published high-severity advisory, and the app parses user-uploaded spreadsheets. [C35]
-  - Store amounts as integer cents instead of floating-point numbers.
-  - Make installment payment a single atomic IndexedDB transaction.
-  - Stop publishing source maps in production.
+
+**Limitations by design:** there is no authentication. Anyone with access to the browser can see the data, and this is documented.
+
+**Known issues, open** (found in my own review; they are why the status is MVP):
+1. **OFX amounts with a comma decimal separator** (e.g. `-123,45`) are read without the cents. Some Brazilian bank exports use this format. OFX entries without a date receive the current date without a warning.
+2. **Import and reconciliation are not yet covered by automated tests.** Measured line coverage: reconciliation 6%, import service 13%, parsers 4–19%.
+3. **Monetary values use floating-point numbers.** They should be stored as integer cents.
+4. **Paying an installment performs two separate writes,** so an interruption between them could leave the payment recorded and the installment still pending. It should be one atomic operation.
+5. **Dependencies:** the spreadsheet library (SheetJS 0.18.5 from npm) has published high-severity advisories, and the fix requires the maintained 0.20.x line from SheetJS's own distribution. Several development-only tools (Vite, Vitest) also need major-version updates. [C35]
 
 ## 11. Results and evidence
-- **42 automated tests in 7 files, all passing.** Executed on a clean install on 2026-11-13: onboarding, empty first-run state, transaction CRUD, installment maths, demo isolation, forecast, score, privacy mode, alerts, goals and net worth, and a smoke test that navigates every screen with sparse and full datasets.
-- **CI/CD:** GitHub Actions runs `npm ci → npm test → npm run build` and deploys to GitHub Pages only if the tests pass.
-- **No usage metrics exist**, so none are claimed.
+- **42 automated tests in 7 files, all passing,** executed on a clean install on 2026-11-13. They cover onboarding, the empty first-run state, transaction CRUD, debts and installment maths, demo isolation, forecast, score, the what-if simulator, privacy mode, alerts, goals and net worth, and a smoke test that navigates every screen with sparse and full datasets.
+- **Measured coverage:** 47% of lines overall.
+  - 96–100% for debts, forecast, simulator, business-day rules and privacy mode.
+  - Low for import and reconciliation (see section 10).
+- **CI/CD:** the GitHub Actions workflow is configured to run `npm ci → npm test → npm run build` and to deploy to GitHub Pages only if the tests pass.
+- **No usage metrics exist,** so none are claimed.
 
 ## 12. Current status
-**Completed — v2.0.** Feature-complete for its local-first scope. A backend, sync and authentication are deliberately out of scope. Live demo: [C33].
+**MVP — v2.0.** Working for its local-first scope, with the open issues listed in section 10. Not production-ready. A backend, sync and authentication are deliberately out of scope. Live demo: [C33].
 
 ## 13. Lessons learned
 [Draft for your review. It must reflect your real experience.]
 - Writing down the limitations made the scope decisions easier to defend than adding features would have been.
-- Tests that navigate every screen caught integration breakages that unit tests alone would miss.
+- Tests that navigate every screen caught integration breakages, but the areas without tests (import parsing) are exactly where the review found defects.
 
 ## 14. Future improvements
-- The security and reliability items listed in section 10.
+- Fix the known issues in section 10: comma decimals in OFX, tests for import and reconciliation, integer cents, an atomic installment payment, dependency updates.
 - An optional backend API with authentication and multi-device sync. The layering is already prepared for it.
 - Drag-and-drop column mapping, and line-by-line category editing during reconciliation.
 - An English interface and README, plus screenshots in the repository.

@@ -11,7 +11,7 @@ Priority: be the clear, correct result for name searches, and be relevant (not k
 | Search theme | Primary page | Supporting pages |
 |---|---|---|
 | Edvan Figuerêdo / Edvan Figueredo (+ EY, AI, data) | Home | About, Journey |
-| Technology consultant, AI & data, financial services | Home | Expertise, Journey |
+| Technology consulting, AI & data, financial services | Home | Expertise, Journey |
 | Software engineering, Java, Spring Boot, Python backend | Expertise | Pulse Finance, Journey |
 | Generative AI, AI agents, RAG | Expertise | OrkestrIA (when evidenced), Credentials |
 | Financial services technology, personal finance software | Pulse Finance | Financial Market Analysis |
@@ -29,12 +29,12 @@ Each theme appears where it is **true and evidenced**, in natural sentences. No 
 ## Titles and descriptions (EN / PT)
 | Page | EN title — description | PT title — description |
 |---|---|---|
-| Home | Edvan Figuerêdo — Technology Consulting, AI & Data — Technology consultant in AI and data for financial services, with a software engineering foundation and thirteen years in regulated operations. | Edvan Figuerêdo — Consultoria em Tecnologia, IA & Dados — Consultor de tecnologia em IA e dados para serviços financeiros, com base em engenharia de software e treze anos em operações reguladas. |
+| Home | Edvan Figuerêdo — Technology Consulting, AI & Data — Consultant in technology consulting for financial services (AI & Data), with a software engineering foundation and more than ten years in healthcare operations. | Edvan Figuerêdo — Consultoria em Tecnologia, IA & Dados — Consultor em consultoria de tecnologia para serviços financeiros (AI & Data), com base em engenharia de software e mais de dez anos em operações de saúde. |
 | About | About Edvan Figuerêdo — From hospitals and oncology pharmacy to technology consulting at EY: the path, principles and direction behind my work. | Sobre Edvan Figuerêdo — De hospitais e farmácia oncológica à consultoria em tecnologia na EY: a trajetória, os princípios e a direção do meu trabalho. |
 | Expertise | Expertise — AI, Data & Software Engineering — Consulting, data, backend, frontend, cloud and AI, each labeled by evidence: professional practice, project or in development. | Atuação — IA, Dados e Engenharia de Software — Consultoria, dados, backend, frontend, cloud e IA, cada área com o nível de evidência: prática profissional, projeto ou em desenvolvimento. |
 | Projects | Projects & Case Studies — Edvan Figuerêdo — Case studies with architecture, technical decisions, test evidence and an honest status for each project. | Projetos e Estudos de Caso — Edvan Figuerêdo — Estudos de caso com arquitetura, decisões técnicas, evidências de teste e status real de cada projeto. |
-| Pulse Finance | Pulse Finance — Local-First Personal Finance App — Statement import in five formats, duplicate reconciliation, debts, forecasts and 42 automated tests. A case study. | Pulse Finance — Finanças Pessoais Local-First — Importação de extratos em cinco formatos, conciliação de duplicidades, dívidas, projeções e 42 testes automatizados. |
-| Journey | Professional Journey — Edvan Figuerêdo — Thirteen years across healthcare operations, pharmaceutical retail and technology consulting. | Trajetória Profissional — Edvan Figuerêdo — Treze anos entre operações em saúde, varejo farmacêutico e consultoria em tecnologia. |
+| Pulse Finance | Pulse Finance — Local-First Personal Finance App (MVP) — Individually built: statement import, duplicate flags, debts and forecasts, 42 automated tests, known issues listed openly. | Pulse Finance — Finanças Pessoais Local-First (MVP) — Projeto individual: importação de extratos, sinalização de duplicidades, dívidas e projeções, 42 testes, problemas conhecidos declarados. |
+| Journey | Professional Journey — Edvan Figuerêdo — From healthcare operations (since 2013) and pharmaceutical retail to technology consulting at EY. | Trajetória Profissional — Edvan Figuerêdo — Das operações em saúde (desde 2013) e do varejo farmacêutico à consultoria em tecnologia na EY. |
 | Credentials | Certifications & Credentials — Edvan Figuerêdo — Microsoft Azure, Azure Data and Power Platform certifications, and university courses in AI, MLOps and digital strategy. | Certificações e Credenciais — Edvan Figuerêdo — Certificações Microsoft Azure, Azure Data e Power Platform, e cursos universitários em IA, MLOps e estratégia digital. |
 | Contact | Contact — Edvan Figuerêdo — Get in touch about technology consulting, AI and data roles. Email, LinkedIn, GitHub and CV. | Contato — Edvan Figuerêdo — Fale comigo sobre oportunidades em consultoria de tecnologia, IA e dados. E-mail, LinkedIn, GitHub e currículo. |
 
@@ -45,7 +45,7 @@ Each theme appears where it is **true and evidenced**, in natural sentences. No 
 - **Sitemap:** `sitemap.xml` with `xhtml:link` alternates for both languages, unpublished pages excluded. Submitted to Google Search Console and Bing Webmaster Tools.
 - **robots.txt:** only effective at a domain root. On the `github.io/Portfolio/` sub-path it is ignored, so we rely on the sitemap submission. With a custom domain, `robots.txt` references the sitemap.
 - **Structured data (JSON-LD):**
-  - `Person` (name, alternateName, jobTitle [C2], worksFor: "EY", alumniOf, knowsAbout, hasCredential, sameAs: LinkedIn and GitHub). No address, phone or birth date.
+  - `Person` (name, alternateName, jobTitle "Consultant" [C2: exact public wording], worksFor: "EY", alumniOf, knowsAbout, hasCredential, sameAs: LinkedIn and GitHub). No internal grade ("staff"), address, phone or birth date.
   - `WebSite` with `inLanguage`; `BreadcrumbList` on case studies.
   - `SoftwareSourceCode` on case studies with a public repository (`codeRepository`, `programmingLanguage`).
   - `Article` for future Insights.

@@ -11,6 +11,11 @@ Each stage ends at an approval gate. Nothing is merged into `main` or deployed w
 | **2.6 QA** | Widths 360–1440 px; keyboard and screen-reader checks; WCAG 2.2 AA; Lighthouse ≥ 90 ×4; links; console; hreflang validation; GitHub Pages compatibility; final report | 2.4–2.5 | Report review |
 | **2.7 Deployment preparation** | GitHub Actions build workflow; instructions; domain configuration (if bought); CV PDFs in EN and PT | Domain decision; your authorization | **Explicit approval to merge and deploy** |
 
+## Dependencies on the repository history cleanup
+- The cleanup is planned and rehearsed, but **not authorized yet**. It rewrites every branch (`main`, `update-portfolio`, `claude/busy-knuth-ceqkl6`), so all commit SHAs change.
+- **No pull request may be opened before the cleanup**, because pull-request refs cannot be rewritten by the owner.
+- Any branch created from `main` before the cleanup inherits the history and widens its scope. Keep the number of branches minimal.
+
 ## Parallel tracks (outside this repository; each requires your authorization)
 1. **Repository improvements** that raise the evidence level before launch:
    - Pulse: SheetJS upgrade, integer cents, atomic installment payment, English README, screenshots.
