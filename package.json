@@ -8,7 +8,8 @@
     "build": "eleventy",
     "start": "eleventy --serve",
     "check": "node scripts/check-site.mjs",
-    "test": "npm run build && npm run check"
+    "test": "npm run build && npm run check",
+    "gallery": "npm run build && node scripts/make-gallery.cjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.8"

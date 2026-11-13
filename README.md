@@ -13,6 +13,24 @@ Bilingual (English by default, Brazilian Portuguese under `/pt/`), static, acces
 - **No runtime framework, no tracking, no cookies, no third-party requests.** Fonts are self-hosted (IBM Plex Sans, Source Serif 4, IBM Plex Mono — SIL Open Font License, see `src/assets/fonts/LICENSE-*`).
 - Node.js 20 or later.
 
+## Review the site locally
+
+```bash
+npm ci
+npm start                 # http://localhost:8080/Portfolio/ — live reload while editing
+```
+
+`npm start` serves the site under the same `/Portfolio/` path as GitHub Pages; open the address it prints.
+
+Visual review gallery (real screenshots of every page — EN/PT, light/dark, desktop/mobile):
+
+```bash
+npm run gallery           # needs Playwright with Chromium; writes review/gallery/index.html
+```
+
+Open `review/gallery/index.html` in a browser and filter by language, theme, device or page. The folder is git-ignored.
+Content that still needs the owner's confirmation is listed in [`planning/pending-confirmations.md`](planning/pending-confirmations.md).
+
 ## Commands
 
 ```bash
@@ -41,6 +59,7 @@ scripts/
 ├── check-site.mjs       # dependency-free QA used by CI
 ├── qa-browser.cjs       # local browser QA (responsiveness, menu, language switch), any engine
 ├── a11y-*.cjs           # local accessibility audits: axe, contrast, keyboard/screen-reader structure
+├── make-gallery.cjs     # review gallery of real screenshots (npm run gallery)
 └── make-og.py           # regenerates the social preview images (Pillow)
 content/, planning/      # editorial drafts and planning documents (not published)
 ```
