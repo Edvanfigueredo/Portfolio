@@ -9,6 +9,7 @@ pageKey: journey
   <div class="container">
     <p class="eyebrow">{{ t[lang].ui.nav.journey }}</p>
     <h1>{{ J.title }}</h1>
+    <p class="lead">{{ J.intro }}</p>
   </div>
 </section>
 
@@ -18,9 +19,10 @@ pageKey: journey
     <h2 id="g{{ loop.index }}" class="h-sm">{{ group[0] }}</h2>
     <ol class="entries">
       {%- for e in group[1] %}
-      <li class="entry">
+      <li class="entry{% if e.current %} is-current{% endif %}">
         <p class="entry-period">{{ e.period }}<br>{{ e.place }}</p>
         <div>
+          {%- if e.current %}<span class="badge badge-practice">{{ t[lang].ui.current }}</span>{% endif %}
           <h3>{{ e.org }}</h3>
           <p class="entry-role">{{ e.role }}</p>
           {%- if e.text %}<p>{{ e.text }}</p>{% endif %}

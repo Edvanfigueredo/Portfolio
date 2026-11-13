@@ -120,6 +120,7 @@
   @media (min-width: 40rem) and (max-width: 63.99rem) { .grid-4, .grid-3 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   .page-head { padding-block: var(--s-7) var(--s-5); }
   @media (min-width: 48rem) { .page-head { padding-block: var(--s-8) var(--s-6); } }
+  .page-head + .section { padding-top: var(--s-4); }
   .page-head .lead { font-size: var(--fs-lg); color: var(--c-ink-soft); max-width: var(--measure); }
 }
 
@@ -174,8 +175,7 @@
   @media (min-width: 48rem) { .hero-grid { grid-template-columns: minmax(0, 1fr) 15rem; gap: var(--s-7); } }
   @media (min-width: 64rem) { .hero-grid { grid-template-columns: minmax(0, 1fr) 18rem; } }
   .hero h1 { font-size: var(--fs-xl); font-family: var(--f-sans); font-weight: 600; letter-spacing: 0; margin-bottom: var(--s-2); }
-  .hero-statement { font-family: var(--f-serif); font-size: var(--fs-3xl); line-height: var(--lh-tight); font-weight: 600; margin: 0 0 var(--s-5); letter-spacing: -0.015em; max-width: 22ch; }
-  .hero-role { font-weight: 500; color: var(--c-ink-soft); margin-bottom: var(--s-4); }
+  .hero-statement { font-family: var(--f-serif); font-size: var(--fs-3xl); line-height: var(--lh-tight); font-weight: 600; margin: 0 0 var(--s-5); letter-spacing: -0.015em; max-width: 20ch; }
   .hero-intro { color: var(--c-ink-soft); max-width: var(--measure); }
   .hero-photo { width: 100%; max-width: 15rem; border-radius: var(--radius); border: 1px solid var(--c-line); aspect-ratio: 721 / 837; object-fit: cover; background: var(--c-surface); }
   @media (max-width: 47.99rem) { .hero-media { order: -1; } .hero-photo { max-width: 8.5rem; } }
@@ -297,10 +297,6 @@
   .kv { list-style: none; padding: 0; }
 
   /* Contact */
-  .contact-list { list-style: none; padding: 0; margin: 0 0 var(--s-6); display: grid; gap: var(--s-4); }
-  .contact-list li { margin: 0; display: grid; gap: var(--s-1); padding: var(--s-4) 0; border-top: 1px solid var(--c-line); }
-  .contact-list .label { font-family: var(--f-mono); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--c-muted); }
-  .contact-list a { font-size: var(--fs-lg); word-break: break-word; }
 
   /* Footer */
   .site-footer { border-top: 1px solid var(--c-line); padding-block: var(--s-7); margin-top: var(--s-8); font-size: var(--fs-sm); color: var(--c-muted); }
@@ -308,9 +304,48 @@
   @media (min-width: 48rem) { .footer-inner { grid-template-columns: 1fr auto; align-items: start; } }
   .footer-name { color: var(--c-ink); font-weight: 500; margin-bottom: var(--s-2); }
   .footer-note { margin-bottom: var(--s-1); }
-  .footer-links { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-5); }
-  .footer-links li { margin: 0; }
-  .footer-links a { display: inline-flex; align-items: center; min-height: 44px; }
+
+  /* Social / contact links with monochrome icons */
+  .social { list-style: none; padding: 0; margin: var(--s-5) 0 0; display: flex; flex-wrap: wrap; gap: var(--s-3); }
+  .social li { margin: 0; }
+  .social-link { display: inline-flex; align-items: center; gap: var(--s-2); min-height: 44px; padding: var(--s-2) var(--s-4); border: 1px solid var(--c-line); border-radius: var(--radius); background: var(--c-surface); color: var(--c-ink); font: 500 var(--fs-sm) var(--f-sans); text-decoration: none; transition: border-color var(--t-fast), color var(--t-fast); }
+  .social-link:hover { border-color: var(--c-accent); color: var(--c-accent); }
+  .social-link .icon { width: 1.125rem; height: 1.125rem; flex: none; }
+  .social-compact { margin: 0; gap: var(--s-1) var(--s-4); }
+  .social-compact .social-link { border: 0; background: none; padding: 0 var(--s-1); color: var(--c-ink-soft); }
+  .social-compact .social-link:hover { color: var(--c-accent); text-decoration: underline; text-underline-offset: 0.18em; }
+
+  /* Current role (home hero) */
+  .role-card { border-left: 3px solid var(--c-accent); padding: var(--s-1) 0 var(--s-1) var(--s-4); margin: 0 0 var(--s-5); }
+  .role-card p { margin: 0; }
+  .role-label { font-family: var(--f-mono); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.06em; color: var(--c-muted); }
+  .role-title { font-weight: 600; color: var(--c-ink); margin-top: var(--s-1) !important; }
+  .role-meta { font-size: var(--fs-sm); color: var(--c-muted); }
+
+  /* Five-phase journey on the home page */
+  .timeline .phase { display: block; font-family: var(--f-serif); font-weight: 600; font-size: var(--fs-base); color: var(--c-ink); }
+  .timeline .phase-text { display: block; font-size: var(--fs-sm); color: var(--c-ink-soft); }
+  .timeline li.is-current { border-top-color: var(--c-accent); }
+  .timeline-row li { align-content: start; }
+  @media (min-width: 64rem) { .timeline-5 { grid-template-columns: repeat(5, 1fr); } .timeline-5 li.is-current { border-top-color: var(--c-accent); } }
+
+  /* Current position on the journey page */
+  .entry.is-current { border-top: 2px solid var(--c-accent); }
+  .entry.is-current .badge { margin-bottom: var(--s-2); }
+
+  /* Project cards: type, implemented highlights */
+  .badge-type-own { color: var(--c-accent-ink); background: var(--c-accent); }
+  .badge-type-own::before { background: var(--c-accent-ink); }
+  .badge-type-academic, .badge-type-learning { color: var(--c-neutral); background: var(--c-neutral-bg); }
+  .card-subhead { font-family: var(--f-mono); font-size: var(--fs-xs); font-weight: 400; text-transform: uppercase; letter-spacing: 0.05em; color: var(--c-muted); margin: var(--s-2) 0 0; }
+  .check-list { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s-2); font-size: var(--fs-sm); color: var(--c-ink-soft); }
+  .check-list li { margin: 0; padding-left: 1.25rem; position: relative; }
+  .check-list li::before { content: ""; position: absolute; left: 0.125rem; top: 0.45em; width: 0.55rem; height: 0.3rem; border-left: 2px solid var(--c-accent); border-bottom: 2px solid var(--c-accent); transform: rotate(-45deg); }
+
+  /* Contact page */
+  .contact-email { margin-top: var(--s-6); display: grid; gap: var(--s-1); }
+  .contact-email .label { font-family: var(--f-mono); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--c-muted); }
+  .contact-email a { font-size: var(--fs-lg); word-break: break-word; }
 
   /* Closing CTA */
   .closing { text-align: left; }

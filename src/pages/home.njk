@@ -35,7 +35,11 @@ eleventyComputed:
       <p class="eyebrow">{{ H.eyebrow }}</p>
       <h1>{{ site.name }}</h1>
       <p class="hero-statement">{{ H.statement }}</p>
-      <p class="hero-role">{{ H.role }}</p>
+      <div class="role-card">
+        <p class="role-label">{{ L.ui.currentRole }}</p>
+        <p class="role-title">{{ H.role }}</p>
+        <p class="role-meta">{{ H.roleSince }}</p>
+      </div>
       <p class="hero-intro">{{ H.intro }}</p>
       <div class="actions">
         <a class="btn btn-primary" href="{{ 'projects' | langUrl(lang) | url }}">{{ L.ui.viewWork }}</a>
@@ -91,10 +95,10 @@ eleventyComputed:
 
 <section class="section" aria-labelledby="journey-title">
   <div class="container">
-    <div class="section-head"><h2 id="journey-title">{{ H.journeyTitle }}</h2></div>
-    <ol class="timeline timeline-row">
+    <div class="section-head"><h2 id="journey-title">{{ H.journeyTitle }}</h2><p>{{ H.journeyIntro }}</p></div>
+    <ol class="timeline timeline-row timeline-5">
       {%- for j in H.journey %}
-      <li><span class="year">{{ j.year }}</span><span>{{ j.text }}</span></li>
+      <li{% if loop.last %} class="is-current"{% endif %}><span class="year">{{ j.year }}</span><span class="phase">{{ j.phase }}</span><span class="phase-text">{{ j.text }}</span></li>
       {%- endfor %}
     </ol>
     <a class="link-arrow" href="{{ 'journey' | langUrl(lang) | url }}">{{ H.journeyLink }}</a>
@@ -115,8 +119,7 @@ eleventyComputed:
   <div class="container">
     <h2 id="closing-title">{{ H.closingTitle }}</h2>
     <p class="muted">{{ H.closingText }}</p>
-    <div class="actions">
-      <a class="btn btn-primary" href="{{ 'contact' | langUrl(lang) | url }}">{{ L.ui.getInTouch }}</a>
-    </div>
+    {%- set socialVariant = "buttons" %}
+    {% include "partials/social-links.njk" %}
   </div>
 </section>

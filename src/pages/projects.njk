@@ -21,6 +21,12 @@ pageKey: projects
       {% include "partials/project-card.njk" %}
       {%- endfor %}
     </div>
-    <div class="note mt-6"><p>{{ P.hiddenNote }}</p></div>
+    <h2 class="h-xs mt-6">{{ P.typesTitle }}</h2>
+    <ul class="legend">
+      {%- for ty in P.types %}
+      <li><span class="badge badge-type-{{ ty.key }}">{{ ty.label }}</span><span>{{ ty.text }}</span></li>
+      {%- endfor %}
+    </ul>
+    <div class="note"><p>{{ P.hiddenNote }}</p></div>
   </div>
 </section>

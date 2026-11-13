@@ -1,9 +1,13 @@
 {%- set P = t[lang].projects.items[key] -%}
 <article class="card project-card">
-  <div class="meta"><span class="badge badge-{{ P.status }}">{{ P.statusText }}</span></div>
+  <div class="meta">
+    <span class="badge badge-type-{{ P.type }}">{{ P.typeText }}</span>
+    <span class="badge badge-{{ P.status }}">{{ P.statusText }}</span>
+  </div>
   <h3><a href="{{ key | langUrl(lang) | url }}">{{ P.name }}</a></h3>
   <p>{{ P.summary }}</p>
-  <p class="evidence">{{ P.evidence }}</p>
+  <h4 class="card-subhead">{{ t[lang].ui.highlights }}</h4>
+  <ul class="check-list">{% for h in P.highlights %}<li>{{ h }}</li>{% endfor %}</ul>
   <ul class="stack" aria-label="{{ t[lang].ui.stack }}">
     {%- for s in P.stack %}<li>{{ s }}</li>{% endfor %}
   </ul>
