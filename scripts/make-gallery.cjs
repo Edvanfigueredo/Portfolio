@@ -16,6 +16,7 @@ const PAGES = [
   ["home", "Home / Início", ""], ["about", "About / Sobre", "about/"], ["expertise", "Expertise / Atuação", "expertise/"],
   ["projects", "Projects / Projetos", "projects/"], ["pulse", "Pulse Finance (case study)", "projects/pulse-finance/"],
   ["fma", "Financial Market Analysis (case study)", "projects/financial-market-analysis/"],
+  ["capstone", "Saúde IA — capstone (case study)", "projects/health-bmi-capstone/"], ["guibbor", "Guibbor BJJ (case study)", "projects/guibbor-bjj/"],
   ["journey", "Journey / Trajetória", "journey/"], ["credentials", "Credentials / Credenciais", "credentials/"], ["contact", "Contact / Contato", "contact/"],
 ];
 const DEVICES = [["desktop", { width: 1440, height: 900 }, 1], ["mobile", { width: 390, height: 844 }, 2]];

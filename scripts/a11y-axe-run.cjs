@@ -4,7 +4,7 @@
 const pw = require("playwright");
 const axeSource = require("fs").readFileSync(require.resolve("axe-core/axe.min.js"), "utf8");
 const BASE = process.argv[3] || "http://localhost:8090/Portfolio/";
-const PATHS = ["", "about/", "expertise/", "projects/", "projects/pulse-finance/", "projects/financial-market-analysis/", "journey/", "credentials/", "contact/"];
+const PATHS = ["", "about/", "expertise/", "projects/", "projects/pulse-finance/", "projects/financial-market-analysis/", "projects/health-bmi-capstone/", "projects/guibbor-bjj/", "journey/", "credentials/", "contact/"];
 const PAGES = [...PATHS, ...PATHS.map((p) => "pt/" + p), "404.html"];
 const browserName = process.argv[2] || "chromium";
 

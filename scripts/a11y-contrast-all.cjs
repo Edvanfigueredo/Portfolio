@@ -2,7 +2,7 @@
 // Usage: node scripts/a11y-contrast-all.cjs [chromium|firefox|webkit] [baseUrl]
 const pw = require("playwright");
 const BASE = process.argv[3] || "http://localhost:8090/Portfolio/";
-const PATHS = ["", "about/", "expertise/", "projects/", "projects/pulse-finance/", "projects/financial-market-analysis/", "journey/", "credentials/", "contact/"];
+const PATHS = ["", "about/", "expertise/", "projects/", "projects/pulse-finance/", "projects/financial-market-analysis/", "projects/health-bmi-capstone/", "projects/guibbor-bjj/", "journey/", "credentials/", "contact/"];
 const PAGES = [...PATHS, ...PATHS.map((p) => "pt/" + p), "404.html"];
 
 (async () => {

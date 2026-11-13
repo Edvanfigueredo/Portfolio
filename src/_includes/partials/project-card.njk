@@ -2,17 +2,26 @@
 <article class="card project-card">
   <div class="meta">
     <span class="badge badge-type-{{ P.type }}">{{ P.typeText }}</span>
+    {%- if P.status %}
     <span class="badge badge-{{ P.status }}">{{ P.statusText }}</span>
+    {%- endif %}
   </div>
   <h3><a href="{{ key | langUrl(lang) | url }}">{{ P.name }}</a></h3>
   <p>{{ P.summary }}</p>
-  <h4 class="card-subhead">{{ t[lang].ui.highlights }}</h4>
+  <h4 class="card-subhead">{{ t[lang].ui[P.highlightsLabel or "highlights"] }}</h4>
   <ul class="check-list">{% for h in P.highlights %}<li>{{ h }}</li>{% endfor %}</ul>
+  {%- if P.stack %}
   <ul class="stack" aria-label="{{ t[lang].ui.stack }}">
     {%- for s in P.stack %}<li>{{ s }}</li>{% endfor %}
   </ul>
+  {%- endif %}
   <div class="card-foot">
     <a class="link-arrow" href="{{ key | langUrl(lang) | url }}">{{ t[lang].ui.readCase }}<span class="visually-hidden">: {{ P.name }}</span></a>
+    {%- if P.repo %}
     <a href="{{ P.repo }}" rel="noopener noreferrer" target="_blank">{{ t[lang].ui.viewRepo }}<span class="visually-hidden"> — {{ P.name }} {{ t[lang].ui.newTab }}</span></a>
+    {%- endif %}
+    {%- if P.site %}
+    <a href="{{ P.site }}" rel="noopener noreferrer" target="_blank">{{ t[lang].ui.officialSite }}<span class="visually-hidden"> — {{ P.name }} {{ t[lang].ui.newTab }}</span></a>
+    {%- endif %}
   </div>
 </article>
