@@ -1,0 +1,15 @@
+{%- set L = t[lang] -%}
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-name">© {{ "" | year }} {{ site.name }}</p>
+      <p class="footer-note">{{ L.ui.footerDisclaimer }}</p>
+      <p class="footer-note">{{ L.ui.footerTracking }}</p>
+    </div>
+    <ul class="footer-links">
+      <li><a href="{{ site.linkedin }}" rel="noopener noreferrer" target="_blank">LinkedIn<span class="visually-hidden"> {{ L.ui.newTab }}</span></a></li>
+      <li><a href="{{ site.github }}" rel="noopener noreferrer" target="_blank">GitHub<span class="visually-hidden"> {{ L.ui.newTab }}</span></a></li>
+      <li><a href="mailto:{{ site.email }}">{{ L.contact.email }}</a></li>
+    </ul>
+  </div>
+</footer>

@@ -1,0 +1,48 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{% if lang == 'pt' %}/pt{% endif %}/about/index.html"
+layout: layouts/base.njk
+pageKey: about
+---
+{%- set A = t[lang].about -%}
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">{{ t[lang].ui.nav.about }}</p>
+    <h1>{{ A.title }}</h1>
+  </div>
+</section>
+
+<section class="section" aria-label="{{ A.title }}">
+  <div class="container prose">
+    {%- for s in A.sections %}
+    <h2 class="h-xs">{{ s.heading }}</h2>
+    <p>{{ s.text }}</p>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="section" aria-labelledby="principles-title">
+  <div class="container">
+    <div class="section-head"><h2 id="principles-title">{{ A.principlesTitle }}</h2></div>
+    <div class="grid grid-3">
+      {%- for p in A.principles %}
+      <article class="card pillar"><h3>{{ p.title }}</h3><p>{{ p.text }}</p></article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid grid-2">
+    <div>
+      <h2 class="h-sm">{{ A.focusTitle }}</h2>
+      <ul>{% for f in A.focus %}<li>{{ f }}</li>{% endfor %}</ul>
+    </div>
+    <div>
+      <h2 class="h-sm">{{ A.directionTitle }}</h2>
+      <p>{{ A.direction }}</p>
+      <h2 class="h-sm">{{ A.languagesTitle }}</h2>
+      <ul>{% for l in A.languages %}<li>{{ l }}</li>{% endfor %}</ul>
+    </div>
+  </div>
+</section>

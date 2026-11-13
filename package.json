@@ -1,0 +1,17 @@
+{
+  "name": "edvan-portfolio",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Professional portfolio of Edvan Figuerêdo Araujo — static site built with Eleventy (build time only).",
+  "type": "module",
+  "scripts": {
+    "build": "eleventy",
+    "start": "eleventy --serve",
+    "check": "node scripts/check-site.mjs",
+    "test": "npm run build && npm run check"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.2"
+  },
+  "engines": { "node": ">=20" }
+}

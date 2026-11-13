@@ -1,0 +1,122 @@
+---
+pagination:
+  data: site.languages
+  size: 1
+  alias: lang
+permalink: "{% if lang == 'pt' %}/pt{% endif %}/index.html"
+layout: layouts/base.njk
+pageKey: home
+eleventyComputed:
+  jsonld:
+    "@context": "https://schema.org"
+    "@type": "Person"
+    name: "{{ site.name }}"
+    alternateName: "{{ site.alternateName }}"
+    url: "{{ site.url }}"
+    jobTitle: "Consultant"
+    worksFor: { "@type": "Organization", name: "EY" }
+    address: { "@type": "PostalAddress", addressLocality: "São Paulo", addressCountry: "BR" }
+    alumniOf:
+      - { "@type": "CollegeOrUniversity", name: "Faculdade São Francisco de Assis" }
+      - { "@type": "CollegeOrUniversity", name: "Universidade Cruzeiro do Sul" }
+    knowsAbout: ["Technology consulting", "Financial services", "Data analytics", "Software engineering", "Java", "Spring Boot", "Python", "Angular", "Microsoft Azure", "Power Platform", "Generative AI"]
+    hasCredential:
+      - { "@type": "EducationalOccupationalCredential", name: "Microsoft Certified: Azure Fundamentals (AZ-900)", credentialCategory: "certification" }
+      - { "@type": "EducationalOccupationalCredential", name: "Microsoft Certified: Azure Data Fundamentals (DP-900)", credentialCategory: "certification" }
+      - { "@type": "EducationalOccupationalCredential", name: "Microsoft Certified: Power Platform Fundamentals (PL-900)", credentialCategory: "certification" }
+    knowsLanguage: ["pt-BR", "es", "en"]
+    sameAs: ["{{ site.linkedin }}", "{{ site.github }}"]
+---
+{%- set L = t[lang] -%}
+{%- set H = L.home -%}
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">{{ H.eyebrow }}</p>
+      <h1>{{ site.name }}</h1>
+      <p class="hero-statement">{{ H.statement }}</p>
+      <p class="hero-role">{{ H.role }}</p>
+      <p class="hero-intro">{{ H.intro }}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="{{ 'projects' | langUrl(lang) | url }}">{{ L.ui.viewWork }}</a>
+        <a class="btn btn-secondary" href="{{ 'contact' | langUrl(lang) | url }}">{{ L.ui.getInTouch }}</a>
+      </div>
+    </div>
+    <picture class="hero-media">
+      <source type="image/webp" srcset="{{ '/assets/img/edvan-360.webp' | url }} 360w, {{ '/assets/img/edvan-640.webp' | url }} 640w" sizes="(min-width: 64rem) 18rem, (min-width: 48rem) 15rem, 10rem">
+      <img class="hero-photo" src="{{ '/assets/img/edvan-360.jpg' | url }}" srcset="{{ '/assets/img/edvan-360.jpg' | url }} 360w, {{ '/assets/img/edvan-640.jpg' | url }} 640w" sizes="(min-width: 64rem) 18rem, (min-width: 48rem) 15rem, 10rem" width="360" height="417" alt="{{ H.photoAlt }}" fetchpriority="high">
+    </picture>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="proof-title">
+  <div class="container">
+    <h2 id="proof-title" class="visually-hidden">{{ H.proofTitle }}</h2>
+    <ul class="proof">
+      {%- for p in H.proof %}
+      <li><span class="proof-value">{{ p.value }}</span><span class="proof-label">{{ p.label }}</span></li>
+      {%- endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="pillars-title">
+  <div class="container">
+    <div class="section-head"><h2 id="pillars-title">{{ H.pillarsTitle }}</h2></div>
+    <div class="grid grid-4">
+      {%- for p in H.pillars %}
+      <article class="card pillar">
+        {%- if p.tag %}<span class="badge badge-developing card-tag">{{ p.tag }}</span>{% endif %}
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.text }}</p>
+      </article>
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="work-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="work-title">{{ H.workTitle }}</h2>
+      <p>{{ H.workNote }}</p>
+    </div>
+    <div class="grid grid-2">
+      {%- for key in ["pulse", "fma"] %}
+      {% include "partials/project-card.njk" %}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="journey-title">
+  <div class="container">
+    <div class="section-head"><h2 id="journey-title">{{ H.journeyTitle }}</h2></div>
+    <ol class="timeline timeline-row">
+      {%- for j in H.journey %}
+      <li><span class="year">{{ j.year }}</span><span>{{ j.text }}</span></li>
+      {%- endfor %}
+    </ol>
+    <a class="link-arrow" href="{{ 'journey' | langUrl(lang) | url }}">{{ H.journeyLink }}</a>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="cred-title">
+  <div class="container">
+    <div class="section-head">
+      <h2 id="cred-title">{{ H.credTitle }}</h2>
+      <p>{{ H.credText }}</p>
+    </div>
+    <a class="link-arrow" href="{{ 'credentials' | langUrl(lang) | url }}">{{ H.credLink }}</a>
+  </div>
+</section>
+
+<section class="section closing" aria-labelledby="closing-title">
+  <div class="container">
+    <h2 id="closing-title">{{ H.closingTitle }}</h2>
+    <p class="muted">{{ H.closingText }}</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="{{ 'contact' | langUrl(lang) | url }}">{{ L.ui.getInTouch }}</a>
+    </div>
+  </div>
+</section>

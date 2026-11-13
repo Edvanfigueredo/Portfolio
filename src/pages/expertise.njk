@@ -1,0 +1,43 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{% if lang == 'pt' %}/pt{% endif %}/expertise/index.html"
+layout: layouts/base.njk
+pageKey: expertise
+---
+{%- set E = t[lang].expertise -%}
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">{{ t[lang].ui.nav.expertise }}</p>
+    <h1>{{ E.title }}</h1>
+    <p class="lead">{{ E.intro }}</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="legend-title">
+  <div class="container">
+    <h2 id="legend-title" class="h-sm">{{ E.legendTitle }}</h2>
+    <ul class="legend">
+      {%- for l in E.legend %}
+      <li><span class="badge badge-{{ l.key }}">{{ l.label }}</span><span>{{ l.text }}</span></li>
+      {%- endfor %}
+    </ul>
+    <div class="table-wrap">
+      <table class="data-table">
+        <caption class="visually-hidden">{{ E.title }}</caption>
+        <thead>
+          <tr><th scope="col">{{ E.cols.area }}</th><th scope="col">{{ E.cols.level }}</th><th scope="col">{{ E.cols.scope }}</th><th scope="col">{{ E.cols.evidence }}</th></tr>
+        </thead>
+        <tbody>
+          {%- for r in E.rows %}
+          <tr>
+            <th scope="row">{{ r.area }}</th>
+            <td data-label="{{ E.cols.level }}"><span class="badges">{% for k in r.levels %}{% for l in E.legend %}{% if l.key == k %}<span class="badge badge-{{ k }}">{{ l.label }}</span>{% endif %}{% endfor %}{% endfor %}</span></td>
+            <td data-label="{{ E.cols.scope }}">{{ r.scope }}</td>
+            <td data-label="{{ E.cols.evidence }}">{{ r.evidence }}</td>
+          </tr>
+          {%- endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

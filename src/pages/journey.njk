@@ -1,0 +1,47 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{% if lang == 'pt' %}/pt{% endif %}/journey/index.html"
+layout: layouts/base.njk
+pageKey: journey
+---
+{%- set J = t[lang].journey -%}
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">{{ t[lang].ui.nav.journey }}</p>
+    <h1>{{ J.title }}</h1>
+  </div>
+</section>
+
+{%- for group in [[J.techTitle, J.tech], [J.opsTitle, J.ops]] %}
+<section class="section" aria-labelledby="g{{ loop.index }}">
+  <div class="container">
+    <h2 id="g{{ loop.index }}" class="h-sm">{{ group[0] }}</h2>
+    <ol class="entries">
+      {%- for e in group[1] %}
+      <li class="entry">
+        <p class="entry-period">{{ e.period }}<br>{{ e.place }}</p>
+        <div>
+          <h3>{{ e.org }}</h3>
+          <p class="entry-role">{{ e.role }}</p>
+          {%- if e.text %}<p>{{ e.text }}</p>{% endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
+{%- endfor %}
+
+<section class="section" aria-labelledby="edu-title">
+  <div class="container">
+    <h2 id="edu-title" class="h-sm">{{ J.eduTitle }}</h2>
+    <ol class="entries">
+      {%- for e in J.edu %}
+      <li class="entry">
+        <p class="entry-period">{{ e.period }}</p>
+        <div><h3>{{ e.role }}</h3><p class="entry-role">{{ e.org }}</p></div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+</section>
