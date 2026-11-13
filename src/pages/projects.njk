@@ -1,0 +1,32 @@
+---
+pagination: { data: site.languages, size: 1, alias: lang }
+permalink: "{% if lang == 'pt' %}/pt{% endif %}/projects/index.html"
+layout: layouts/base.njk
+pageKey: projects
+---
+{%- set P = t[lang].projects -%}
+<section class="page-head">
+  <div class="container">
+    <p class="eyebrow">{{ t[lang].ui.nav.projects }}</p>
+    <h1>{{ P.title }}</h1>
+    <p class="lead">{{ P.intro }}</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="list-title">
+  <div class="container">
+    <h2 id="list-title" class="visually-hidden">{{ P.listTitle }}</h2>
+    <div class="grid grid-2">
+      {%- for key in ["pulse", "fma"] %}
+      {% include "partials/project-card.njk" %}
+      {%- endfor %}
+    </div>
+    <h2 class="h-xs mt-6">{{ P.typesTitle }}</h2>
+    <ul class="legend">
+      {%- for ty in P.types %}
+      <li><span class="badge badge-type-{{ ty.key }}">{{ ty.label }}</span><span>{{ ty.text }}</span></li>
+      {%- endfor %}
+    </ul>
+    <div class="note"><p>{{ P.hiddenNote }}</p></div>
+  </div>
+</section>

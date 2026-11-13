@@ -1,0 +1,12 @@
+{%- set L = t[lang] -%}
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-name">© {{ "" | year }} {{ site.name }}</p>
+      <p class="footer-note">{{ L.ui.footerDisclaimer }}</p>
+      <p class="footer-note">{{ L.ui.footerTracking }}</p>
+    </div>
+    {%- set socialVariant = "compact" %}
+    {% include "partials/social-links.njk" %}
+  </div>
+</footer>

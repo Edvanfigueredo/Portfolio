@@ -1,0 +1,9 @@
+{#- Contact and profile links. Set `socialVariant` to "buttons" (default) or "compact" before including.
+    Destinations come only from src/_data/site.js. Icons are decorative; the visible text is the accessible name. -#}
+{%- import "partials/icons.njk" as icon -%}
+{%- set L = t[lang] -%}
+<ul class="social social-{{ socialVariant or 'buttons' }}" aria-label="{{ L.ui.socialLabel }}">
+  <li><a class="social-link" href="{{ site.github }}" rel="noopener noreferrer" target="_blank">{{ icon.github() }}<span>GitHub</span><span class="visually-hidden"> {{ L.ui.newTab }}</span></a></li>
+  <li><a class="social-link" href="{{ site.linkedin }}" rel="noopener noreferrer" target="_blank">{{ icon.linkedin() }}<span>LinkedIn</span><span class="visually-hidden"> {{ L.ui.newTab }}</span></a></li>
+  <li><a class="social-link" href="mailto:{{ site.email }}">{{ icon.mail() }}<span>{{ L.ui.emailLabel }}</span></a></li>
+</ul>
