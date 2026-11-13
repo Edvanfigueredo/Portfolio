@@ -1,15 +1,18 @@
-// Browser QA (local): node scripts/qa-browser.cjs [baseUrl]
-// Requires Playwright with Chromium available on the machine (not a project dependency).
+// Browser QA (local): node scripts/qa-browser.cjs [baseUrl] [chromium|firefox|webkit]
+// Requires Playwright and the chosen browser on the machine (not a project dependency).
 // Serve _site under the path prefix first, e.g. a folder containing a "Portfolio" symlink to _site.
-const { chromium } = require("playwright");
+const playwright = require("playwright");
 
 const BASE = process.argv[2] || "http://localhost:8090/Portfolio/";
 const PATHS = ["", "about/", "expertise/", "projects/", "projects/pulse-finance/", "projects/financial-market-analysis/", "journey/", "credentials/", "contact/"];
 const PAGES = [...PATHS, ...PATHS.map((p) => "pt/" + p)];
 const WIDTHS = [360, 768, 1024, 1440];
+const BROWSER = process.argv[3] || "chromium";
+// Safari/WebKit only moves Tab focus to links with Alt+Tab (macOS default behaviour).
+const TAB = BROWSER === "webkit" ? "Alt+Tab" : "Tab";
 
 (async () => {
-  const browser = await chromium.launch();
+  const browser = await playwright[BROWSER].launch();
   const problems = [];
   let checks = 0;
 
@@ -42,7 +45,7 @@ const WIDTHS = [360, 768, 1024, 1440];
   const page = await browser.newPage({ viewport: { width: 390, height: 844 } });
   await page.goto(BASE, { waitUntil: "networkidle" });
   // 1. Skip link is the first focusable element and moves focus to <main>
-  await page.keyboard.press("Tab");
+  await page.keyboard.press(TAB);
   const first = await page.evaluate(() => document.activeElement.className);
   if (first !== "skip-link") problems.push(`first Tab focuses "${first}", expected skip-link`);
   await page.keyboard.press("Enter");
@@ -76,5 +79,5 @@ const WIDTHS = [360, 768, 1024, 1440];
     console.error(`✗ ${problems.length} problem(s):\n` + problems.map((p) => "  - " + p).join("\n"));
     process.exit(1);
   }
-  console.log(`✓ ${checks} page renders (${PAGES.length} pages × ${WIDTHS.length} widths): no overflow, no errors, targets OK; skip link, mobile menu, language switch and no-JS navigation OK.`);
+  console.log(`✓ [${BROWSER}] ${checks} page renders (${PAGES.length} pages × ${WIDTHS.length} widths): no overflow, no errors, targets OK; skip link, mobile menu, language switch and no-JS navigation OK.`);
 })();

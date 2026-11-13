@@ -23,12 +23,6 @@ npm run check     # static QA of _site/ (structure, SEO, links, images, content 
 npm test          # build + check
 ```
 
-Optional browser QA (needs Playwright with Chromium on the machine; serve `_site/` under `/Portfolio/` first):
-
-```bash
-node scripts/qa-browser.cjs http://localhost:8090/Portfolio/
-```
-
 ## Structure
 
 ```
@@ -45,7 +39,8 @@ src/
 └── static/              # files copied as-is (favicon)
 scripts/
 ├── check-site.mjs       # dependency-free QA used by CI
-├── qa-browser.cjs       # local browser QA (responsiveness, keyboard, language switch)
+├── qa-browser.cjs       # local browser QA (responsiveness, menu, language switch), any engine
+├── a11y-*.cjs           # local accessibility audits: axe, contrast, keyboard/screen-reader structure
 └── make-og.py           # regenerates the social preview images (Pillow)
 content/, planning/      # editorial drafts and planning documents (not published)
 ```
@@ -58,11 +53,24 @@ content/, planning/      # editorial drafts and planning documents (not publishe
 - No phone number, street address, birth date or government identifiers anywhere.
 - EY is mentioned in text only (no logo or brand colors) and no client or internal project is described.
 
-## Quality (latest local run)
+## Quality (latest run, 2026-11-13)
 
-- `npm run check`: 19 pages, all checks passing.
-- Browser QA: 18 pages × 4 widths (360, 768, 1024, 1440 px) without horizontal overflow or console errors; keyboard navigation, mobile menu, language switch and no-JavaScript navigation verified.
-- Lighthouse (mobile): Performance 99–100, Accessibility 100, Best Practices 100, SEO 100.
+Full results, browsers and commands: [`planning/qa-report.md`](planning/qa-report.md).
+
+- **Accessibility (WCAG 2.2 AA):** axe-core reports 0 violations in Chromium, Firefox and WebKit, in light and dark themes. Contrast of all 2,264 text elements is at least 6.05:1. Keyboard navigation (Tab and Shift+Tab, focus visible and never hidden under the sticky header) and screen-reader structure pass in all three engines.
+- **Cross-browser:** 18 pages × 4 widths (360–1440 px) in Chromium, Firefox 155 and WebKit 26.6, without horizontal overflow or errors. Mobile menu, language switch and no-JavaScript navigation verified.
+- **Lighthouse (mobile):** Performance 99–100, Accessibility 100, Best Practices 100, SEO 100.
+- **Build:** `npm test` passes; `npm audit` reports 0 vulnerabilities.
+- **Not covered:** real screen readers (NVDA/JAWS/VoiceOver), Safari on macOS/iOS hardware, and the LinkedIn link, which is unreachable from the test environment.
+
+Optional local QA scripts (need Playwright, and `axe-core` for the axe audit — not project dependencies):
+
+```bash
+node scripts/qa-browser.cjs http://localhost:8090/Portfolio/ [chromium|firefox|webkit]
+node scripts/a11y-axe-run.cjs [chromium|firefox|webkit] http://localhost:8090/Portfolio/
+node scripts/a11y-contrast-all.cjs [chromium|firefox|webkit] http://localhost:8090/Portfolio/
+node scripts/a11y-keyboard.cjs [chromium|firefox|webkit] http://localhost:8090/Portfolio/
+```
 
 ## Deployment (prepared, not active)
 
