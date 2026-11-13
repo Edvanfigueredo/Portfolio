@@ -16,7 +16,7 @@ Everything below was executed against a local build served under `/Portfolio/`, 
 | Check | Chromium | Firefox | WebKit |
 |---|---|---|---|
 | axe-core 4.14 — WCAG 2.0/2.1/2.2 A+AA + best practices, 19 pages × 2 widths × light/dark | 0 violations | 0 violations | 0 violations |
-| Text contrast of every text element (2,264 elements, light + dark) | all ≥ 4.5:1 (lowest 6.05:1) | same | same |
+| Text contrast of every text element (2,424 elements, light + dark) | all ≥ 4.5:1 (lowest 6.05:1) | same | same |
 | Keyboard: Tab and Shift+Tab through all interactive elements, focus visible, focus not hidden under the sticky header (2.4.11), skip link first | pass | pass | pass (Alt+Tab, Safari behaviour) |
 | Screen-reader structure (accessibility tree): banner, navigation, main and contentinfo landmarks; heading levels without jumps; no unnamed links or buttons | pass | pass | pass |
 
@@ -80,3 +80,19 @@ node scripts/a11y-axe-run.cjs webkit http://localhost:8090/Portfolio/
 ```
 
 Browser scripts need Playwright with the chosen browser, and `axe-core` for the axe audit. Neither is a project dependency.
+
+## Final visual round (2026-11-13)
+
+Changes: GitHub/LinkedIn/email buttons with monochrome icons (Home, Contact, footer), current-role card and
+five-phase timeline on Home, project type and "Implemented" lists on project cards, current-role marker on Journey,
+AI-assisted-prototyping statement on the Pulse Finance case study (EN/PT).
+
+Re-run after these changes:
+
+- `npm test`: 19 pages pass.
+- Cross-browser: 72 renders each in Chromium, Firefox and WebKit, no overflow or errors.
+- axe-core: 0 violations in all three engines (light and dark).
+- Contrast: 2,424 text elements, lowest 6.05:1.
+- Keyboard and screen-reader structure (Chromium): pass.
+- Lighthouse mobile, Home and Contact: Performance 99/100, Accessibility, Best Practices and SEO 100.
+- Gallery regenerated: 72 screenshots (`npm run gallery`).

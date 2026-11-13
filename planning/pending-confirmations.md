@@ -35,6 +35,6 @@ None of the items below appears on the site today. Each one says exactly what is
 
 6. **Pulse Finance — lessons learned**
    - Two or three sentences, in your own words and in any language, on what you learned building it.
-   - Yes or no: was AI-assisted development used? If yes, one line on what you specified, reviewed and tested.
 
-   Both texts appear on the case-study page exactly as approved.
+   The text appears on the case-study page exactly as approved. (The AI question is answered: AI supported only the
+   initial UX prototype; the development is yours. This is now stated on the case-study page in both languages.)

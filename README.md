@@ -76,9 +76,10 @@ content/, planning/      # editorial drafts and planning documents (not publishe
 
 Full results, browsers and commands: [`planning/qa-report.md`](planning/qa-report.md).
 
-- **Accessibility (WCAG 2.2 AA):** axe-core reports 0 violations in Chromium, Firefox and WebKit, in light and dark themes. Contrast of all 2,264 text elements is at least 6.05:1. Keyboard navigation (Tab and Shift+Tab, focus visible and never hidden under the sticky header) and screen-reader structure pass in all three engines.
+- **Accessibility (WCAG 2.2 AA):** axe-core reports 0 violations in Chromium, Firefox and WebKit, in light and dark themes. Contrast of all 2,424 text elements is at least 6.05:1. Keyboard navigation (Tab and Shift+Tab, focus visible and never hidden under the sticky header) and screen-reader structure pass in all three engines.
 - **Cross-browser:** 18 pages × 4 widths (360–1440 px) in Chromium, Firefox 155 and WebKit 26.6, without horizontal overflow or errors. Mobile menu, language switch and no-JavaScript navigation verified.
-- **Lighthouse (mobile):** Performance 99–100, Accessibility 100, Best Practices 100, SEO 100.
+- **Lighthouse (mobile):** Performance 99–100, Accessibility 100, Best Practices 100, SEO 100 (Home and Contact re-checked after the final visual round).
+- **Links:** GitHub, LinkedIn and email buttons point to the existing URLs in `src/_data/site.js`; external links open in a new tab with `rel="noopener noreferrer"` and an accessible "opens in a new tab" hint.
 - **Build:** `npm test` passes; `npm audit` reports 0 vulnerabilities.
 - **Not covered:** real screen readers (NVDA/JAWS/VoiceOver), Safari on macOS/iOS hardware, and the LinkedIn link, which is unreachable from the test environment.
 
