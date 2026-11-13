@@ -6,7 +6,7 @@ layout: layouts/case-study.njk
 navKey: projects
 eyebrow: Estudo de caso · Finanças pessoais · Aplicação web local-first
 lead: Aplicação web de finanças pessoais local-first que desenvolvi individualmente. Importação de extratos, sinalização de duplicidades, dívidas, recorrências e projeções em uma visão mensal consistente.
-role: Projetado e desenvolvido individualmente
+role: Projeto individual. A IA apoiou o protótipo inicial de UX; eu desenvolvi a aplicação.
 ---
 
 ## Resumo
@@ -25,6 +25,10 @@ Os dados ficam no navegador: sem servidor, sem conta, sem chave de API. **Status
   </picture>
   <figcaption>Visão geral com o conjunto de dados de demonstração do próprio app (dados fictícios).</figcaption>
 </figure>
+
+## Como foi construído
+
+A IA foi utilizada como apoio na prototipação inicial da experiência do usuário, como referência visual e de navegação. A partir dessa referência, conduzi o desenvolvimento da aplicação: arquitetura, regras de negócio, lógica de importação e conciliação, testes e pipeline de CI/CD.
 
 ## Problema
 

@@ -6,7 +6,7 @@ layout: layouts/case-study.njk
 navKey: projects
 eyebrow: Case study · Personal finance · Local-first web app
 lead: A local-first personal finance web app that I built individually. Statement import, duplicate flags, debts, recurring payments and forecasts in one consistent monthly view.
-role: Designed and built individually
+role: Individual project. AI supported the initial UX prototype; I developed the application.
 ---
 
 ## Summary
@@ -25,6 +25,10 @@ All data stays in the browser: no server, no account, no API key. **Status: MVP.
   </picture>
   <figcaption>Dashboard with the app's built-in demonstration dataset (fictitious data). Interface in Portuguese.</figcaption>
 </figure>
+
+## How it was built
+
+AI was used to support the initial UX prototyping, as a visual and user-experience reference. Building on that reference, I carried out the development of the application: architecture, business rules, import and reconciliation logic, tests and the CI/CD pipeline.
 
 ## Problem
 
