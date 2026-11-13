@@ -20,6 +20,19 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addFilter("year", () => new Date().getFullYear());
 
+  // Wide tables and code blocks scroll horizontally on small screens. Wrap them in a labelled,
+  // focusable region so keyboard users can scroll them too (WCAG 2.1.1, axe scrollable-region-focusable).
+  eleventyConfig.addTransform("scroll-regions", function (content) {
+    if (!(this.page.outputPath || "").endsWith(".html")) return content;
+    const pt = (this.page.url || "").startsWith("/pt/");
+    const tableLabel = pt ? "Tabela (role para ver mais)" : "Table (scroll to see more)";
+    const codeLabel = pt ? "Diagrama em texto" : "Text diagram";
+    return content
+      .replace(/<table>/g, `<div class="scroll-region" role="region" aria-label="${tableLabel}" tabindex="0"><table>`)
+      .replace(/<\/table>/g, "</table></div>")
+      .replace(/<pre>/g, `<pre class="scroll-region" role="region" aria-label="${codeLabel}" tabindex="0">`);
+  });
+
   return {
     dir: { input: "src", output: "_site", includes: "_includes", data: "_data" },
     pathPrefix: site.pathPrefix,

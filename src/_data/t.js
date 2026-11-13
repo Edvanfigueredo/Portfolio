@@ -139,6 +139,7 @@ const en = {
   },
   projects: {
     title: "Projects",
+    listTitle: "Project list",
     intro: "Selected projects. Each one states its status, my role, and what has been built, tested and validated, with links to the code. Known limitations are listed, not hidden.",
     hiddenNote: "Other projects (including OrkestrIA and CloudCost Navigator) are not shown until their code is available for audit. The healthcare capstone is pending confirmation of its scope.",
     items: {
@@ -352,6 +353,7 @@ const pt = {
   },
   projects: {
     title: "Projetos",
+    listTitle: "Lista de projetos",
     intro: "Projetos selecionados. Cada um informa o status, meu papel e o que foi construído, testado e validado, com links para o código. Limitações conhecidas são listadas, não escondidas.",
     hiddenNote: "Outros projetos (incluindo OrkestrIA e CloudCost Navigator) não aparecem até que o código esteja disponível para auditoria. O TCC de saúde aguarda confirmação de escopo.",
     items: {

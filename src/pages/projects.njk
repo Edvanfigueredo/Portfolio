@@ -13,8 +13,9 @@ pageKey: projects
   </div>
 </section>
 
-<section class="section" aria-label="{{ P.title }}">
+<section class="section" aria-labelledby="list-title">
   <div class="container">
+    <h2 id="list-title" class="visually-hidden">{{ P.listTitle }}</h2>
     <div class="grid grid-2">
       {%- for key in ["pulse", "fma"] %}
       {% include "partials/project-card.njk" %}
