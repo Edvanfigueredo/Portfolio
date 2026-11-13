@@ -1,6 +1,8 @@
 # Portfolio transformation — working documents (branch `update-portfolio`)
 
-This branch holds **planning and content drafts only**. The production website files (`index.html`, `assets/`, `css/`, `js/`) are **unchanged** from `main`, so merging this branch does not change the live site.
+This branch holds the **new site implementation** (`src/`, built with Eleventy into `_site/`) plus these planning and content drafts. The legacy production files (`index.html`, `assets/`, `css/`, `js/`) are **unchanged**, so merging this branch alone does not change the live site; the cut-over needs the Pages source switch described in the main README.
+
+The copy actually rendered on the site is `src/_data/t.js` and `src/projects/`. The files in `content/` are the editorial reference they were derived from; items still awaiting confirmation (`[C#]`) are **not** rendered.
 
 | Path | What it is | Status |
 |---|---|---|
