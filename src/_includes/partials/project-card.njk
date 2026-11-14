@@ -22,6 +22,9 @@
   {%- endif %}
   <div class="card-foot">
     <a class="link-arrow" href="{{ key | langUrl(lang) | url }}">{{ t[lang].ui.readCase }}<span class="visually-hidden">: {{ P.name }}</span></a>
+    {%- if P.app %}
+    <a class="link-app" href="{{ P.app }}" rel="noopener noreferrer" target="_blank">{{ t[lang].ui.viewApp }}<span aria-hidden="true"> ↗</span><span class="visually-hidden"> — {{ P.name }} {{ t[lang].ui.newTab }}</span></a>
+    {%- endif %}
     {%- if P.repo %}
     <a href="{{ P.repo }}" rel="noopener noreferrer" target="_blank">{{ t[lang].ui.viewRepo }}<span class="visually-hidden"> — {{ P.name }} {{ t[lang].ui.newTab }}</span></a>
     {%- endif %}
