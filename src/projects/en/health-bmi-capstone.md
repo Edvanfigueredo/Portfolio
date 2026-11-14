@@ -26,7 +26,7 @@ The app turns weight, height, country and dietary preference into three things: 
 
 ## Academic result
 
-Developed as part of my degree in Systems Analysis and Development. The capstone was **approved with a final grade of 9.5**.
+Developed as part of my degree in Systems Analysis and Development (ADS) at Faculdade São Francisco de Assis. The capstone was **approved with a final grade of 9.5**.
 
 ## Problem
 
@@ -36,7 +36,7 @@ Developed as part of my degree in Systems Analysis and Development. The capstone
 ## What is implemented
 
 - **BMI calculation and classification** in six bands, from underweight to obesity class III.
-- **Country comparison** for nine countries (Brazil, United States, Mexico, Argentina, France, Japan, Germany, Ireland, Italy): national average BMI, obesity rate and ranking. The values are stored in the code. An earlier version of the repository README (July 2025) credited the BMI data to World Health Organization (WHO) statistics, without naming the publication or year; the current README does not state a source.
+- **Country comparison** for nine countries (Brazil, United States, Mexico, Argentina, France, Japan, Germany, Ireland, Italy): national average BMI, obesity rate and ranking. The values are stored in the code. Reference source for the BMI data: World Health Organization (WHO), 2025.
 - **7-day meal plans** with six meals a day. The goal follows the BMI band: healthy weight gain, maintenance or moderate weight loss.
 - **Eight dietary profiles:** meat-eater, vegetarian, lactose intolerant, type 1 or type 2 diabetes, and combinations. Diabetes profiles swap in lower-sugar options; lactose-free profiles use plant-based drinks.
 - **Food lists per country,** built from foods that are common in each country.
@@ -61,7 +61,7 @@ On the roadmap in the repository, not built: a Power BI dashboard, user login, r
 | Plan generation | Rule-based: plan templates by goal, plus food lists by country and profile, with random picks |
 | Tests | No automated tests |
 | Repository | `package.json` and `src` are leftovers from an unused React template |
-| Data | Credited to WHO statistics in an earlier README; publication and year not recorded |
+| Data | Reference source: World Health Organization (WHO), 2025 |
 
 ## Next steps
 

@@ -23,7 +23,7 @@ Guibbor BJJ is a Brazilian Jiu-Jitsu academy with an official website and an Ins
 My work with the academy has two phases, presented separately below.
 
 <section class="case-phase is-first" aria-labelledby="phase-1">
-<p class="phase-tag">Phase 1 · Before EY</p>
+<p class="phase-tag">Phase 1 · Aug 2025 – Feb 2026 · Before EY</p>
 <h2 id="phase-1">Building the digital platform</h2>
 
 This was my first professional project in technology. I was responsible for the original solution from start to finish, and built it by hand, without AI tools:
@@ -34,12 +34,20 @@ This was my first professional project in technology. I was responsible for the 
 - **Frontend** development.
 - **Integration** of the components into one working application.
 
+<ol class="phase-timeline" role="list">
+<li><span class="phase-date">Aug 2025</span><span>Project start: understanding the academy team's needs and what it wanted from the platform.</span></li>
+<li><span class="phase-date">Sep 2025</span><span>Structure and architecture of the platform.</span></li>
+<li><span class="phase-date">Oct – Nov 2025</span><span>Frontend and backend development; the frontend design was presented to and approved by the academy team.</span></li>
+<li><span class="phase-date">Dec 2025 – Jan 2026</span><span>Testing and user acceptance.</span></li>
+<li><span class="phase-date">Feb 2026</span><span>System published and made available, hosted on Locaweb.</span></li>
+</ol>
+
 This phase describes the original development. The website has evolved since its first version, so this page does not claim that everything published today is unchanged.
 
 </section>
 
 <section class="case-phase" aria-labelledby="phase-2">
-<p class="phase-tag">Phase 2 · Later</p>
+<p class="phase-tag">Phase 2 · Since Sep 2026</p>
 <h2 id="phase-2">Strategic consulting and digital evolution</h2>
 
 With more experience in software engineering, data, AI and technology consulting, my role grew from building the platform to connecting technology with the business. I now also advise the academy on:
@@ -48,6 +56,12 @@ With more experience in software engineering, data, AI and technology consulting
 - **Digital presence:** Google, Instagram and WhatsApp working as one journey.
 - **The student acquisition journey** and its user experience, from first search to first class.
 - **Technology modernization:** the evolution of the platform and a product view of it.
+
+<ol class="phase-timeline" role="list">
+<li><span class="phase-date">Sep 2026</span><span>Consulting begins, on weekends: improvements, growth opportunities and strategies to reach more students.</span></li>
+<li><span class="phase-date">Oct – Nov 2026</span><span>In progress: a new frontend, backend improvements and an evolution of the database.</span></li>
+<li><span class="phase-date">Dec 2026</span><span>Planned: release of the new visual identity and the new system.</span></li>
+</ol>
 
 </section>
 

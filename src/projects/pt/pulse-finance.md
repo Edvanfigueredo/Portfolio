@@ -28,7 +28,7 @@ Os dados ficam no navegador: sem servidor, sem conta, sem chave de API. **Status
 
 ## Origem: um projeto de extensão universitária
 
-O Pulse surgiu em um projeto de extensão da faculdade, no qual cada proposta precisava se relacionar com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU. Projetei e desenvolvi a aplicação individualmente como ferramenta de apoio a uma atividade prática de educação financeira: uma dinâmica, oficina e palestra para jovens do Ensino Médio. A proposta era tornar a educação financeira mais acessível, prática e interativa, com uma ferramenta real de organização financeira.
+O Pulse surgiu em um projeto de extensão universitária da Universidade Cruzeiro do Sul, no qual cada proposta precisava se relacionar com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU. Projetei e desenvolvi a aplicação individualmente como ferramenta de apoio a uma atividade prática de educação financeira: uma dinâmica, oficina e palestra para jovens do Ensino Médio. A proposta era tornar a educação financeira mais acessível, prática e interativa, com uma ferramenta real de organização financeira.
 
 Esta página não afirma adoção por escolas, uso em larga escala nem resultados educacionais medidos.
 
@@ -97,6 +97,13 @@ A persistência fica isolada em um único módulo de propósito: migrar para um 
 - **Cobertura de linhas medida:** 47% no total; de 96% a 100% em dívidas, projeção, simulador, regras de dias úteis e modo privado.
 - **CI/CD:** o workflow do GitHub Actions está configurado para executar `npm ci → npm test → npm run build` e só publicar se os testes passarem.
 - **Não existem métricas de uso,** então nenhuma é declarada.
+
+## Lições aprendidas
+
+- **Planejamento:** a importância de planejar a solução antes de iniciar o desenvolvimento.
+- **Comunicação e oratória:** explicar o mesmo assunto para públicos diferentes, adaptando a linguagem e a abordagem ao perfil de quem está ouvindo.
+- **Arquitetura e banco de dados:** desenvolver uma solução com arquitetura e banco de dados locais, adequada a quem usaria a aplicação sem depender de um backend tradicional.
+- **Conhecimento financeiro:** aprofundar o domínio da terminologia e dos conceitos do mundo financeiro, aprendendo a traduzir termos técnicos para uma linguagem acessível a jovens e adultos.
 
 ## Próximos passos
 

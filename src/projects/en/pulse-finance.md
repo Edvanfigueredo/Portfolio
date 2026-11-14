@@ -28,7 +28,7 @@ All data stays in the browser: no server, no account, no API key. **Status: MVP.
 
 ## Origin: a university extension project
 
-Pulse started in a university extension project in which each proposal had to relate to the Sustainable Development Goals (SDGs) of the UN 2030 Agenda. I designed and developed it individually as a support tool for a hands-on financial-education activity: a workshop and talk for high-school students. The idea was to make financial education more accessible, practical and interactive by letting students work with a real budgeting tool.
+Pulse started in a university extension project at Universidade Cruzeiro do Sul, in which each proposal had to relate to the Sustainable Development Goals (SDGs) of the UN 2030 Agenda. I designed and developed it individually as a support tool for a hands-on financial-education activity: a workshop and talk for high-school students. The idea was to make financial education more accessible, practical and interactive by letting students work with a real budgeting tool.
 
 This page makes no claim about adoption by schools, use at scale or measured learning outcomes.
 
@@ -97,6 +97,13 @@ Persistence is isolated in one module on purpose: moving to a REST backend means
 - **Measured line coverage:** 47% overall; 96–100% for debts, forecast, simulator, business-day rules and privacy mode.
 - **CI/CD:** the GitHub Actions workflow is configured to run `npm ci → npm test → npm run build` and to deploy only if the tests pass.
 - **No usage metrics exist,** so none are claimed.
+
+## Lessons learned
+
+- **Planning:** the value of planning the solution before starting to write code.
+- **Communication:** explaining the same subject to different audiences, adapting language and approach to who is listening.
+- **Architecture and data:** designing a local architecture and database for people who would use the app without depending on a traditional backend.
+- **Financial knowledge:** a deeper command of financial terms and concepts, and practice in translating them into language that young people and adults can follow.
 
 ## Next steps
 

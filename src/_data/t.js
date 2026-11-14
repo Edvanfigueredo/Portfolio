@@ -206,8 +206,8 @@ const en = {
         summary: "My first professional technology project, designed and built entirely by me before I joined EY. I now also advise the academy on strategy and digital evolution.",
         phasesLabel: "Two phases",
         phases: [
-          { tag: "1 · Original development", text: "Architecture, planning, database, backend and frontend, built by hand without AI" },
-          { tag: "2 · Strategic consulting", text: "Growth strategy, digital presence (including the Google Business Profile), the student journey and platform evolution" },
+          { tag: "1 · Original development · 2025–2026", text: "Architecture, planning, database, backend and frontend, built by hand without AI" },
+          { tag: "2 · Strategic consulting · since 2026", text: "Growth strategy, digital presence (including the Google Business Profile), the student journey and platform evolution" },
         ],
         site: "https://guibborbjj.com.br/",
       },
@@ -488,8 +488,8 @@ const pt = {
         summary: "Meu primeiro projeto profissional em tecnologia, projetado e desenvolvido integralmente por mim antes de ingressar na EY. Hoje também atuo na consultoria estratégica e na evolução digital da academia.",
         phasesLabel: "Duas fases",
         phases: [
-          { tag: "1 · Desenvolvimento original", text: "Arquitetura, planejamento, banco de dados, backend e frontend, feitos manualmente, sem IA" },
-          { tag: "2 · Consultoria estratégica", text: "Estratégia de crescimento, presença digital (incluindo o Perfil da Empresa no Google), jornada do aluno e evolução da plataforma" },
+          { tag: "1 · Desenvolvimento original · 2025–2026", text: "Arquitetura, planejamento, banco de dados, backend e frontend, feitos manualmente, sem IA" },
+          { tag: "2 · Consultoria estratégica · desde 2026", text: "Estratégia de crescimento, presença digital (incluindo o Perfil da Empresa no Google), jornada do aluno e evolução da plataforma" },
         ],
         site: "https://guibborbjj.com.br/",
       },

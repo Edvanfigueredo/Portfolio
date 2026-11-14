@@ -23,7 +23,7 @@ A Guibbor BJJ é uma academia de Jiu-Jitsu com site oficial e perfil no Instagra
 Meu trabalho com a academia tem duas fases, apresentadas separadamente abaixo.
 
 <section class="case-phase is-first" aria-labelledby="phase-1">
-<p class="phase-tag">Fase 1 · Antes da EY</p>
+<p class="phase-tag">Fase 1 · ago 2025 – fev 2026 · Antes da EY</p>
 <h2 id="phase-1">Desenvolvimento da plataforma digital</h2>
 
 Este foi meu primeiro projeto profissional em tecnologia. Fui responsável pela solução original do início ao fim e a desenvolvi manualmente, sem ferramentas de IA:
@@ -34,12 +34,20 @@ Este foi meu primeiro projeto profissional em tecnologia. Fui responsável pela 
 - Desenvolvimento do **frontend**.
 - **Integração** dos componentes em uma aplicação funcional.
 
+<ol class="phase-timeline" role="list">
+<li><span class="phase-date">ago 2025</span><span>Início do projeto: entendimento das necessidades e do que a equipe da academia desejava da plataforma.</span></li>
+<li><span class="phase-date">set 2025</span><span>Estruturação e montagem da arquitetura da plataforma.</span></li>
+<li><span class="phase-date">out – nov 2025</span><span>Desenvolvimento do frontend e do backend; o visual do frontend foi apresentado e aprovado pela equipe da academia.</span></li>
+<li><span class="phase-date">dez 2025 – jan 2026</span><span>Testes e homologação.</span></li>
+<li><span class="phase-date">fev 2026</span><span>Sistema publicado e disponibilizado, hospedado na Locaweb.</span></li>
+</ol>
+
 Esta fase descreve o desenvolvimento original. O site evoluiu desde a primeira versão, por isso esta página não afirma que tudo o que está publicado hoje permanece igual.
 
 </section>
 
 <section class="case-phase" aria-labelledby="phase-2">
-<p class="phase-tag">Fase 2 · Depois</p>
+<p class="phase-tag">Fase 2 · Desde set 2026</p>
 <h2 id="phase-2">Consultoria estratégica e evolução digital</h2>
 
 Com mais experiência em engenharia de software, dados, IA e consultoria de tecnologia, minha atuação passou da construção da plataforma para a conexão entre tecnologia e negócio. Hoje também atuo na academia com:
@@ -48,6 +56,12 @@ Com mais experiência em engenharia de software, dados, IA e consultoria de tecn
 - **Presença digital:** Google, Instagram e WhatsApp funcionando como uma só jornada.
 - **Jornada de captação de alunos** e sua experiência do usuário, da primeira busca à primeira aula.
 - **Modernização tecnológica:** evolução da plataforma e visão de produto.
+
+<ol class="phase-timeline" role="list">
+<li><span class="phase-date">set 2026</span><span>Início da consultoria, nos finais de semana: melhorias, oportunidades de crescimento e estratégias para alcançar mais alunos.</span></li>
+<li><span class="phase-date">out – nov 2026</span><span>Em andamento: novo frontend, aprimoramento do backend e evolução do banco de dados.</span></li>
+<li><span class="phase-date">dez 2026</span><span>Previsto: publicação da nova identidade visual e do novo sistema.</span></li>
+</ol>
 
 </section>
 
