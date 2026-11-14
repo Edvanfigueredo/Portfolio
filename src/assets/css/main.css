@@ -367,6 +367,10 @@
   .entry-path li:last-child { border-color: var(--c-accent); }
   .entry-focus { border-left: 3px solid var(--c-accent); padding-left: var(--s-4); }
   .entry-detail .card-subhead { margin: 0 0 var(--s-1); }
+  .phase-timeline { list-style: none; padding: 0; margin: var(--s-4) 0; display: grid; gap: var(--s-2); }
+  .phase-timeline li { margin: 0; display: grid; grid-template-columns: 9.5rem 1fr; gap: var(--s-3); font-size: var(--fs-sm); color: var(--c-ink-soft); padding-top: var(--s-2); border-top: 1px solid var(--c-line); }
+  .phase-date { font-family: var(--f-mono); font-size: var(--fs-xs); color: var(--c-accent); padding-top: 0.15em; }
+  @media (max-width: 30rem) { .phase-timeline li { grid-template-columns: 1fr; gap: var(--s-1); } }
   .metrics-block { border: 1px solid var(--c-line); border-radius: var(--radius); background: var(--c-surface); padding: var(--s-4); margin-block: var(--s-4); }
   .metrics-title { font-weight: 600; margin: 0 0 var(--s-3); font-size: var(--fs-sm); }
   .metrics { display: grid; grid-template-columns: repeat(auto-fill, minmax(8.5rem, 1fr)); gap: var(--s-2); margin: 0; }
