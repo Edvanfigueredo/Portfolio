@@ -19,15 +19,17 @@ Last update: 2026-11-14.
 - OrkestrIA: kept out of the portfolio.
 - Guibbor BJJ opening-day photo: the owner confirmed on 2026-11-14 that the academy authorised its public use and that
   consent for the minors shown is covered. Published in the case study; original kept in `planning/source-images/`.
+- UNACON roles: no individual dates; the order shown is kept; the SAME team lead role stays (confirmed 2026-11-14).
+- Saúde IA: approved with a final grade of 9.5, individual work, ADS at Faculdade São Francisco de Assis; reference source
+  for the BMI data: World Health Organization (WHO), 2025 (no full bibliographic reference is published, by the owner's choice).
+- Pulse Finance: extension project at Universidade Cruzeiro do Sul; lessons learned published.
+- Guibbor BJJ: chronology of both phases (Aug 2025 – Feb 2026 original platform, published on Locaweb; consulting since
+  Sep 2026, new system planned for December 2026).
 
 ## Still open
 
-1. **UNACON** — dates of each role, and confirmation that the order shown (youth apprentice, SAME, reception,
-   nursing technician, oncology pharmacy) is chronological. "SAME" stays as an acronym until its official name is
-   confirmed. The SAME team lead role comes from the earlier LinkedIn-based record; confirm it should stay.
-2. **Saúde IA data source** — an earlier README (July 2025) credited the BMI data to WHO statistics without naming the
-   publication or year. The full reference (author, publication, year, URL) from the capstone document is still needed.
-3. **Pulse Finance** — two or three sentences on lessons learned; the name of the university and extension project, if
-   they should appear; whether the workshop actually took place (the site only says the app was designed to support it).
-4. **Guibbor BJJ** — period of each phase; technologies of the original platform, if they should be named; who made later
-   changes to the website; the academy's agreement to be named.
+1. **Pulse Finance** — whether the financial-education workshop and talk actually took place. The site only says the app
+   was designed to support them.
+2. **Guibbor BJJ** — technologies of the original platform (languages, frameworks, database), if they should be named;
+   and who made any changes to the published site between February and September 2026. Until then the site names no
+   stack and attributes no later change to the owner beyond the work described in Phase 2.
