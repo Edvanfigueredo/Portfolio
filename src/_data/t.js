@@ -154,7 +154,7 @@ const en = {
     title: "Projects",
     listTitle: "Project list",
     intro: "Selected projects. Each one states its status, my role, and what has been built, tested and validated, with links to the code or the live site. Known limitations are listed, not hidden.",
-    hiddenNote: "Other projects (including OrkestrIA and CloudCost Navigator) are not shown until their code is available for audit.",
+    hiddenNote: "Other projects (including CloudCost Navigator) are not shown until their code is available for audit.",
     typesTitle: "Project types",
     types: [
       { key: "own", label: "Own project", text: "Designed and built by me outside work." },
@@ -415,7 +415,7 @@ const pt = {
     title: "Projetos",
     listTitle: "Lista de projetos",
     intro: "Projetos selecionados. Cada um informa o status, meu papel e o que foi construído, testado e validado, com links para o código ou o site. Limitações conhecidas são listadas, não escondidas.",
-    hiddenNote: "Outros projetos (incluindo OrkestrIA e CloudCost Navigator) não aparecem até que o código esteja disponível para auditoria.",
+    hiddenNote: "Outros projetos (incluindo CloudCost Navigator) não aparecem até que o código esteja disponível para auditoria.",
     typesTitle: "Tipos de projeto",
     types: [
       { key: "own", label: "Projeto próprio", text: "Projetado e desenvolvido por mim, fora do trabalho." },
