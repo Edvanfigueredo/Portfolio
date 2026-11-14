@@ -5,8 +5,8 @@ permalink: /projects/pulse-finance/index.html
 layout: layouts/case-study.njk
 navKey: projects
 eyebrow: Case study · Personal finance · Local-first web app
-lead: A local-first personal finance web app that I built individually. Statement import, duplicate flags, debts, recurring payments and forecasts in one consistent monthly view.
-role: Individual project. AI supported the initial UX prototype; I developed the application.
+lead: A local-first personal finance web app that I designed and built individually for a university extension project on financial education. Statement import, duplicate flags, debts, recurring payments and forecasts in one consistent monthly view.
+role: "Individual project, created in a university extension project. AI supported the initial UX prototype; I developed the application."
 ---
 
 ## Summary
@@ -25,6 +25,12 @@ All data stays in the browser: no server, no account, no API key. **Status: MVP.
   </picture>
   <figcaption>Dashboard with the app's built-in demonstration dataset (fictitious data). Interface in Portuguese.</figcaption>
 </figure>
+
+## Origin: a university extension project
+
+Pulse started in a university extension project in which each proposal had to relate to the Sustainable Development Goals (SDGs) of the UN 2030 Agenda. I designed and developed it individually as a support tool for a hands-on financial-education activity: a workshop and talk for high-school students. The idea was to make financial education more accessible, practical and interactive by letting students work with a real budgeting tool.
+
+This page makes no claim about adoption by schools, use at scale or measured learning outcomes.
 
 ## How it was built
 

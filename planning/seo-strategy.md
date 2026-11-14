@@ -13,7 +13,7 @@ Priority: be the clear, correct result for name searches, and be relevant (not k
 | Edvan Figuerêdo / Edvan Figueredo (+ EY, AI, data) | Home | About, Journey |
 | Technology consulting, AI & data, financial services | Home | Expertise, Journey |
 | Software engineering, Java, Spring Boot, Python backend | Expertise | Pulse Finance, Journey |
-| Generative AI, AI agents, RAG | Expertise | OrkestrIA (when evidenced), Credentials |
+| Generative AI, AI agents, RAG | Expertise | Credentials |
 | Financial services technology, personal finance software | Pulse Finance | Financial Market Analysis |
 | Cloud and data, Azure (AZ-900, DP-900, PL-900) | Credentials | Expertise |
 

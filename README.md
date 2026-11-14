@@ -3,9 +3,9 @@
 Professional portfolio: **Technology Consulting · AI & Data · Software Engineering**.
 Bilingual (English by default, Brazilian Portuguese under `/pt/`), static, accessible and fast.
 
-> **Branch status (`update-portfolio`):** the new site lives in `src/` and is built into `_site/`.
-> The legacy site at the repository root (`index.html`, `assets/`, `css/`, `js/`) is still what
-> GitHub Pages serves today, and stays untouched until the cut-over at merge time.
+Live site: https://edvanfigueredo.github.io/Portfolio/ (PT: https://edvanfigueredo.github.io/Portfolio/pt/).
+The site is built from `src/` into `_site/` and published by GitHub Actions. The legacy hand-written site that used to
+live at the repository root was removed in November 2026; it remains in the Git history.
 
 ## Stack
 
@@ -61,7 +61,7 @@ scripts/
 ├── a11y-*.cjs           # local accessibility audits: axe, contrast, keyboard/screen-reader structure
 ├── make-gallery.cjs     # review gallery of real screenshots (npm run gallery)
 └── make-og.py           # regenerates the social preview images (Pillow)
-content/, planning/      # editorial drafts and planning documents (not published)
+planning/                # QA report, pending confirmations, LinkedIn media, IA and SEO notes (not published)
 ```
 
 ## Content rules
@@ -92,10 +92,11 @@ node scripts/a11y-contrast-all.cjs [chromium|firefox|webkit] http://localhost:80
 node scripts/a11y-keyboard.cjs [chromium|firefox|webkit] http://localhost:8090/Portfolio/
 ```
 
-## Deployment (prepared, not active)
+## Deployment
 
-`.github/workflows/deploy.yml` publishes `_site/` to GitHub Pages, but it only runs manually and requires
-**Settings → Pages → Source = "GitHub Actions"**. That switch is part of the merge decision.
+`.github/workflows/deploy.yml` builds, checks and publishes `_site/` to GitHub Pages. It runs manually
+(Actions → "Deploy to GitHub Pages" → Run workflow) and stops unless **Settings → Pages → Source** is
+"GitHub Actions". The CI workflow reports that setting on every push.
 To use a custom domain later, change `url` and `pathPrefix` in `src/_data/site.js` and add a `CNAME` file to `src/static/`.
 
 ## Contact

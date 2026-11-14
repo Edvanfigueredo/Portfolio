@@ -1,64 +1,33 @@
-# Pending confirmations — content not rendered until received
+# Pending confirmations
 
-Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are published with only verified content. Each one says exactly what is needed.
+Only items that still depend on the owner. Nothing in this list is shown on the site until it is confirmed.
+Last update: 2026-11-14.
 
-1. **EY Shine recognition**
-   - Exact name of the recognition, as EY writes it.
-   - Month and year.
-   - One sentence on what it recognised.
-   - Confirmation that EY's policy allows mentioning it publicly.
-   - Optionally, the link to your public LinkedIn post about it.
+## Resolved in November 2026 (for the record)
 
-2. **CV (PDF)** — one of the two:
-   - **(a)** approve the CV text in `content/en/site.md` and `content/pt-br/site.md` (section "CV"), and I generate both PDFs;
-   - **(b)** send your final `CV-EN.pdf` and `CV-PT.pdf`.
+- EY: five Shine recognitions, shown as "Recognised five times with Shine, EY's recognition programme".
+- UNACON — Hospital Dom Pedro de Alcântara: roles and oncology pharmacy responsibilities (Responsável Técnico).
+- Saúde IA capstone: individual work, approved with a final grade of 9.5.
+- Pulse Finance: created individually in a university extension project linked to the UN 2030 Agenda (SDGs),
+  as a support tool for a financial-education workshop for high-school students. AI only supported the initial UX prototype.
+- Guibbor BJJ: original platform designed and built by the owner without AI before EY; later strategic consulting;
+  Google Business Profile management and its August 2026 report.
+- Demo links approved: Pulse Finance, Saúde IA and Financial Market Analysis (Streamlit).
+- Project selection approved; Spring Enterprise Patterns API only in "Other projects".
+- `Sistema-de-Gest-o-de-Clientes/clientes.csv`: its three records are fictitious test data created by the owner; the file is kept as is.
+- CV in PDF: definitively not offered on the site.
+- OrkestrIA: kept out of the portfolio.
+- Guibbor BJJ opening-day photo: the owner confirmed on 2026-11-14 that the academy authorised its public use and that
+  consent for the minors shown is covered. Published in the case study; original kept in `planning/source-images/`.
 
-   Either way: no phone, street address, birth date, marital status or photo. The email is the current one.
+## Still open
 
-3. **Demo links** — approved by the owner on 2026-11-14 and now shown as "View app" (not reachable from the
-   build environment, so availability must be checked in a browser):
-   - Pulse Finance: `https://edvanfigueredo.github.io/CarteiraDigitalPulse/#transacoes`
-   - Saúde IA: `https://edvanfigueredo.github.io/IMC_BMI_health/` (from the repository README)
-   - Financial Market Analysis (Streamlit): `https://stock-exchange-analysis-app.streamlit.app/`
-
-4. **Saúde IA capstone (TCC)** — now published as "Academic project · Capstone (TCC)", described from the public
-   repository `IMC_BMI_health` (rule-based, front end only, no AI model). Still to confirm:
-   - ~~(a) Individual or group work?~~ Confirmed on 2026-11-14: individual work by the owner.
-   - **(b)** Whether the capstone was submitted and approved (the page makes no claim about grading).
-   - **(c)** The source of the nine-country BMI and obesity figures.
-   - **(d)** If a fuller version exists (Node/Express, React, Azure SQL, Azure Pipelines, an AI API), its repository URL.
-
-5. **Oncology pharmacy role — English title**
-   - Your exact original job title.
-   - Two or three lines on what you did (for example: preparation, stock control, supervision).
-   - Whether you held the legal technical-responsibility registration.
-
-   This decides between "Lead Technician, Oncology Pharmacy" and another title.
-
-6. **Pulse Finance — lessons learned**
-   - Two or three sentences, in your own words and in any language, on what you learned building it.
-
-   The text appears on the case-study page exactly as approved. (The AI question is answered: AI supported only the
-   initial UX prototype; the development is yours. This is now stated on the case-study page in both languages.)
-
-7. **Guibbor BJJ** — confirmed by the owner on 2026-11-14: first professional technology project, before EY; the
-   owner designed and developed the original platform by hand, without AI (architecture, planning, database, backend,
-   frontend, integration), and later took on strategic consulting. Now published in two phases. Still open:
-   - **(a)** Period of each phase (years), and whether the consulting is ongoing.
-   - **(b)** Technologies of the original platform (languages, framework, database, hosting), if they should be named.
-   - **(c)** Who made later changes to the website, if any, and which consulting proposals were implemented.
-   - **(d)** The academy's agreement to be named. Published on 2026-11-14 with the owner's authorization: the owner
-     manages the academy's Google Business Profile, and its official August 2026 report (vs July 2026): 153 interactions,
-     1,977 profile views (+38%), 648 searches (+64%), 94 direction requests (+23%), 45 website visits (+9%),
-     14 chat clicks (+75%), 0 calls. Commercial results (enrolments, revenue) remain unproven and unpublished.
-   - **(e)** A clean screenshot you are allowed to publish (the old one was a phone photo of a screen).
-   - **(f)** Whether the project should also appear on the Journey page and in the home timeline.
-
-8. **Other public repositories** — selection approved by the owner on 2026-11-14:
-   - Shown: Pulse Finance, Financial Market Analysis, Saúde IA and Guibbor BJJ as projects; Spring-Enterprise-Pattern
-     only in the compact "Other projects" list (no case study).
-   - Not shown: boxing-game-java, the Pac-Man versions, SistemaIngressoCine, Sistema-de-Gest-o-de-Clientes, vite.
-   - Waiting: exercicio-bootcampsantander, until its endpoints and tests are complete.
-   - `Sistema-de-Gest-o-de-Clientes/clientes.csv`: the owner confirmed on 2026-11-14 that its three records are
-     fictitious test data created by the owner. The file is kept as is. Future reviews should still tell synthetic test data
-     apart from real personal data, and record the author's confirmation when it is given.
+1. **UNACON** — dates of each role, and confirmation that the order shown (youth apprentice, SAME, reception,
+   nursing technician, oncology pharmacy) is chronological. "SAME" stays as an acronym until its official name is
+   confirmed. The SAME team lead role comes from the earlier LinkedIn-based record; confirm it should stay.
+2. **Saúde IA data source** — an earlier README (July 2025) credited the BMI data to WHO statistics without naming the
+   publication or year. The full reference (author, publication, year, URL) from the capstone document is still needed.
+3. **Pulse Finance** — two or three sentences on lessons learned; the name of the university and extension project, if
+   they should appear; whether the workshop actually took place (the site only says the app was designed to support it).
+4. **Guibbor BJJ** — period of each phase; technologies of the original platform, if they should be named; who made later
+   changes to the website; the academy's agreement to be named.
