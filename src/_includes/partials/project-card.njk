@@ -8,8 +8,13 @@
   </div>
   <h3><a href="{{ key | langUrl(lang) | url }}">{{ P.name }}</a></h3>
   <p>{{ P.summary }}</p>
+  {%- if P.phases %}
+  <h4 class="card-subhead">{{ P.phasesLabel }}</h4>
+  <ol class="card-phases">{% for ph in P.phases %}<li><span class="phase-tag">{{ ph.tag }}</span><span>{{ ph.text }}</span></li>{% endfor %}</ol>
+  {%- else %}
   <h4 class="card-subhead">{{ t[lang].ui[P.highlightsLabel or "highlights"] }}</h4>
   <ul class="check-list">{% for h in P.highlights %}<li>{{ h }}</li>{% endfor %}</ul>
+  {%- endif %}
   {%- if P.stack %}
   <ul class="stack" aria-label="{{ t[lang].ui.stack }}">
     {%- for s in P.stack %}<li>{{ s }}</li>{% endfor %}
