@@ -42,7 +42,7 @@ This was my first professional project in technology. I was responsible for the 
 <li><span class="phase-date">Feb 2026</span><span>System published and made available, hosted on Locaweb.</span></li>
 </ol>
 
-This phase describes the original development. The website has evolved since its first version, so this page does not claim that everything published today is unchanged.
+The published site was not changed between February and September 2026. Everything after that belongs to Phase 2.
 
 </section>
 
@@ -95,7 +95,7 @@ I am also responsible for managing the academy's Google Business Profile, the li
 | Strategic consulting: diagnosis, strategy and proposals | Done by me |
 | Google Business Profile management | Done by me |
 | Digital performance indicators (Google Business Profile) | Recorded in the official report for August 2026, shown above |
-| Recent changes to the website | Not attributed to me here unless confirmed |
+| Changes to the published site, Feb – Sep 2026 | None |
 | Commercial results (enrolments, revenue) | Not proven, so not shown |
 
 ## Links

@@ -42,7 +42,7 @@ Este foi meu primeiro projeto profissional em tecnologia. Fui responsável pela 
 <li><span class="phase-date">fev 2026</span><span>Sistema publicado e disponibilizado, hospedado na Locaweb.</span></li>
 </ol>
 
-Esta fase descreve o desenvolvimento original. O site evoluiu desde a primeira versão, por isso esta página não afirma que tudo o que está publicado hoje permanece igual.
+O site publicado não teve alterações entre fevereiro e setembro de 2026. Tudo o que veio depois pertence à Fase 2.
 
 </section>
 
@@ -95,7 +95,7 @@ Também sou responsável pela gestão do Perfil da Empresa no Google da academia
 | Consultoria estratégica: diagnóstico, estratégia e propostas | Feitos por mim |
 | Gestão do Perfil da Empresa no Google | Feita por mim |
 | Indicadores de desempenho digital (Perfil da Empresa no Google) | Registrados no relatório oficial de agosto de 2026, exibidos acima |
-| Alterações recentes no site | Não atribuídas a mim aqui sem confirmação |
+| Alterações no site publicado, fev – set 2026 | Nenhuma |
 | Resultados comerciais (matrículas, faturamento) | Não comprovados, por isso não são exibidos |
 
 ## Links
