@@ -48,7 +48,11 @@ Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are publish
    - **(d)** A clean screenshot or image you are allowed to publish (the old one was a phone photo of a screen).
    - **(e)** Permission to read the private `guibborbjj` repository, if technical work should be described.
 
-8. **Other public repositories** — reviewed on 2026-11-14 and not published until you approve a selection:
-   boxing-game-java, Pac-ManRoblox, pacman-gameazul, PACMAN-game, vite (a fork with no commits of yours),
-   Spring-Enterprise-Pattern, SistemaIngressoCine, Sistema-de-Gest-o-de-Clientes, exercicio-bootcampsantander.
-   Also confirm that the three records in `Sistema-de-Gest-o-de-Clientes/clientes.csv` are fictitious.
+8. **Other public repositories** — selection approved by the owner on 2026-11-14:
+   - Shown: Pulse Finance, Financial Market Analysis, Saúde IA and Guibbor BJJ as projects; Spring-Enterprise-Pattern
+     only in the compact "Other projects" list (no case study).
+   - Not shown: boxing-game-java, the Pac-Man versions, SistemaIngressoCine, Sistema-de-Gest-o-de-Clientes, vite.
+   - Waiting: exercicio-bootcampsantander, until its endpoints and tests are complete.
+   - `Sistema-de-Gest-o-de-Clientes/clientes.csv`: the owner confirmed on 2026-11-14 that its three records are
+     fictitious test data created by the owner. The file is kept as is. Future reviews should still tell synthetic test data
+     apart from real personal data, and record the author's confirmation when it is given.
