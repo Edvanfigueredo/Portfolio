@@ -47,3 +47,8 @@ Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are publish
    - **(c)** The academy's agreement to be named, and any result it agrees to publish.
    - **(d)** A clean screenshot or image you are allowed to publish (the old one was a phone photo of a screen).
    - **(e)** Permission to read the private `guibborbjj` repository, if technical work should be described.
+
+8. **Other public repositories** — reviewed on 2026-11-14 and not published until you approve a selection:
+   boxing-game-java, Pac-ManRoblox, pacman-gameazul, PACMAN-game, vite (a fork with no commits of yours),
+   Spring-Enterprise-Pattern, SistemaIngressoCine, Sistema-de-Gest-o-de-Clientes, exercicio-bootcampsantander.
+   Also confirm that the three records in `Sistema-de-Gest-o-de-Clientes/clientes.csv` are fictitious.

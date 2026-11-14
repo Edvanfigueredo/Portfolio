@@ -21,11 +21,16 @@ A Guibbor BJJ é uma academia de Jiu-Jitsu com site oficial e perfil no Instagra
 - **Experiência do usuário:** a jornada de captação de alunos, da primeira busca à primeira aula.
 - **Modernização tecnológica:** oportunidades para melhorar a experiência digital da academia.
 
-## O que esta página não afirma
+## O que está confirmado e o que não está
 
-- Não apresento o site atual, nem todas as funcionalidades digitais da academia, como desenvolvidos só por mim.
-- Propostas não aparecem como entregas concluídas. Implementações, datas e resultados entram aqui só depois de confirmados.
-- Nenhuma métrica de negócio é exibida. Nenhuma foi medida ou publicada.
+| Parte do trabalho | Situação |
+|---|---|
+| Diagnóstico e planejamento | Feitos por mim, dentro do escopo acima |
+| Propostas | Elaboradas por mim: jornada de captação de alunos, Google, Instagram, WhatsApp e experiência digital. A aceitação delas não é informada aqui |
+| Implementação | Nenhuma implementação é atribuída a mim até ser confirmada |
+| Trabalho de terceiros | O site atual, os canais sociais e a operação pertencem à academia. Não são apresentados como desenvolvidos por mim |
+
+Nenhuma métrica de negócio é exibida. Nenhuma foi medida ou publicada.
 
 ## Links
 

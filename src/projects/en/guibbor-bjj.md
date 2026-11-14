@@ -21,11 +21,16 @@ Guibbor BJJ is a Brazilian Jiu-Jitsu academy with an official website and an Ins
 - **User experience:** the student acquisition journey, from first search to first class.
 - **Technology modernization:** opportunities to improve the academy's digital experience.
 
-## What this page does not claim
+## What is confirmed, and what is not
 
-- I do not present the current website, or every digital feature of the academy, as built by me alone.
-- Proposals are not presented as delivered. Implementations, dates and results will appear here only after confirmation.
-- No business metrics are shown. None have been measured or published.
+| Part of the work | Status |
+|---|---|
+| Diagnosis and planning | Done by me, within the scope above |
+| Proposals | Prepared by me: the student acquisition journey, Google, Instagram, WhatsApp and the digital experience. Their acceptance is not stated here |
+| Implementation | No implementation is attributed to me until it is confirmed |
+| Work by others | The current website, social channels and operations belong to the academy. They are not presented as built by me |
+
+No business metrics are shown. None have been measured or published.
 
 ## Links
 
