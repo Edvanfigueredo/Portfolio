@@ -30,7 +30,7 @@ All data stays in the browser: no server, no account, no API key. **Status: MVP.
 
 Pulse started in a university extension project at Universidade Cruzeiro do Sul, in which each proposal had to relate to the Sustainable Development Goals (SDGs) of the UN 2030 Agenda. I designed and developed it individually as a support tool for a hands-on financial-education activity: a workshop and talk for high-school students. The idea was to make financial education more accessible, practical and interactive by letting students work with a real budgeting tool.
 
-This page makes no claim about adoption by schools, use at scale or measured learning outcomes.
+The project did not stay on paper: the financial-education activities were carried out at two places, the **Guibbor BJJ** academy and **Colégio Santa Amália**, with Pulse as the support tool for the dynamics, workshops and talks with young people. This page makes no claim about dates, number of participants, adoption by schools or measured learning outcomes.
 
 ## How it was built
 

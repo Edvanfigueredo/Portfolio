@@ -30,7 +30,7 @@ Os dados ficam no navegador: sem servidor, sem conta, sem chave de API. **Status
 
 O Pulse surgiu em um projeto de extensão universitária da Universidade Cruzeiro do Sul, no qual cada proposta precisava se relacionar com os Objetivos de Desenvolvimento Sustentável (ODS) da Agenda 2030 da ONU. Projetei e desenvolvi a aplicação individualmente como ferramenta de apoio a uma atividade prática de educação financeira: uma dinâmica, oficina e palestra para jovens do Ensino Médio. A proposta era tornar a educação financeira mais acessível, prática e interativa, com uma ferramenta real de organização financeira.
 
-Esta página não afirma adoção por escolas, uso em larga escala nem resultados educacionais medidos.
+O projeto não ficou só no planejamento: as atividades de educação financeira foram realizadas em dois locais, a academia **Guibbor BJJ** e o **Colégio Santa Amália**, com o Pulse como ferramenta de apoio às dinâmicas, oficinas e palestras com o público jovem. Esta página não informa datas, número de participantes, adoção por escolas nem resultados educacionais medidos.
 
 ## Como foi construído
 

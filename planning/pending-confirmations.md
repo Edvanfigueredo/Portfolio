@@ -25,11 +25,15 @@ Last update: 2026-11-14.
 - Pulse Finance: extension project at Universidade Cruzeiro do Sul; lessons learned published.
 - Guibbor BJJ: chronology of both phases (Aug 2025 – Feb 2026 original platform, published on Locaweb; consulting since
   Sep 2026, new system planned for December 2026).
+- Pulse Finance: the financial-education activities took place at the Guibbor BJJ academy and Colégio Santa Amália
+  (no dates, participant numbers or outcomes are published).
+- Guibbor BJJ: the published site was not changed between February and September 2026.
 
 ## Still open
 
-1. **Pulse Finance** — whether the financial-education workshop and talk actually took place. The site only says the app
-   was designed to support them.
-2. **Guibbor BJJ** — technologies of the original platform (languages, frameworks, database), if they should be named;
-   and who made any changes to the published site between February and September 2026. Until then the site names no
-   stack and attributes no later change to the owner beyond the work described in Phase 2.
+None.
+
+## Internal note (not shown on the site)
+
+- Guibbor BJJ: the technologies of the original platform have not been specified. The site describes the architecture
+  and the work done, and names no languages, frameworks or database. Do not add a stack until the owner provides it.
