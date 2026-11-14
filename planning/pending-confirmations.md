@@ -15,8 +15,10 @@ Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are publish
 
    Either way: no phone, street address, birth date, marital status or photo. The email is the current one.
 
-3. **Demo links** — for each, confirm that the URL is online and that you approve it being public:
-   - Pulse Finance: `https://edvanfigueredo.github.io/CarteiraDigitalPulse/`
+3. **Demo links** — approved by the owner on 2026-11-14 and now shown as "View app" (not reachable from the
+   build environment, so availability must be checked in a browser):
+   - Pulse Finance: `https://edvanfigueredo.github.io/CarteiraDigitalPulse/#transacoes`
+   - Saúde IA: `https://edvanfigueredo.github.io/IMC_BMI_health/` (from the repository README)
    - Financial Market Analysis (Streamlit): `https://stock-exchange-analysis-app.streamlit.app/`
 
 4. **Saúde IA capstone (TCC)** — now published as "Academic project · Capstone (TCC)", described from the public
@@ -25,7 +27,6 @@ Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are publish
    - **(b)** Whether the capstone was submitted and approved (the page makes no claim about grading).
    - **(c)** The source of the nine-country BMI and obesity figures.
    - **(d)** If a fuller version exists (Node/Express, React, Azure SQL, Azure Pipelines, an AI API), its repository URL.
-   - **(e)** Whether the live demo `https://edvanfigueredo.github.io/IMC_BMI_health/` may be linked.
 
 5. **Oncology pharmacy role — English title**
    - Your exact original job title.
