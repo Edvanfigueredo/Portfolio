@@ -24,3 +24,21 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run check
+
+  # Read-only report of the GitHub Pages source. The new site is published by deploy.yml,
+  # which needs Settings → Pages → Source = "GitHub Actions" (build_type "workflow").
+  pages-source:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    permissions:
+      pages: read
+    steps:
+      - name: Report the Pages build type
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          type=$(gh api "repos/${{ github.repository }}/pages" --jq .build_type 2>/dev/null || echo unknown)
+          echo "PAGES_BUILD_TYPE=$type"
+          if [ "$type" != "workflow" ]; then
+            echo "::warning::GitHub Pages source is '$type', not 'GitHub Actions'. A push to main would rebuild the legacy site with Jekyll."
+          fi

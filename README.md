@@ -68,7 +68,7 @@ content/, planning/      # editorial drafts and planning documents (not publishe
 
 - Every statement is backed by LinkedIn, a public repository, or a credential. Nothing is inferred.
 - Projects state their real status (MVP, completed, learning project) and list known issues; planned features never appear as implemented.
-- Only projects with audited code are shown. OrkestrIA and CloudCost Navigator are not shown until their code is available; the healthcare capstone is pending confirmation of its scope.
+- Only projects with audited code or a confirmed scope are shown. CloudCost Navigator is not shown until its code is available. The Saúde IA capstone is described from its public repository; Guibbor BJJ only within the consulting scope confirmed by the owner.
 - No phone number, street address, birth date or government identifiers anywhere.
 - EY is mentioned in text only (no logo or brand colors) and no client or internal project is described.
 

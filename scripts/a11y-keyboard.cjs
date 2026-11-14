@@ -2,7 +2,7 @@
 // Usage: node scripts/a11y-keyboard.cjs [chromium|firefox|webkit] [baseUrl]
 const pw = require("playwright");
 const BASE = process.argv[3] || "http://localhost:8090/Portfolio/";
-const PAGES = ["", "projects/pulse-finance/", "pt/expertise/", "pt/contact/"];
+const PAGES = ["", "projects/pulse-finance/", "pt/projects/guibbor-bjj/", "projects/health-bmi-capstone/", "pt/expertise/", "pt/contact/"];
 const browserName = process.argv[2] || "chromium";
 // macOS-style Safari only tabs to links with Alt+Tab; Playwright WebKit honours the same setting.
 const TAB = browserName === "webkit" ? "Alt+Tab" : "Tab";

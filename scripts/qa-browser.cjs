@@ -4,7 +4,7 @@
 const playwright = require("playwright");
 
 const BASE = process.argv[2] || "http://localhost:8090/Portfolio/";
-const PATHS = ["", "about/", "expertise/", "projects/", "projects/pulse-finance/", "projects/financial-market-analysis/", "journey/", "credentials/", "contact/"];
+const PATHS = ["", "about/", "expertise/", "projects/", "projects/pulse-finance/", "projects/financial-market-analysis/", "projects/health-bmi-capstone/", "projects/guibbor-bjj/", "journey/", "credentials/", "contact/"];
 const PAGES = [...PATHS, ...PATHS.map((p) => "pt/" + p)];
 const WIDTHS = [360, 768, 1024, 1440];
 const BROWSER = process.argv[3] || "chromium";

@@ -35,6 +35,7 @@ const FORBIDDEN = [
   [/\b\d{3}\.\d{3}\.\d{3}-\d{2}\b/, "CPF-formatted number"],
   [/@gmail\.com/i, "personal Gmail address"],
   [/projeto_guibbor_admin/, "removed admin screenshot reference"],
+  [/orkestr/i, "OrkestrIA mention (removed from the public site by the owner)"],
 ];
 
 for (const file of htmlFiles) {

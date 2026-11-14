@@ -18,6 +18,8 @@ const site = {
     projects: { path: "/projects/" },
     pulse: { path: "/projects/pulse-finance/" },
     fma: { path: "/projects/financial-market-analysis/" },
+    capstone: { path: "/projects/health-bmi-capstone/" },
+    guibbor: { path: "/projects/guibbor-bjj/" },
     journey: { path: "/journey/" },
     credentials: { path: "/credentials/" },
     contact: { path: "/contact/" },
