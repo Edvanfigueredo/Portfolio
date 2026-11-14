@@ -283,6 +283,14 @@
   .case-aside dt { font-family: var(--f-mono); font-size: var(--fs-xs); text-transform: uppercase; letter-spacing: 0.05em; color: var(--c-muted); }
   .case-aside dd { margin: var(--s-1) 0 0; }
   .case-aside .badge { white-space: normal; border-radius: var(--radius); }
+  .other-list { list-style: none; padding: 0; margin: var(--s-4) 0 0; border-top: 1px solid var(--c-line); }
+  .other-item { padding: var(--s-4) 0 var(--s-5); border-bottom: 1px solid var(--c-line); max-width: 52rem; }
+  .other-head { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2) var(--s-3); }
+  .other-head h3 { margin: 0; font-size: var(--fs-lg); }
+  .other-item > p { margin: var(--s-2) 0 var(--s-3); color: var(--c-ink-soft); }
+  .other-item .badge { white-space: normal; }
+  .other-foot { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-3) var(--s-5); }
+  .other-foot .stack { margin: 0; }
   .case-aside .badge::before { flex: none; }
   .case-body { max-width: var(--measure); min-width: 0; }
   .case-body h2 { font-size: var(--fs-xl); margin-top: var(--s-7); }

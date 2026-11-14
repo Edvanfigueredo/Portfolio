@@ -21,6 +21,22 @@ pageKey: projects
       {% include "partials/project-card.njk" %}
       {%- endfor %}
     </div>
+    <h2 class="h-sm mt-6">{{ P.otherTitle }}</h2>
+    <ul class="other-list">
+      {%- for o in P.others %}
+      <li class="other-item">
+        <div class="other-head">
+          <h3>{{ o.name }}</h3>
+          <span class="badge badge-type-learning">{{ o.typeText }}</span>
+        </div>
+        <p>{{ o.text }}</p>
+        <div class="other-foot">
+          <ul class="stack" aria-label="{{ t[lang].ui.stack }}">{% for st in o.stack %}<li>{{ st }}</li>{% endfor %}</ul>
+          <a href="{{ o.repo }}" rel="noopener noreferrer" target="_blank">{{ t[lang].ui.viewRepo }}<span class="visually-hidden"> — {{ o.name }} {{ t[lang].ui.newTab }}</span></a>
+        </div>
+      </li>
+      {%- endfor %}
+    </ul>
     <h2 class="h-xs mt-6">{{ P.typesTitle }}</h2>
     <ul class="legend">
       {%- for ty in P.types %}

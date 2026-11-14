@@ -155,6 +155,16 @@ const en = {
     listTitle: "Project list",
     intro: "Selected projects. Each one states its status, my role, and what has been built, tested and validated, with links to the code or the live site. Known limitations are listed, not hidden.",
     hiddenNote: "Other projects (including CloudCost Navigator) are not shown until their code is available for audit.",
+    otherTitle: "Other projects",
+    others: [
+      {
+        name: "Spring Enterprise Patterns API",
+        typeText: "Learning project · Bootcamp exercise",
+        text: "A REST API for customers, built during the Santander 2026 Back-End with Java bootcamp (DIO): create, list, read, update and delete under /api/v1/customers, with request validation, DTOs and a MapStruct mapper, a Flyway migration and PostgreSQL via Docker Compose. Only the default context tests exist, and security is not configured yet.",
+        stack: ["Java 21", "Spring Boot", "Spring Data JPA", "Flyway", "PostgreSQL"],
+        repo: "https://github.com/Edvanfigueredo/Spring-Enterprise-Pattern",
+      },
+    ],
     typesTitle: "Project types",
     types: [
       { key: "own", label: "Own project", text: "Designed and built by me outside work." },
@@ -416,6 +426,16 @@ const pt = {
     listTitle: "Lista de projetos",
     intro: "Projetos selecionados. Cada um informa o status, meu papel e o que foi construído, testado e validado, com links para o código ou o site. Limitações conhecidas são listadas, não escondidas.",
     hiddenNote: "Outros projetos (incluindo CloudCost Navigator) não aparecem até que o código esteja disponível para auditoria.",
+    otherTitle: "Outros projetos",
+    others: [
+      {
+        name: "Spring Enterprise Patterns API",
+        typeText: "Projeto de aprendizado · Exercício de bootcamp",
+        text: "API REST de clientes desenvolvida no Bootcamp Santander 2026 — Back-End com Java (DIO): criar, listar, consultar, atualizar e excluir em /api/v1/customers, com validação das requisições, DTOs e mapeamento com MapStruct, migração Flyway e PostgreSQL via Docker Compose. Há apenas os testes de contexto padrão, e a segurança ainda não está configurada.",
+        stack: ["Java 21", "Spring Boot", "Spring Data JPA", "Flyway", "PostgreSQL"],
+        repo: "https://github.com/Edvanfigueredo/Spring-Enterprise-Pattern",
+      },
+    ],
     typesTitle: "Tipos de projeto",
     types: [
       { key: "own", label: "Projeto próprio", text: "Projetado e desenvolvido por mim, fora do trabalho." },
