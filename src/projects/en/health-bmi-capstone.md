@@ -6,7 +6,7 @@ layout: layouts/case-study.njk
 navKey: projects
 eyebrow: "Case study · Capstone (TCC) · Health"
 lead: "My individual capstone for the Systems Analysis and Development degree at Faculdade São Francisco de Assis. A web app that calculates BMI, compares it with national data and suggests educational 7-day meal plans."
-role: "Individual academic project developed as a capstone project. All the code and commits in the public repository are mine."
+role: "Individual academic project developed as a capstone project, approved with a final grade of 9.5. All the code and commits in the public repository are mine."
 ---
 
 ## Summary
@@ -24,6 +24,10 @@ The app turns weight, height, country and dietary preference into three things: 
   <figcaption>Input form and result, with example values. Captured locally from the public repository. Interface in Portuguese.</figcaption>
 </figure>
 
+## Academic result
+
+Developed as part of my degree in Systems Analysis and Development. The capstone was **approved with a final grade of 9.5**.
+
 ## Problem
 
 - BMI calculators usually return a number without context or a next step.
@@ -32,7 +36,7 @@ The app turns weight, height, country and dietary preference into three things: 
 ## What is implemented
 
 - **BMI calculation and classification** in six bands, from underweight to obesity class III.
-- **Country comparison** for nine countries (Brazil, United States, Mexico, Argentina, France, Japan, Germany, Ireland, Italy): national average BMI, obesity rate and ranking. The values are stored in the code; their source is not documented in the repository.
+- **Country comparison** for nine countries (Brazil, United States, Mexico, Argentina, France, Japan, Germany, Ireland, Italy): national average BMI, obesity rate and ranking. The values are stored in the code. An earlier version of the repository README (July 2025) credited the BMI data to World Health Organization (WHO) statistics, without naming the publication or year; the current README does not state a source.
 - **7-day meal plans** with six meals a day. The goal follows the BMI band: healthy weight gain, maintenance or moderate weight loss.
 - **Eight dietary profiles:** meat-eater, vegetarian, lactose intolerant, type 1 or type 2 diabetes, and combinations. Diabetes profiles swap in lower-sugar options; lactose-free profiles use plant-based drinks.
 - **Food lists per country,** built from foods that are common in each country.
@@ -57,7 +61,7 @@ On the roadmap in the repository, not built: a Power BI dashboard, user login, r
 | Plan generation | Rule-based: plan templates by goal, plus food lists by country and profile, with random picks |
 | Tests | No automated tests |
 | Repository | `package.json` and `src` are leftovers from an unused React template |
-| Data | The source of the country statistics is not documented |
+| Data | Credited to WHO statistics in an earlier README; publication and year not recorded |
 
 ## Next steps
 

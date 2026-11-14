@@ -6,7 +6,7 @@ layout: layouts/case-study.njk
 navKey: projects
 eyebrow: "Estudo de caso · TCC · Saúde"
 lead: "Meu TCC, desenvolvido individualmente, do curso de Análise e Desenvolvimento de Sistemas na Faculdade São Francisco de Assis. Aplicação web que calcula o IMC, compara com dados nacionais e sugere planos alimentares educativos de 7 dias."
-role: "Projeto acadêmico individual desenvolvido como Trabalho de Conclusão de Curso (TCC). Todo o código e os commits do repositório público são meus."
+role: "Projeto acadêmico individual desenvolvido como Trabalho de Conclusão de Curso (TCC), aprovado com nota final 9,5. Todo o código e os commits do repositório público são meus."
 ---
 
 ## Resumo
@@ -24,6 +24,10 @@ A aplicação transforma peso, altura, país e preferência alimentar em três r
   <figcaption>Formulário e resultado, com valores de exemplo. Captura feita localmente a partir do repositório público.</figcaption>
 </figure>
 
+## Resultado acadêmico
+
+Desenvolvido como parte da minha formação em Análise e Desenvolvimento de Sistemas. O TCC foi **aprovado com nota final 9,5**.
+
 ## Problema
 
 - Calculadoras de IMC costumam entregar um número sem contexto nem próximo passo.
@@ -32,7 +36,7 @@ A aplicação transforma peso, altura, país e preferência alimentar em três r
 ## O que está implementado
 
 - **Cálculo e classificação do IMC** em seis faixas, de abaixo do peso a obesidade grau III.
-- **Comparação por país** com nove países (Brasil, Estados Unidos, México, Argentina, França, Japão, Alemanha, Irlanda e Itália): IMC médio nacional, taxa de obesidade e posição no ranking. Os valores ficam no código; a fonte não está documentada no repositório.
+- **Comparação por país** com nove países (Brasil, Estados Unidos, México, Argentina, França, Japão, Alemanha, Irlanda e Itália): IMC médio nacional, taxa de obesidade e posição no ranking. Os valores ficam no código. Uma versão anterior do README do repositório (julho de 2025) atribuía os dados de IMC a estatísticas da Organização Mundial da Saúde (OMS), sem indicar publicação nem ano; o README atual não informa a fonte.
 - **Planos alimentares de 7 dias** com seis refeições por dia. O objetivo segue a faixa de IMC: ganho de peso saudável, manutenção ou perda de peso moderada.
 - **Oito perfis alimentares:** carnívoro, vegetariano, intolerante à lactose, diabético tipo 1 ou tipo 2, e combinações. Os perfis com diabetes trocam por opções com menos açúcar; os sem lactose usam bebidas vegetais.
 - **Listas de alimentos por país,** com alimentos comuns em cada um.
@@ -57,7 +61,7 @@ Está no roadmap do repositório, mas não foi construído: dashboard em Power B
 | Geração dos planos | Baseada em regras: modelos de refeição por objetivo, mais listas de alimentos por país e perfil, com escolhas aleatórias |
 | Testes | Não há testes automatizados |
 | Repositório | `package.json` e `src` são sobras de um template React não utilizado |
-| Dados | A fonte das estatísticas por país não está documentada |
+| Dados | Atribuídos a estatísticas da OMS em um README anterior; publicação e ano não registrados |
 
 ## Próximos passos
 
