@@ -1,6 +1,6 @@
 // All site copy, per language. Source of truth: content/{en,pt-br}/site.md (revision 2).
 // Items still awaiting the owner's confirmation are deliberately NOT rendered here
-// (e.g. EY Shine recognition, CV download, live demo links, healthcare capstone page).
+// (e.g. exact dates of each role).
 
 const en = {
   lang: "en",
@@ -53,8 +53,8 @@ const en = {
     about: { title: "About Edvan Figuerêdo", description: "From hospitals and oncology pharmacy to technology consulting at EY: the path, principles and direction behind my work in software, data and AI." },
     expertise: { title: "Expertise — AI, Data & Software Engineering", description: "Consulting, data, backend, frontend, cloud and AI, each labeled by evidence: professional practice, project evidence or still developing." },
     projects: { title: "Projects — Edvan Figuerêdo", description: "Selected projects with architecture, technical decisions, test evidence and an honest status, including known limitations." },
-    pulse: { title: "Pulse Finance — Local-First Personal Finance App (MVP)", description: "Individually built: statement import, duplicate flags, debts and forecasts, 42 automated tests and known issues listed openly." },
-    capstone: { title: "Saúde IA — BMI and Diet Plan Capstone (TCC)", description: "Academic capstone: BMI calculator, nine-country comparison and rule-based 7-day meal plans. Front end only; no AI model." },
+    pulse: { title: "Pulse Finance — Local-First Personal Finance App (MVP)", description: "Built individually for a university extension project on financial education: statement import, debts and forecasts, with 42 automated tests." },
+    capstone: { title: "Saúde IA — BMI and Diet Plan Capstone (TCC)", description: "Individual capstone, approved with a grade of 9.5: BMI calculator, nine-country comparison and rule-based 7-day meal plans. Front end only; no AI model." },
     guibbor: { title: "Guibbor BJJ — Platform Development and Strategic Consulting", description: "My first professional technology project: a digital platform I designed and built for a Jiu-Jitsu academy, followed by strategic consulting." },
     fma: { title: "Financial Market Analysis — Python market data tool", description: "Python tool for US and Brazilian equities with a transparent, rule-based score. Not an AI model; learning project." },
     journey: { title: "Professional Journey — Edvan Figuerêdo", description: "From healthcare operations (since 2013) and pharmaceutical retail to technology consulting at EY: experience and education." },
@@ -87,7 +87,7 @@ const en = {
     journeyTitle: "Journey in brief",
     journeyIntro: "From regulated healthcare operations and team leadership to technology consulting in AI & Data.",
     journey: [
-      { year: "2013", phase: "Healthcare operations", text: "Hospital administration, medical records (team lead), nursing and oncology pharmacy" },
+      { year: "2013", phase: "Healthcare operations", text: "UNACON: from youth apprentice to Responsável Técnico of the oncology pharmacy" },
       { year: "2019", phase: "Retail leadership", text: "Pharmaceutical retail: from sales associate to store supervisor" },
       { year: "2021", phase: "Clinical operations & systems", text: "Nursing technician at Rede D'Or; daily user of the Tasy hospital ERP" },
       { year: "2024", phase: "Technology education", text: "Technology degree in Systems Analysis and Development; Software Engineering bachelor's in progress" },
@@ -103,10 +103,10 @@ const en = {
   about: {
     title: "From regulated operations to technology consulting",
     sections: [
-      { heading: "Where I started", text: "My working life began in 2013 at Hospital Dom Pedro de Alcântara in Feira de Santana, Brazil. I started as an administrative apprentice, then worked in medical records, nursing and the oncology pharmacy. In oncology, preparation, traceability and stock control leave no margin for error. It taught me to respect process, data and the people who depend on both." },
-      { heading: "Leading people before leading systems", text: "I led the hospital's medical records team, and later supervised a store team at Droga Raia (RD Saúde). Those roles taught me what technology projects often underestimate: adoption, routines, and the people who keep a process running every day. From 2021 to 2026 I was a nursing technician at Rede D'Or and a daily user of Tasy, a hospital ERP. I saw how systems can help people doing critical work, and how they can get in the way." },
+      { heading: "Where I started", text: "My working life began in 2013 at UNACON, Hospital Dom Pedro de Alcântara, in Feira de Santana, Brazil. I started as a youth apprentice, then worked in the SAME, at reception and as a nursing technician, and became Responsável Técnico (technical lead) of the oncology pharmacy, where I compounded pre-chemotherapy medication and controlled the stock of chemotherapy drugs, medicines and supplies. In oncology, preparation, traceability and stock control leave no margin for error. It taught me to respect process, data and the people who depend on both." },
+      { heading: "Leading people before leading systems", text: "I led the SAME team at the hospital, and later supervised a store team at Droga Raia (RD Saúde). Those roles taught me what technology projects often underestimate: adoption, routines, and the people who keep a process running every day. From 2021 to 2026 I was a nursing technician at Rede D'Or and a daily user of Tasy, a hospital ERP. I saw how systems can help people doing critical work, and how they can get in the way." },
       { heading: "Retraining, deliberately", text: "Alongside hospital shifts, I completed a technology degree in Systems Analysis and Development (2024–2026), started a bachelor's degree in Software Engineering, and earned Microsoft's Azure, Azure Data and Power Platform Fundamentals certifications." },
-      { heading: "Today", text: "Since March 2026 I have worked as a consultant in EY's Technology Consulting practice, on AI & Data for financial services. Banking and healthcare share more than it seems: regulation, sensitive data, audit trails and very low tolerance for failure. My operational background is part of how I approach that work." },
+      { heading: "Today", text: "Since March 2026 I have worked as a consultant in EY's Technology Consulting practice, on AI & Data for financial services. Banking and healthcare share more than it seems: regulation, sensitive data, audit trails and very low tolerance for failure. My operational background is part of how I approach that work. I have been recognised five times with Shine, EY's recognition programme." },
     ],
     principlesTitle: "How I work",
     principles: [
@@ -178,10 +178,10 @@ const en = {
         name: "Pulse Finance",
         status: "mvp",
         statusText: "MVP — v2.0",
-        type: "own",
-        typeText: "Own project · Software development",
+        type: "academic",
+        typeText: "University extension project · Software development",
         highlights: ["Bank statement import (OFX, CSV/Excel, PDF) and JSON backups", "Debts, installments, recurring payments and financial calendar", "Multi-month forecast and what-if simulator", "42 automated tests; CI configured to run them before deployment"],
-        summary: "A local-first personal finance app that I built individually. It imports bank statements (OFX, CSV/Excel, PDF) and JSON backups, flags possible duplicates, and connects debts, recurring payments and forecasts.",
+        summary: "A local-first personal finance app that I designed and built individually for a university extension project linked to the UN 2030 Agenda, as a support tool for a financial-education workshop for high-school students.",
         evidence: "42 automated tests cover debts, forecasting, the what-if simulator, privacy mode and full-app navigation.",
         stack: ["JavaScript", "Vite", "IndexedDB", "Vitest", "GitHub Actions"],
         repo: "https://github.com/Edvanfigueredo/CarteiraDigitalPulse",
@@ -192,9 +192,9 @@ const en = {
         status: "prototype",
         statusText: "Functional prototype",
         type: "academic",
-        typeText: "Academic project · Capstone (TCC)",
+        typeText: "Academic project · Approved capstone (TCC)",
         highlights: ["BMI calculation and classification from weight and height", "Comparison with national averages for nine countries", "Rule-based 7-day meal plans by goal, country and dietary profile (incl. lactose intolerance and diabetes)"],
-        summary: "My individual capstone for the Systems Analysis and Development degree: a web app that calculates BMI, compares it with national data and suggests educational 7-day meal plans. The plan generator is rule-based, not an AI model.",
+        summary: "My individual capstone for the Systems Analysis and Development degree, approved with a final grade of 9.5: a web app that calculates BMI, compares it with national data and suggests educational 7-day meal plans. The plan generator is rule-based, not an AI model.",
         stack: ["HTML", "JavaScript", "Tailwind CSS", "GitHub Pages"],
         repo: "https://github.com/Edvanfigueredo/IMC_BMI_health",
         app: "https://edvanfigueredo.github.io/IMC_BMI_health/",
@@ -228,16 +228,20 @@ const en = {
   },
   journey: {
     title: "Professional journey",
-    intro: "From regulated healthcare operations and team leadership to technology consulting in AI & Data. Each role is listed with its title and dates as recorded on LinkedIn.",
+    intro: "From regulated healthcare operations and team leadership to technology consulting in AI & Data.",
     techTitle: "Technology Consulting",
     tech: [
-      { org: "EY", current: true, role: "Consultant, Technology Consulting — AI & Data, Financial Services", place: "São Paulo, hybrid", period: "Mar 2026 – present", text: "Data, automation and software work for financial-sector clients, using Java, Angular, Python, SQL, Power Automate and BI tools." },
+      { org: "EY", current: true, role: "Consultant, Technology Consulting — AI & Data, Financial Services", place: "São Paulo, hybrid", period: "Mar 2026 – present", text: "Data, automation and software work for financial-sector clients, using Java, Angular, Python, SQL, Power Automate and BI tools.", recognition: "Recognised five times with Shine, EY's recognition programme." },
     ],
     opsTitle: "Healthcare & Pharmaceutical Operations · 2013 – 2026",
     ops: [
       { org: "Rede D'Or São Luiz", role: "Nursing Technician", place: "São Paulo", period: "Jun 2021 – Feb 2026", text: "Patient care in a large hospital network, with daily use of the Tasy hospital ERP for clinical records and medication data." },
       { org: "Droga Raia (RD Saúde)", role: "Store Supervisor · Sales Associate and Cashier", place: "São Paulo", period: "2019 – Jun 2021", text: "Supervisor from January to June 2021, after starting as a sales associate and cashier." },
-      { org: "Hospital Dom Pedro de Alcântara", role: "Oncology pharmacy (Responsável Técnico) · Nursing Technician · Medical Records (SAME) Team Lead · Administrative Apprentice", place: "Feira de Santana, Bahia", period: "2013 – 2017", text: "" },
+      { org: "UNACON — Hospital Dom Pedro de Alcântara", role: "From youth apprentice to Responsável Técnico (technical lead) of the oncology pharmacy", place: "Feira de Santana, Bahia", period: "2013 – 2017", text: "",
+        pathTitle: "Roles held at the institution",
+        path: ["Youth apprentice (Jovem Aprendiz)", "SAME, including team lead", "Reception", "Nursing technician", "Oncology pharmacy: Responsável Técnico"],
+        focusTitle: "Oncology pharmacy",
+        focus: ["Technical responsibility for the pharmacy (Responsável Técnico)", "Compounding of pre-chemotherapy medication", "Stock control of chemotherapy drugs, other medicines and pharmacy supplies", "The pharmacy's day-to-day operating routines"] },
     ],
     eduTitle: "Education",
     edu: [
@@ -331,8 +335,8 @@ const pt = {
     about: { title: "Sobre Edvan Figuerêdo", description: "De hospitais e farmácia oncológica à consultoria em tecnologia na EY: a trajetória, os princípios e a direção do meu trabalho com software, dados e IA." },
     expertise: { title: "Atuação — IA, Dados e Engenharia de Software", description: "Consultoria, dados, backend, frontend, cloud e IA, cada área com o nível de evidência: prática profissional, projeto ou em desenvolvimento." },
     projects: { title: "Projetos — Edvan Figuerêdo", description: "Projetos selecionados com arquitetura, decisões técnicas, evidências de teste e status real, incluindo limitações conhecidas." },
-    pulse: { title: "Pulse Finance — Finanças Pessoais Local-First (MVP)", description: "Projeto individual: importação de extratos, sinalização de duplicidades, dívidas e projeções, 42 testes e problemas conhecidos declarados." },
-    capstone: { title: "Saúde IA — TCC de IMC e plano alimentar", description: "TCC: calculadora de IMC, comparação com nove países e planos alimentares de 7 dias baseados em regras. Só front-end; sem modelo de IA." },
+    pulse: { title: "Pulse Finance — Finanças Pessoais Local-First (MVP)", description: "Desenvolvido individualmente em um projeto de extensão sobre educação financeira: importação de extratos, dívidas, projeções e 42 testes automatizados." },
+    capstone: { title: "Saúde IA — TCC de IMC e plano alimentar", description: "TCC individual aprovado (nota 9,5): calculadora de IMC, comparação com nove países e planos alimentares de 7 dias baseados em regras. Só front-end; sem modelo de IA." },
     guibbor: { title: "Guibbor BJJ — Desenvolvimento e consultoria estratégica", description: "Meu primeiro projeto profissional em tecnologia: a plataforma digital que projetei e desenvolvi para uma academia de Jiu-Jitsu, seguida de consultoria estratégica." },
     fma: { title: "Análise do Mercado Financeiro — ferramenta em Python", description: "Ferramenta em Python para ações dos EUA e do Brasil, com pontuação transparente baseada em regras. Não é IA; projeto de aprendizado." },
     journey: { title: "Trajetória Profissional — Edvan Figuerêdo", description: "Das operações em saúde (desde 2013) e do varejo farmacêutico à consultoria em tecnologia na EY: experiência e formação." },
@@ -365,7 +369,7 @@ const pt = {
     journeyTitle: "Trajetória em síntese",
     journeyIntro: "Das operações reguladas em saúde e da liderança de equipes à consultoria em tecnologia em AI & Data.",
     journey: [
-      { year: "2013", phase: "Operações em saúde", text: "Administrativo hospitalar, SAME (liderança da equipe), enfermagem e farmácia oncológica" },
+      { year: "2013", phase: "Operações em saúde", text: "UNACON: de jovem aprendiz a Responsável Técnico da farmácia oncológica" },
       { year: "2019", phase: "Liderança no varejo", text: "Varejo farmacêutico: de atendente a supervisor de loja" },
       { year: "2021", phase: "Operação clínica e sistemas", text: "Técnico de enfermagem na Rede D'Or; usuário diário do ERP hospitalar Tasy" },
       { year: "2024", phase: "Formação em tecnologia", text: "Tecnólogo em Análise e Desenvolvimento de Sistemas; bacharelado em Engenharia de Software em andamento" },
@@ -381,10 +385,10 @@ const pt = {
   about: {
     title: "Das operações reguladas à consultoria em tecnologia",
     sections: [
-      { heading: "Onde comecei", text: "Comecei a trabalhar em 2013 no Hospital Dom Pedro de Alcântara, em Feira de Santana (BA): primeiro como jovem aprendiz administrativo, depois no SAME, na enfermagem e na farmácia oncológica. Na oncologia, preparo, rastreabilidade e controle de estoque não admitem margem de erro. Foi ali que aprendi a respeitar processos, dados e as pessoas que dependem deles." },
+      { heading: "Onde comecei", text: "Comecei a trabalhar em 2013 na UNACON do Hospital Dom Pedro de Alcântara, em Feira de Santana (BA): primeiro como jovem aprendiz, depois no SAME, na recepção e como técnico de enfermagem, até me tornar Responsável Técnico da farmácia oncológica, onde manipulei medicamentos de pré-quimioterapia e controlei o estoque de quimioterápicos, medicamentos e materiais. Na oncologia, preparo, rastreabilidade e controle de estoque não admitem margem de erro. Foi ali que aprendi a respeitar processos, dados e as pessoas que dependem deles." },
       { heading: "Liderar pessoas antes de liderar sistemas", text: "Liderei a equipe do SAME no hospital e, depois, supervisionei uma equipe de loja na Droga Raia (RD Saúde). Essas funções me ensinaram o que projetos de tecnologia costumam subestimar: adoção, rotina e as pessoas que mantêm um processo funcionando todos os dias. De 2021 a 2026, fui técnico de enfermagem na Rede D'Or e usuário diário do Tasy, um ERP hospitalar. Vi como sistemas podem ajudar quem faz um trabalho crítico, e também atrapalhar." },
       { heading: "Uma transição feita com método", text: "Em paralelo aos plantões, concluí a graduação tecnológica em Análise e Desenvolvimento de Sistemas (2024–2026), iniciei o bacharelado em Engenharia de Software e obtive as certificações Microsoft Azure, Azure Data e Power Platform Fundamentals." },
-      { heading: "Hoje", text: "Desde março de 2026, atuo como consultor na prática de Consultoria em Tecnologia da EY, em AI & Data para serviços financeiros. Bancos e hospitais têm mais em comum do que parece: regulação, dados sensíveis, trilhas de auditoria e baixíssima tolerância a falhas. Minha experiência operacional faz parte da forma como encaro esse trabalho." },
+      { heading: "Hoje", text: "Desde março de 2026, atuo como consultor na prática de Consultoria em Tecnologia da EY, em AI & Data para serviços financeiros. Bancos e hospitais têm mais em comum do que parece: regulação, dados sensíveis, trilhas de auditoria e baixíssima tolerância a falhas. Minha experiência operacional faz parte da forma como encaro esse trabalho. Fui reconhecido cinco vezes com o Shine, programa de reconhecimento da EY." },
     ],
     principlesTitle: "Como trabalho",
     principles: [
@@ -456,10 +460,10 @@ const pt = {
         name: "Pulse Finance",
         status: "mvp",
         statusText: "MVP — v2.0",
-        type: "own",
-        typeText: "Projeto próprio · Desenvolvimento de software",
+        type: "academic",
+        typeText: "Projeto de extensão universitária · Desenvolvimento de software",
         highlights: ["Importação de extratos (OFX, CSV/Excel, PDF) e backups em JSON", "Dívidas, parcelas, recorrências e calendário financeiro", "Projeção multi-mês e simulador “e se?”", "42 testes automatizados; CI configurado para rodá-los antes da publicação"],
-        summary: "Aplicação de finanças pessoais local-first que desenvolvi individualmente. Importa extratos bancários (OFX, CSV/Excel, PDF) e backups em JSON, sinaliza possíveis duplicidades e conecta dívidas, recorrências e projeções.",
+        summary: "Aplicação de finanças pessoais local-first que projetei e desenvolvi individualmente em um projeto de extensão universitária ligado à Agenda 2030 da ONU, como ferramenta de apoio a uma oficina de educação financeira para jovens do Ensino Médio.",
         evidence: "42 testes automatizados cobrem dívidas, projeções, o simulador “e se?”, o modo privado e a navegação por todo o app.",
         stack: ["JavaScript", "Vite", "IndexedDB", "Vitest", "GitHub Actions"],
         repo: "https://github.com/Edvanfigueredo/CarteiraDigitalPulse",
@@ -470,9 +474,9 @@ const pt = {
         status: "prototype",
         statusText: "Protótipo funcional",
         type: "academic",
-        typeText: "Projeto acadêmico · TCC",
+        typeText: "Projeto acadêmico · TCC aprovado",
         highlights: ["Cálculo e classificação do IMC a partir de peso e altura", "Comparação com médias nacionais de nove países", "Planos alimentares de 7 dias baseados em regras, por objetivo, país e perfil alimentar (inclui intolerância à lactose e diabetes)"],
-        summary: "Meu TCC individual do curso de Análise e Desenvolvimento de Sistemas: aplicação web que calcula o IMC, compara com dados nacionais e sugere planos alimentares educativos de 7 dias. O gerador de planos é baseado em regras, não em um modelo de IA.",
+        summary: "Meu TCC individual do curso de Análise e Desenvolvimento de Sistemas, aprovado com nota final 9,5: aplicação web que calcula o IMC, compara com dados nacionais e sugere planos alimentares educativos de 7 dias. O gerador de planos é baseado em regras, não em um modelo de IA.",
         stack: ["HTML", "JavaScript", "Tailwind CSS", "GitHub Pages"],
         repo: "https://github.com/Edvanfigueredo/IMC_BMI_health",
         app: "https://edvanfigueredo.github.io/IMC_BMI_health/",
@@ -506,16 +510,20 @@ const pt = {
   },
   journey: {
     title: "Trajetória profissional",
-    intro: "Das operações reguladas em saúde e da liderança de equipes à consultoria em tecnologia em AI & Data. Cada função aparece com o título e as datas registrados no LinkedIn.",
+    intro: "Das operações reguladas em saúde e da liderança de equipes à consultoria em tecnologia em AI & Data.",
     techTitle: "Consultoria em Tecnologia",
     tech: [
-      { org: "EY", current: true, role: "Consultor, Consultoria em Tecnologia — AI & Data, Serviços Financeiros", place: "São Paulo, híbrido", period: "mar 2026 – atual", text: "Trabalho com dados, automação e software para clientes do setor financeiro, usando Java, Angular, Python, SQL, Power Automate e ferramentas de BI." },
+      { org: "EY", current: true, role: "Consultor, Consultoria em Tecnologia — AI & Data, Serviços Financeiros", place: "São Paulo, híbrido", period: "mar 2026 – atual", text: "Trabalho com dados, automação e software para clientes do setor financeiro, usando Java, Angular, Python, SQL, Power Automate e ferramentas de BI.", recognition: "Reconhecido cinco vezes com o Shine, programa de reconhecimento da EY." },
     ],
     opsTitle: "Operações em Saúde e Varejo Farmacêutico · 2013 – 2026",
     ops: [
       { org: "Rede D'Or São Luiz", role: "Técnico de Enfermagem", place: "São Paulo", period: "jun 2021 – fev 2026", text: "Assistência em uma grande rede hospitalar, com uso diário do ERP hospitalar Tasy para registros clínicos e dados de medicação." },
       { org: "Droga Raia (RD Saúde)", role: "Supervisor de Loja · Atendente e Operador de Caixa", place: "São Paulo", period: "2019 – jun 2021", text: "Supervisor de janeiro a junho de 2021, depois de começar como atendente e operador de caixa." },
-      { org: "Hospital Dom Pedro de Alcântara", role: "Farmácia oncológica (Responsável Técnico) · Técnico de Enfermagem · Líder do SAME · Jovem Aprendiz Administrativo", place: "Feira de Santana (BA)", period: "2013 – 2017", text: "" },
+      { org: "UNACON — Hospital Dom Pedro de Alcântara", role: "De jovem aprendiz a Responsável Técnico da farmácia oncológica", place: "Feira de Santana (BA)", period: "2013 – 2017", text: "",
+        pathTitle: "Funções exercidas na instituição",
+        path: ["Jovem Aprendiz", "SAME, incluindo a liderança da equipe", "Recepção", "Técnico de Enfermagem", "Farmácia oncológica: Responsável Técnico"],
+        focusTitle: "Farmácia oncológica",
+        focus: ["Responsabilidade técnica pela farmácia (Responsável Técnico)", "Manipulação de medicamentos de pré-quimioterapia", "Controle de estoque de quimioterápicos, demais medicamentos e materiais da farmácia", "Rotinas operacionais do dia a dia da farmácia oncológica"] },
     ],
     eduTitle: "Formação",
     edu: [
