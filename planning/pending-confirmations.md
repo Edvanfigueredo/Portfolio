@@ -46,7 +46,10 @@ Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are publish
    - **(a)** Period of each phase (years), and whether the consulting is ongoing.
    - **(b)** Technologies of the original platform (languages, framework, database, hosting), if they should be named.
    - **(c)** Who made later changes to the website, if any, and which consulting proposals were implemented.
-   - **(d)** The academy's agreement to be named, and any result it agrees to publish.
+   - **(d)** The academy's agreement to be named. Published on 2026-11-14 with the owner's authorization: the owner
+     manages the academy's Google Business Profile, and its official August 2026 report (vs July 2026): 153 interactions,
+     1,977 profile views (+38%), 648 searches (+64%), 94 direction requests (+23%), 45 website visits (+9%),
+     14 chat clicks (+75%), 0 calls. Commercial results (enrolments, revenue) remain unproven and unpublished.
    - **(e)** A clean screenshot you are allowed to publish (the old one was a phone photo of a screen).
    - **(f)** Whether the project should also appear on the Journey page and in the home timeline.
 

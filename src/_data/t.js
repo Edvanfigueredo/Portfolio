@@ -204,7 +204,7 @@ const en = {
         phasesLabel: "Two phases",
         phases: [
           { tag: "1 · Original development", text: "Architecture, planning, database, backend and frontend, built by hand without AI" },
-          { tag: "2 · Strategic consulting", text: "Growth strategy, digital presence, the student journey and platform evolution" },
+          { tag: "2 · Strategic consulting", text: "Growth strategy, digital presence (including the Google Business Profile), the student journey and platform evolution" },
         ],
         site: "https://guibborbjj.com.br/",
       },
@@ -478,7 +478,7 @@ const pt = {
         phasesLabel: "Duas fases",
         phases: [
           { tag: "1 · Desenvolvimento original", text: "Arquitetura, planejamento, banco de dados, backend e frontend, feitos manualmente, sem IA" },
-          { tag: "2 · Consultoria estratégica", text: "Estratégia de crescimento, presença digital, jornada do aluno e evolução da plataforma" },
+          { tag: "2 · Consultoria estratégica", text: "Estratégia de crescimento, presença digital (incluindo o Perfil da Empresa no Google), jornada do aluno e evolução da plataforma" },
         ],
         site: "https://guibborbjj.com.br/",
       },

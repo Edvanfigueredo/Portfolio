@@ -6,7 +6,7 @@ layout: layouts/case-study.njk
 navKey: projects
 eyebrow: "Case study · Software development · Strategic consulting"
 lead: "My first professional technology project: the digital platform of Guibbor BJJ, a Brazilian Jiu-Jitsu academy. I designed and built it before joining EY, and I now also advise the academy on strategy and digital evolution."
-role: "Developer of the original platform (architecture, database, backend and frontend). Now also strategic consultant."
+role: "Developer of the original platform (architecture, database, backend and frontend). Now also strategic consultant and manager of the Google Business Profile."
 ---
 
 ## Context
@@ -44,14 +44,38 @@ With more experience in software engineering, data, AI and technology consulting
 
 </section>
 
+<section class="case-phase" aria-labelledby="gbp">
+<p class="phase-tag">Ongoing · Google Business Profile</p>
+<h2 id="gbp">Google Business Profile management</h2>
+
+I am also responsible for managing the academy's Google Business Profile, the listing that appears in Google Search and Maps.
+
+<div class="metrics-block">
+<p class="metrics-title">Profile performance, August 2026 compared with July 2026</p>
+<dl class="metrics">
+<div><dt>Profile views</dt><dd class="metric-value">1,977</dd><dd class="metric-delta">+38% vs July</dd></div>
+<div><dt>Searches</dt><dd class="metric-value">648</dd><dd class="metric-delta">+64% vs July</dd></div>
+<div><dt>Interactions</dt><dd class="metric-value">153</dd><dd class="metric-delta">No comparison</dd></div>
+<div><dt>Direction requests</dt><dd class="metric-value">94</dd><dd class="metric-delta">+23% vs July</dd></div>
+<div><dt>Website visits</dt><dd class="metric-value">45</dd><dd class="metric-delta">+9% vs July</dd></div>
+<div><dt>Chat clicks</dt><dd class="metric-value">14</dd><dd class="metric-delta">+75% vs July</dd></div>
+<div><dt>Calls</dt><dd class="metric-value">0</dd><dd class="metric-delta">No comparison</dd></div>
+</dl>
+<p class="metrics-source">Source: the official Google Business Profile performance report for August 2026, compared with July 2026. These are visibility and engagement indicators. They are not enrolments or sales.</p>
+</div>
+
+</section>
+
 ## What is confirmed
 
 | Part of the work | Status |
 |---|---|
 | Original platform: architecture, planning, database, backend, frontend and integration | Designed and developed by me, without AI tools |
-| Consulting: diagnosis, strategy and proposals | Done by me |
+| Strategic consulting: diagnosis, strategy and proposals | Done by me |
+| Google Business Profile management | Done by me |
+| Digital performance indicators (Google Business Profile) | Recorded in the official report for August 2026, shown above |
 | Recent changes to the website | Not attributed to me here unless confirmed |
-| Business results | None are shown; none have been measured or published |
+| Commercial results (enrolments, revenue) | Not proven, so not shown |
 
 ## Links
 
