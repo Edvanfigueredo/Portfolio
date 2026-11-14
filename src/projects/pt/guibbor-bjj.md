@@ -13,6 +13,13 @@ role: "Desenvolvedor da plataforma original (arquitetura, banco de dados, backen
 
 A Guibbor BJJ é uma academia de Jiu-Jitsu com site oficial e perfil no Instagram (@guibborbjj). O crescimento depende de futuros alunos a encontrarem no Google ou no Instagram, entrarem em contato, muitas vezes pelo WhatsApp, e se matricularem.
 
+<figure>
+  <picture>
+    <img src="{{ '/assets/img/guibbor-opening-1280.webp' | url }}" srcset="{{ '/assets/img/guibbor-opening-800.webp' | url }} 800w, {{ '/assets/img/guibbor-opening-1280.webp' | url }} 1280w" sizes="(min-width: 64rem) 44rem, 100vw" width="1280" height="854" loading="lazy" alt="Foto em grupo de cerca de noventa praticantes de Jiu-Jitsu de todas as idades, com quimonos brancos, azuis e pretos, sentados e em pé sobre o tatame da sala de treino da academia.">
+  </picture>
+  <figcaption>Equipe da Guibbor BJJ reunida no primeiro treino oficial, na inauguração da academia.</figcaption>
+</figure>
+
 Meu trabalho com a academia tem duas fases, apresentadas separadamente abaixo.
 
 <section class="case-phase is-first" aria-labelledby="phase-1">

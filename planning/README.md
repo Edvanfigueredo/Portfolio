@@ -10,6 +10,7 @@ These files document the portfolio; none of them is published. The copy rendered
 | `information-architecture.md` | Site map, URL scheme (EN default, PT under `/pt/`), navigation and content model |
 | `seo-strategy.md` | Search themes, titles and descriptions, hreflang, structured data and sitemap |
 | `linkedin/` | LinkedIn media image (1200 × 627 and 2400 × 1254), its HTML source and the texts |
+| `source-images/` | Original files of photos published on the site in optimised form (Guibbor BJJ opening day) |
 
 Earlier drafts (the editorial copy in `content/`, the roadmap and the case-study standard) were removed in
 November 2026 once the site was published; they remain in the Git history. Audit reports with security findings

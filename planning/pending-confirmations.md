@@ -17,6 +17,8 @@ Last update: 2026-11-14.
 - `Sistema-de-Gest-o-de-Clientes/clientes.csv`: its three records are fictitious test data created by the owner; the file is kept as is.
 - CV in PDF: definitively not offered on the site.
 - OrkestrIA: kept out of the portfolio.
+- Guibbor BJJ opening-day photo: the owner confirmed on 2026-11-14 that the academy authorised its public use and that
+  consent for the minors shown is covered. Published in the case study; original kept in `planning/source-images/`.
 
 ## Still open
 
@@ -29,6 +31,3 @@ Last update: 2026-11-14.
    they should appear; whether the workshop actually took place (the site only says the app was designed to support it).
 4. **Guibbor BJJ** — period of each phase; technologies of the original platform, if they should be named; who made later
    changes to the website; the academy's agreement to be named.
-5. **Guibbor BJJ photo** — the opening-day team photo shows many identifiable people, including children. It is only
-   published after the owner confirms that the academy authorised its public use (and, for minors, that the guardians'
-   consent is covered).
