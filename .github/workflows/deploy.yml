@@ -1,7 +1,7 @@
 # Publishes the Eleventy build (_site/) to GitHub Pages.
-# INACTIVE BY DESIGN: manual trigger only. Before using it, the owner must switch
-# Settings → Pages → Build and deployment → Source to "GitHub Actions".
-# Until then, GitHub Pages keeps serving the legacy site from the repository root.
+# Manual trigger only. It stops before deploying unless Settings → Pages → Source is
+# "GitHub Actions"; with "Deploy from a branch", every push to main would rebuild the
+# legacy root site with Jekyll and replace this deployment.
 name: Deploy to GitHub Pages
 
 on:
@@ -21,6 +21,16 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
+      - name: Require Pages source = GitHub Actions
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          type=$(gh api "repos/${{ github.repository }}/pages" --jq .build_type)
+          echo "Pages build type: $type"
+          if [ "$type" != "workflow" ]; then
+            echo "::error::Settings → Pages → Source must be 'GitHub Actions' (found '$type'). Not deploying."
+            exit 1
+          fi
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
