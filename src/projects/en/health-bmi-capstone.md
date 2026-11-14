@@ -5,8 +5,8 @@ permalink: /projects/health-bmi-capstone/index.html
 layout: layouts/case-study.njk
 navKey: projects
 eyebrow: "Case study · Capstone (TCC) · Health"
-lead: "My capstone for the Systems Analysis and Development degree at Faculdade São Francisco de Assis. A web app that calculates BMI, compares it with national data and suggests educational 7-day meal plans."
-role: "Academic project (capstone). Front-end code and commits in the public repository are mine."
+lead: "My individual capstone for the Systems Analysis and Development degree at Faculdade São Francisco de Assis. A web app that calculates BMI, compares it with national data and suggests educational 7-day meal plans."
+role: "Individual academic project developed as a capstone project. All the code and commits in the public repository are mine."
 ---
 
 ## Summary

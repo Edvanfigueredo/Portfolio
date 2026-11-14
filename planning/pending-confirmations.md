@@ -21,7 +21,7 @@ Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are publish
 
 4. **Saúde IA capstone (TCC)** — now published as "Academic project · Capstone (TCC)", described from the public
    repository `IMC_BMI_health` (rule-based, front end only, no AI model). Still to confirm:
-   - **(a)** Individual or group work? If group, the names to credit and your part.
+   - ~~(a) Individual or group work?~~ Confirmed on 2026-11-14: individual work by the owner.
    - **(b)** Whether the capstone was submitted and approved (the page makes no claim about grading).
    - **(c)** The source of the nine-country BMI and obesity figures.
    - **(d)** If a fuller version exists (Node/Express, React, Azure SQL, Azure Pipelines, an AI API), its repository URL.

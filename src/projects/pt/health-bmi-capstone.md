@@ -5,8 +5,8 @@ permalink: /pt/projects/health-bmi-capstone/index.html
 layout: layouts/case-study.njk
 navKey: projects
 eyebrow: "Estudo de caso · TCC · Saúde"
-lead: "Meu TCC do curso de Análise e Desenvolvimento de Sistemas na Faculdade São Francisco de Assis. Aplicação web que calcula o IMC, compara com dados nacionais e sugere planos alimentares educativos de 7 dias."
-role: "Projeto acadêmico (TCC). O código front-end e os commits do repositório público são meus."
+lead: "Meu TCC, desenvolvido individualmente, do curso de Análise e Desenvolvimento de Sistemas na Faculdade São Francisco de Assis. Aplicação web que calcula o IMC, compara com dados nacionais e sugere planos alimentares educativos de 7 dias."
+role: "Projeto acadêmico individual desenvolvido como Trabalho de Conclusão de Curso (TCC). Todo o código e os commits do repositório público são meus."
 ---
 
 ## Resumo
