@@ -54,7 +54,7 @@ const en = {
     projects: { title: "Projects — Edvan Figuerêdo", description: "Selected projects with architecture, technical decisions, test evidence and an honest status, including known limitations." },
     pulse: { title: "Pulse Finance — Local-First Personal Finance App (MVP)", description: "Individually built: statement import, duplicate flags, debts and forecasts, 42 automated tests and known issues listed openly." },
     capstone: { title: "Saúde IA — BMI and Diet Plan Capstone (TCC)", description: "Academic capstone: BMI calculator, nine-country comparison and rule-based 7-day meal plans. Front end only; no AI model." },
-    guibbor: { title: "Guibbor BJJ — Digital Strategy Consulting", description: "Consulting for a Brazilian Jiu-Jitsu academy: business diagnosis, growth strategy, digital presence and the student acquisition journey." },
+    guibbor: { title: "Guibbor BJJ — Platform Development and Strategic Consulting", description: "My first professional technology project: a digital platform I designed and built for a Jiu-Jitsu academy, followed by strategic consulting." },
     fma: { title: "Financial Market Analysis — Python market data tool", description: "Python tool for US and Brazilian equities with a transparent, rule-based score. Not an AI model; learning project." },
     journey: { title: "Professional Journey — Edvan Figuerêdo", description: "From healthcare operations (since 2013) and pharmaceutical retail to technology consulting at EY: experience and education." },
     credentials: { title: "Certifications & Credentials — Edvan Figuerêdo", description: "Microsoft Azure, Azure Data and Power Platform Fundamentals certifications, plus university courses in AI, MLOps and digital strategy." },
@@ -169,7 +169,7 @@ const en = {
     types: [
       { key: "own", label: "Own project", text: "Designed and built by me outside work." },
       { key: "academic", label: "Academic project", text: "Built as part of a degree." },
-      { key: "consulting", label: "Consulting", text: "Advisory work for a business." },
+      { key: "client", label: "Client project", text: "Professional work for a real business." },
       { key: "learning", label: "Learning project", text: "Built to practise a technology or course content." },
     ],
     items: {
@@ -198,11 +198,14 @@ const en = {
       },
       guibbor: {
         name: "Guibbor BJJ",
-        type: "consulting",
-        typeText: "Consulting · Digital strategy",
-        highlightsLabel: "scopeOfWork",
-        highlights: ["Business diagnosis and growth strategy", "Digital presence: Google, Instagram and WhatsApp", "Student acquisition journey and user experience", "Technology modernization opportunities"],
-        summary: "Consulting for a Brazilian Jiu-Jitsu academy in its digital evolution. The current website and the academy's digital channels are not presented as built by me alone.",
+        type: "client",
+        typeText: "Software development · Strategic consulting",
+        summary: "My first professional technology project, designed and built entirely by me before I joined EY. I now also advise the academy on strategy and digital evolution.",
+        phasesLabel: "Two phases",
+        phases: [
+          { tag: "1 · Original development", text: "Architecture, planning, database, backend and frontend, built by hand without AI" },
+          { tag: "2 · Strategic consulting", text: "Growth strategy, digital presence, the student journey and platform evolution" },
+        ],
         site: "https://guibborbjj.com.br/",
       },
       fma: {
@@ -325,7 +328,7 @@ const pt = {
     projects: { title: "Projetos — Edvan Figuerêdo", description: "Projetos selecionados com arquitetura, decisões técnicas, evidências de teste e status real, incluindo limitações conhecidas." },
     pulse: { title: "Pulse Finance — Finanças Pessoais Local-First (MVP)", description: "Projeto individual: importação de extratos, sinalização de duplicidades, dívidas e projeções, 42 testes e problemas conhecidos declarados." },
     capstone: { title: "Saúde IA — TCC de IMC e plano alimentar", description: "TCC: calculadora de IMC, comparação com nove países e planos alimentares de 7 dias baseados em regras. Só front-end; sem modelo de IA." },
-    guibbor: { title: "Guibbor BJJ — Consultoria em estratégia digital", description: "Consultoria para uma academia de Jiu-Jitsu: diagnóstico de negócio, estratégia de crescimento, presença digital e jornada de captação de alunos." },
+    guibbor: { title: "Guibbor BJJ — Desenvolvimento e consultoria estratégica", description: "Meu primeiro projeto profissional em tecnologia: a plataforma digital que projetei e desenvolvi para uma academia de Jiu-Jitsu, seguida de consultoria estratégica." },
     fma: { title: "Análise do Mercado Financeiro — ferramenta em Python", description: "Ferramenta em Python para ações dos EUA e do Brasil, com pontuação transparente baseada em regras. Não é IA; projeto de aprendizado." },
     journey: { title: "Trajetória Profissional — Edvan Figuerêdo", description: "Das operações em saúde (desde 2013) e do varejo farmacêutico à consultoria em tecnologia na EY: experiência e formação." },
     credentials: { title: "Certificações e Credenciais — Edvan Figuerêdo", description: "Certificações Microsoft Azure, Azure Data e Power Platform Fundamentals, e cursos universitários em IA, MLOps e estratégia digital." },
@@ -440,7 +443,7 @@ const pt = {
     types: [
       { key: "own", label: "Projeto próprio", text: "Projetado e desenvolvido por mim, fora do trabalho." },
       { key: "academic", label: "Projeto acadêmico", text: "Desenvolvido como parte de uma graduação." },
-      { key: "consulting", label: "Consultoria", text: "Assessoria para um negócio." },
+      { key: "client", label: "Projeto para cliente", text: "Trabalho profissional para um negócio real." },
       { key: "learning", label: "Projeto de aprendizado", text: "Desenvolvido para praticar uma tecnologia ou o conteúdo de um curso." },
     ],
     items: {
@@ -469,11 +472,14 @@ const pt = {
       },
       guibbor: {
         name: "Guibbor BJJ",
-        type: "consulting",
-        typeText: "Consultoria · Estratégia digital",
-        highlightsLabel: "scopeOfWork",
-        highlights: ["Diagnóstico de negócio e estratégia de crescimento", "Presença digital: Google, Instagram e WhatsApp", "Jornada de captação de alunos e experiência do usuário", "Oportunidades de modernização tecnológica"],
-        summary: "Consultoria para a evolução digital de uma academia de Jiu-Jitsu. O site atual e os canais digitais da academia não são apresentados como desenvolvidos só por mim.",
+        type: "client",
+        typeText: "Desenvolvimento de software · Consultoria estratégica",
+        summary: "Meu primeiro projeto profissional em tecnologia, projetado e desenvolvido integralmente por mim antes de ingressar na EY. Hoje também atuo na consultoria estratégica e na evolução digital da academia.",
+        phasesLabel: "Duas fases",
+        phases: [
+          { tag: "1 · Desenvolvimento original", text: "Arquitetura, planejamento, banco de dados, backend e frontend, feitos manualmente, sem IA" },
+          { tag: "2 · Consultoria estratégica", text: "Estratégia de crescimento, presença digital, jornada do aluno e evolução da plataforma" },
+        ],
         site: "https://guibborbjj.com.br/",
       },
       fma: {

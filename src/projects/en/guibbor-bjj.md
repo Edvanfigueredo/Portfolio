@@ -4,34 +4,55 @@ pageKey: guibbor
 permalink: /projects/guibbor-bjj/index.html
 layout: layouts/case-study.njk
 navKey: projects
-eyebrow: "Consulting · Digital strategy · Small business"
-lead: "Consulting for the digital evolution of Guibbor BJJ, a Brazilian Jiu-Jitsu academy. The focus is how prospective students find the academy, contact it and sign up."
-role: "Consultant: diagnosis, strategy and proposals. The business, its website and its channels belong to the academy."
+eyebrow: "Case study · Software development · Strategic consulting"
+lead: "My first professional technology project: the digital platform of Guibbor BJJ, a Brazilian Jiu-Jitsu academy. I designed and built it before joining EY, and I now also advise the academy on strategy and digital evolution."
+role: "Developer of the original platform (architecture, database, backend and frontend). Now also strategic consultant."
 ---
 
 ## Context
 
-Guibbor BJJ is a Brazilian Jiu-Jitsu academy with an official website and an Instagram profile (@guibborbjj). Like many small gyms, it depends on prospective students finding it on Google or Instagram and getting in touch, often through WhatsApp.
+Guibbor BJJ is a Brazilian Jiu-Jitsu academy with an official website and an Instagram profile (@guibborbjj). Its growth depends on prospective students finding it on Google or Instagram, getting in touch, often through WhatsApp, and signing up.
 
-## My contribution
+My work with the academy has two phases, presented separately below.
 
-- **Business diagnosis:** how the academy attracts and keeps students today, and where the journey loses people.
-- **Growth strategy:** priorities for growing the student base.
-- **Digital presence:** recommendations for Google, Instagram and WhatsApp working as one journey.
-- **User experience:** the student acquisition journey, from first search to first class.
-- **Technology modernization:** opportunities to improve the academy's digital experience.
+<section class="case-phase is-first" aria-labelledby="phase-1">
+<p class="phase-tag">Phase 1 · Before EY</p>
+<h2 id="phase-1">Building the digital platform</h2>
 
-## What is confirmed, and what is not
+This was my first professional project in technology. I was responsible for the original solution from start to finish, and built it by hand, without AI tools:
+
+- **Architecture and technical planning** of the application.
+- **Database** modelling and structure.
+- **Backend** development.
+- **Frontend** development.
+- **Integration** of the components into one working application.
+
+This phase describes the original development. The website has evolved since its first version, so this page does not claim that everything published today is unchanged.
+
+</section>
+
+<section class="case-phase" aria-labelledby="phase-2">
+<p class="phase-tag">Phase 2 · Later</p>
+<h2 id="phase-2">Strategic consulting and digital evolution</h2>
+
+With more experience in software engineering, data, AI and technology consulting, my role grew from building the platform to connecting technology with the business. I now also advise the academy on:
+
+- **Business diagnosis** and **growth strategy**.
+- **Digital presence:** Google, Instagram and WhatsApp working as one journey.
+- **The student acquisition journey** and its user experience, from first search to first class.
+- **Technology modernization:** the evolution of the platform and a product view of it.
+
+</section>
+
+## What is confirmed
 
 | Part of the work | Status |
 |---|---|
-| Diagnosis and planning | Done by me, within the scope above |
-| Proposals | Prepared by me: the student acquisition journey, Google, Instagram, WhatsApp and the digital experience. Their acceptance is not stated here |
-| Implementation | No implementation is attributed to me until it is confirmed |
-| Work by others | The current website, social channels and operations belong to the academy. They are not presented as built by me |
-
-No business metrics are shown. None have been measured or published.
+| Original platform: architecture, planning, database, backend, frontend and integration | Designed and developed by me, without AI tools |
+| Consulting: diagnosis, strategy and proposals | Done by me |
+| Recent changes to the website | Not attributed to me here unless confirmed |
+| Business results | None are shown; none have been measured or published |
 
 ## Links
 
-The official website is linked on this page. No source code is public for this work.
+The official website is linked on this page. The source code is private.

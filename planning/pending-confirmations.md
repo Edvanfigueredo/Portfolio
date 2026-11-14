@@ -40,13 +40,15 @@ Items 1–3 and 5–6 do not appear on the site today. Items 4 and 7 are publish
    The text appears on the case-study page exactly as approved. (The AI question is answered: AI supported only the
    initial UX prototype; the development is yours. This is now stated on the case-study page in both languages.)
 
-7. **Guibbor BJJ** — now published as "Consulting · Digital strategy", with only the scope you described
-   (diagnosis, growth strategy, digital presence, acquisition journey and UX, modernization opportunities). To add more:
-   - **(a)** Which proposals were actually implemented, and by whom (the old portfolio said "Site + Admin panel").
-   - **(b)** Period of the engagement and whether it is ongoing.
-   - **(c)** The academy's agreement to be named, and any result it agrees to publish.
-   - **(d)** A clean screenshot or image you are allowed to publish (the old one was a phone photo of a screen).
-   - **(e)** Permission to read the private `guibborbjj` repository, if technical work should be described.
+7. **Guibbor BJJ** — confirmed by the owner on 2026-11-14: first professional technology project, before EY; the
+   owner designed and developed the original platform by hand, without AI (architecture, planning, database, backend,
+   frontend, integration), and later took on strategic consulting. Now published in two phases. Still open:
+   - **(a)** Period of each phase (years), and whether the consulting is ongoing.
+   - **(b)** Technologies of the original platform (languages, framework, database, hosting), if they should be named.
+   - **(c)** Who made later changes to the website, if any, and which consulting proposals were implemented.
+   - **(d)** The academy's agreement to be named, and any result it agrees to publish.
+   - **(e)** A clean screenshot you are allowed to publish (the old one was a phone photo of a screen).
+   - **(f)** Whether the project should also appear on the Journey page and in the home timeline.
 
 8. **Other public repositories** — selection approved by the owner on 2026-11-14:
    - Shown: Pulse Finance, Financial Market Analysis, Saúde IA and Guibbor BJJ as projects; Spring-Enterprise-Pattern
