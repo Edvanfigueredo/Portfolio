@@ -25,7 +25,6 @@
 - `pulse-finance` — flagship candidate, status MVP; known issues listed in the case study
 - `financial-market-analysis` — mini case study
 - `healthcare-capstone` — mini case study, blocked until C18
-- `orkestria`, `cloudcost-navigator` — reserved; created only once evidence is available for audit
 - Home "Selected work" shows **two** cards until a third project has audited evidence
 
 ## Navigation
